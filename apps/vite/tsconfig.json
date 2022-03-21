@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "module": "es2022",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@ui/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "exclude": ["node_modules",".turbo"],
+  "references": [
+    {
+      "path": "./ui-config.json"
+    },
+    {
+      "path": "./ui-app.json"
+    }
+  ]
+}

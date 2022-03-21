@@ -1,0 +1,27 @@
+{
+  "name": "config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^9.0.0",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "8.11.0",
+    "eslint-plugin-import": "^2.25.4",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.3",
+    "windicss": "^3.5.1"
+  },
+  "files": [
+    "ui-app.json",
+    "ui-config.json",
+    "vitest.json",
+    "eslint.cjs",
+    "prettier.cjs",
+    "windicss.ts"
+  ]
+}
