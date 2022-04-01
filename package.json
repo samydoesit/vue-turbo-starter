@@ -7,18 +7,34 @@
     "packages/*"
   ],
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "release": "ts-node scripts/release.ts"
   },
   "devDependencies": {
-    "prettier": "^2.6.0",
-    "turbo": "latest"
+    "prettier": "^2.6.1",
+    "turbo": "latest",
+    "semver": "^7.3.5",
+    "@types/semver": "^7.3.9",
+    "simple-git-hooks": "^2.7.0",
+    "picocolors": "^1.0.0",
+    "prompts": "^2.4.2",
+    "@types/prompts": "^2.0.14",
+    "ts-node": "^10.4.0",
+    "@types/node": "^16.11.26",
+    "execa": "^5.1.1",
+    "conventional-changelog-cli": "^2.2.2",
+    "typescript": "~4.5.4"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "pnpm@6.32.0"
+  "packageManager": "pnpm@6.32.0",
+  "simple-git-hooks": {
+    "commit-msg": "pnpm exec ts-node scripts/verifyCommit.ts $1"
+  }
 }
