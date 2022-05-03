@@ -1,21 +1,18 @@
+// import { app } from '@storybook/vue3'
+import * as jest from '@storybook/jest'
 import 'virtual:windi.css'
 
-import { createPinia } from 'pinia'
-import { app } from '@storybook/vue3'
-import { useHelloWorld } from '../store/helloWorld'
-const pinia = createPinia()
+// Fix: fn() is not defined, see: https://github.com/storybookjs/storybook/issues/15391
+window.jest = jest
 
-app.use(pinia)
-useHelloWorld()
+/** How to use Pinia-store in storybook */
+// import { createPinia } from 'pinia'
+// useUser()
+// import { useUser } from '../store/user'
+// const pinia = createPinia()
 
 export const parameters = {
   layout: 'centered',
   controls: { expanded: true },
-  // docs: {
-  //   inlineStories: true,
-  //   source: {
-  //     state: 'open',
-  //   },
-  // },
   actions: { argTypesRegex: '^on[A-Z].*' }
 }

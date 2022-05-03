@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import CustomButton from '@ui/components/CustomButton/CustomButton.vue'
+import CustomButton from '@ui/components/button/Button.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import { useHelloWorld } from '@/store/helloWorld'
 
@@ -13,7 +13,9 @@ console.log(message)
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <CustomButton type="primary">Test</CustomButton>
+  <CustomButton prefix="dscds" type="primary">
+    Test
+  </CustomButton>
 </template>
 
 <style>

@@ -6,33 +6,25 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
+    "postinstall": "rm -rf ./node_modules/@types/react"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.1.8",
-    "pinia": "^2.0.11"
+    "pinia": "^2.0.13"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config-typescript": "^9.0.0",
-    "config": "workspace:*",
-    "eslint": "^8.11.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-unicorn": "^41.0.1",
-    "nuxt-windicss": "^2.2.8",
-    "nuxt3": "latest",
+    "nuxt-windicss": "^2.3.1",
+    "nuxt": "npm:nuxt3@latest",
     "pinia-store": "workspace:*",
     "typescript": "^4.6.2",
     "ui": "workspace:*",
-    "vite": "^2.9.1",
-    "vue": "^3.2.31"
+    "vite": "^2.9.7",
+    "vue": "^3.2.33"
   },
   "peerDependencies": {
-    "@nuxtjs/eslint-config-typescript": "^9.0.0",
-    "eslint": "^8.11.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-unicorn": "^41.0.1",
     "typescript": "^4.6.2",
-    "vite": "^2.9.1",
-    "vue": "^3.2.31"
+    "vite": "^2.9.7",
+    "vue": "^3.2.33"
   }
 }

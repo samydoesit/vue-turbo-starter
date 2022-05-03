@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "preserve",
     "skipLibCheck": true,
     "module": "es2022",
     "moduleResolution": "node",
@@ -9,7 +10,12 @@
     "noEmit": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@ui/*": ["../../packages/ui/src/*"]
+      "@ui": [
+        "../../packages/ui/src"
+      ],
+      "@ui/*": [
+        "../../packages/ui/src/*"
+      ],
     }
   },
   "exclude": ["node_modules",".turbo"],
@@ -20,5 +26,8 @@
     {
       "path": "./ui-app.json"
     }
-  ]
+  ],
+  "vueCompilerOptions": {
+    "experimentalDisableTemplateSupport": false
+  }
 }

@@ -9,9 +9,9 @@ console.log(message)
 <template>
   <div>
     <div class="absolute">
-      <CustomButton type="primary">
-        CustomButton
-      </CustomButton>
+      <Button prefix="test" type="primary">
+        Button1
+      </Button>
     </div>
     <NuxtWelcome />
   </div>
