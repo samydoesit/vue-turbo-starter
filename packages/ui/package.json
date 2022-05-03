@@ -7,8 +7,5 @@
     "typecheck": "vue-tsc --noEmit -p vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
   },
-  "main": "./src/main.ts",
-  "devDependencies": {
-    "config": "workspace:*"
-  }
+  "main": "main.ts"
 }

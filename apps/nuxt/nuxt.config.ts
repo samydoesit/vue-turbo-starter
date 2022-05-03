@@ -1,7 +1,6 @@
 import path from 'path'
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   buildModules: ['nuxt-windicss', '@pinia/nuxt'],
   alias: {
