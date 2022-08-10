@@ -4,7 +4,7 @@ const { defineConfig } = require('eslint-define-config')
 const config = require('config/eslint.cjs')
 
 const apps = 'apps/'
-const nuxtPath = `${apps}/nuxt`
+const nuxtPath = `${apps}/web`
 // const sbPath = `${apps}/storybook`
 
 module.exports = defineConfig({
