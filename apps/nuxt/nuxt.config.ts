@@ -9,5 +9,16 @@ export default defineNuxtConfig({
   components: [{ path: '../../packages/ui/src/components', extensions: ['vue'] }],
   typescript: {
     shim: false
+  },
+  vite: {
+    optimizeDeps: {
+      exclude: ['pinia']
+    },
+    resolve: {
+      alias: {
+        // This is at the moment necessary for a working build
+        pinia: path.resolve(__dirname, './node_modules/pinia/dist/pinia.mjs')
+      }
+    }
   }
 })
