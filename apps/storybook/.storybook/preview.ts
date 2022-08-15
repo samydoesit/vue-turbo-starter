@@ -3,7 +3,7 @@ import * as jest from '@storybook/jest'
 import 'virtual:windi.css'
 
 // Fix: fn() is not defined, see: https://github.com/storybookjs/storybook/issues/15391
-window.jest = jest
+window.jest = jest as any
 
 /** How to use Pinia-store in storybook */
 // import { createPinia } from 'pinia'
