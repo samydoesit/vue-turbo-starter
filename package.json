@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "rm -rf **/@types/react",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
@@ -16,7 +17,6 @@
     "@types/prompts": "^2.4.0",
     "@types/semver": "^7.3.10",
     "config": "workspace:*",
-    "conventional-changelog-angular-bitbucket-roller": "link:packages/conventional-changelog-angular-bitbucket-roller",
     "conventional-changelog-cli": "^2.2.2",
     "execa": "^6.1.0",
     "picocolors": "^1.0.0",
