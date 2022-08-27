@@ -9,8 +9,8 @@
     "test-storybook": "test-storybook --stories-json"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.9",
-    "@babel/preset-env": "^7.18.9",
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
     "@mdx-js/react": "1.6.22",
     "@storybook/addon-docs": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
@@ -25,7 +25,6 @@
     "@storybook/test-runner": "^0.7.0",
     "@storybook/testing-library": "^0.0.13",
     "@storybook/vue3": "^6.5.10",
-    "@types/react": "18.0.15",
     "@vue/compiler-sfc": "^3.2.37",
     "babel-loader": "^8.2.5",
     "http-server": "^14.1.1",
@@ -51,12 +50,11 @@
     "pinia": "^2.0.21"
   },
   "peerDependencies": {
-    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-env": "^7.18.10",
     "@mdx-js/react": "2.1.2",
     "@storybook/csf-tools": "6.5.10",
     "@storybook/node-logger": "6.5.10",
     "@storybook/store": "6.5.10",
-    "@types/react": "18.0.15",
     "jest": "^28.1.3",
     "jest-circus": "^28.1.3",
     "jest-environment-node": "^28.1.3",

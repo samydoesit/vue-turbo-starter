@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "rm -rf **/@types/react",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "start": "turbo run start --parallel",
@@ -41,5 +40,13 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm exec ts-node scripts/verifyCommit.ts $1"
   },
-  "packageManager": "pnpm@7.9.5"
+  "packageManager": "pnpm@7.9.5",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": ["@types/react"],
+      "allowedVersions": {
+        "vite": "3"
+      }
+    }
+  }
 }
