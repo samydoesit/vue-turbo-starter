@@ -1,7 +1,8 @@
 <script lang="ts" setup>
-import IconSpinner from '@ui/components/icon/Spinner.vue'
 import { PropType } from 'vue'
 import { ButtonType, ButtonEnum, ButtonIconSizeType, ButtonIconSizeEnum } from './Button.model'
+// eslint-disable-next-line import/order
+import IconSpinner from '@ui/components/icon/Spinner.vue'
 
 defineEmits<{(e: 'click'): void }>()
 
