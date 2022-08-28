@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "rm -rf **/@types/react",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "start": "turbo run start --parallel",
     "start:apps": "turbo run start --parallel --filter='./apps/*'",
     "start:vite-app": "turbo run start --filter vite-app",
     "start:nuxt-app": "turbo run start --filter nuxt-app",
@@ -14,7 +14,7 @@
     "lint": "turbo run lint",
     "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "release": "ts-node scripts/release.ts"
+    "release": "tsx scripts/release.ts"
   },
   "devDependencies": {
     "@types/node": "^18.6.1",
@@ -28,9 +28,10 @@
     "prompts": "^2.4.2",
     "semver": "^7.3.7",
     "simple-git-hooks": "^2.8.0",
+    "tsx": "^3.8.2",
     "ts-node": "^10.9.1",
     "turbo": "latest",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.2"
   },
   "engines": {
     "node": ">=10",
@@ -39,5 +40,13 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm exec ts-node scripts/verifyCommit.ts $1"
   },
-  "packageManager": "pnpm@7.9.1"
+  "packageManager": "pnpm@7.9.5",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": ["@types/react"],
+      "allowedVersions": {
+        "vite": "3"
+      }
+    }
+  }
 }

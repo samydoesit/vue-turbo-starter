@@ -15,17 +15,17 @@ import {
   updateVersion
 } from './releaseUtils'
 
-async function main(): Promise<void> {
+async function main (): Promise<void> {
   let targetVersion: string | undefined
 
   const { pkg }: { pkg: string } = await prompts({
     type: 'select',
     name: 'pkg',
     message: 'Select package',
-    choices: packages.map((i) => ({ value: i, title: i }))
+    choices: packages.map(i => ({ value: i, title: i }))
   })
 
-  if (!pkg) return
+  if (!pkg) { return }
 
   await logRecentCommits(pkg)
 
@@ -75,7 +75,7 @@ async function main(): Promise<void> {
 
   step('\nUpdating package version...')
   updateVersion(pkgPath, targetVersion)
-  if (pkgName === 'create-vite') updateTemplateVersions()
+  if (pkgName === 'create-vite') { updateTemplateVersions() }
 
   step('\nGenerating changelog...')
   const changelogArgs = [
@@ -108,7 +108,7 @@ async function main(): Promise<void> {
   // await runIfNotDry('git', ['push'])
 
   if (isDryRun) {
-    console.log(`\nDry run finished - run git diff to see package changes.`)
+    console.log('\nDry run finished - run git diff to see package changes.')
   } else {
     console.log(
       colors.green(
