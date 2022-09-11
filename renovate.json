@@ -1,0 +1,139 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "rebaseWhen": "behind-base-branch",
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "groupName": "root-packages",
+      "commitMessageTopic": "root dependency {{depName}}",
+      "matchPaths": [
+        "+(package.json)"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ]
+    },
+    {
+      "groupName": "nuxt core",
+      "groupSlug": "nuxt",
+      "matchPackageNames": ["nuxt", "nuxt3"],
+      "matchPackagePatterns": ["^@nuxt/"]
+    },
+    {
+      "groupName": "vite",
+      "commitMessageTopic": "vite-group dependency {{depName}}",
+      "matchPackagePrefixes": ["vite"],
+      "excludePackagePatterns": [
+        "windicss"
+      ],
+      "excludePackageNames": [
+        "vitest"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "vue",
+      "commitMessageTopic": "vue-group dependency {{depName}}",
+      "matchPackagePrefixes": ["vue"],
+      "excludePackagePatterns": [
+        "storybook"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "storybook",
+      "commitMessageTopic": "SB dependency {{depName}}",
+      "matchPackagePatterns": [
+        "storybook",
+        "jest"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "testing",
+      "commitMessageTopic": "testing dependency {{depName}}",
+      "matchPaths": [
+        "packages/vitest/package.json",
+        "apps/vite/package.json"
+      ],
+      "matchPackageNames": [
+        "vitest"
+      ],
+      "matchPackagePatterns": ["jsdom"],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "eslint",
+      "commitMessageTopic": "linting dependency {{depName}}",
+      "matchPackagePatterns": ["eslint"],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "windicss",
+      "commitMessageTopic": "windicss-group dependency {{depName}}",
+      "matchPackagePatterns": ["windicss"],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "pinia",
+      "commitMessageTopic": "pinia-group dependency {{depName}}",
+      "matchPackagePatterns": ["pinia"],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    }
+  ],
+  "ignoreDeps": ["@mdx-js/react", "react", "react-dom"]
+}
