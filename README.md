@@ -39,9 +39,9 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 
 ### Apps and Packages
 
-- `nuxt`: another [Nuxt3](https://nuxtjs.org) app
-- `vite`: another [Vite Vue](https://vuejs.org) app
-- `storybook`: another [Storybook](https://storybook.js.org/)
+- `nuxt`: another [Nuxt3](https://nuxtjs.org) app - https://localhost:3000/
+- `vite`: another [Vite Vue](https://vuejs.org) app - https://localhost:4000/
+- `storybook`: another [Storybook](https://storybook.js.org/) - https://localhost:6006/
 - `ui`: a stub Vue component library shared by `nuxt`, `vite` and `storybook` applications
 - `config`: `eslint` configurations (includes [nuxt/eslint-config](https://github.com/nuxt/eslint-config) standardjs flavor)
 <!-- - `tsconfig`: `tsconfig.json`s used throughout the monorepo -->
@@ -58,6 +58,12 @@ uses:
 - windicss
 - vitest
 
+## 💻 Development
 
-# bugs
-- vite-plugin-mdx is sometimes causing postinstall errors, workaround for them moment force execution using `-f`
+- Clone this repository
+- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable` (use `npm i -g corepack` for Node.js < 16.10)
+- Install dependencies using `pnpm install`
+- Run development servers `pnpm dev`
+
+## 🚀 Build
+- Build for production `pnpm build`
