@@ -38,6 +38,7 @@
     "pnpm": ">=3"
   },
   "simple-git-hooks": {
+    "pre-push": "pnpm lint:root",
     "commit-msg": "pnpm exec ts-node scripts/verifyCommit.ts $1"
   },
   "packageManager": "pnpm@7.11.0",
