@@ -1,14 +1,11 @@
 // @ts-check
 const { defineConfig } = require('eslint-define-config')
 
-const config = require('config/eslint.cjs')
-
 const apps = 'apps/'
 const nuxtPath = `${apps}/web`
-// const sbPath = `${apps}/storybook`
 
 module.exports = defineConfig({
-  ...config,
+  extends: ['custom'],
   root: true,
   rules: {
     'vue/component-tags-order': [
@@ -38,5 +35,5 @@ module.exports = defineConfig({
       }
     }
   ],
-  ignorePatterns: ['**/*.json', 'dist', 'node_modules', '.turbo', '.nuxt', 'public', '.output', '!.storybook', 'storybook-static']
+  ignorePatterns: ['**/*.json', 'dist', 'node_modules', '.turbo', '.nuxt', 'public', '.output', '!.storybook']
 })

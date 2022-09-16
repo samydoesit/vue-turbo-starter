@@ -1,13 +1,14 @@
+/* eslint-disable no-console */
 /**
  * modified from https://github.com/vuejs/core/blob/master/scripts/release.js
  */
-import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import path from 'node:path'
 import colors from 'picocolors'
 import type { Options as ExecaOptions } from 'execa'
 import { execa } from 'execa'
 import type { ReleaseType } from 'semver'
-import semver from 'semver'
+import { inc as semverInc } from 'semver'
 
 export const args = require('minimist')(process.argv.slice(2))
 
@@ -19,15 +20,18 @@ if (isDryRun) {
 }
 
 export const apps = [
-  'web',
-  'storybook'
+  'nuxt-app',
+  'storybook',
+  'vite-app'
 ]
 
 export const realPackages = [
   'ui',
   'vitest',
   'pinia-store',
-  'config'
+  'eslint-config-roller',
+  'tsconfig',
+  'windicss-config'
 ]
 export const packages = [
   ...apps,
@@ -73,7 +77,7 @@ export function getPackageInfo (pkgName: string) {
   }
 }
 
-export async function run (
+export function run (
   bin: string,
   args: string[],
   opts: ExecaOptions<string> = {}
@@ -81,6 +85,7 @@ export async function run (
   return execa(bin, args, { stdio: 'inherit', ...opts })
 }
 
+// eslint-disable-next-line require-await
 export async function dryRun (
   bin: string,
   args: string[],
@@ -102,7 +107,7 @@ export function getVersionChoices (currentVersion: string) {
   const currentBeta = currentVersion.includes('beta')
 
   const inc: (i: ReleaseType) => string = i =>
-     semver.inc(currentVersion, i, 'beta')!
+     semverInc(currentVersion, i, 'beta')!
 
   const versionChoices = [
     {
@@ -200,25 +205,4 @@ export async function logRecentCommits (pkgName: string) {
     { stdio: 'inherit' }
   )
   console.log()
-}
-
-export async function updateTemplateVersions () {
-  const viteVersion = require('../packages/vite/package.json').version
-  if (/beta|alpha|rc/.test(viteVersion)) { return }
-
-  const dir = path.resolve(__dirname, '../packages/create-vite')
-
-  const templates = readdirSync(dir).filter(dir =>
-    dir.startsWith('template-')
-  )
-  for (const template of templates) {
-    const pkgPath = path.join(dir, template, 'package.json')
-    const pkg = require(pkgPath)
-    pkg.devDependencies.vite = '^' + viteVersion
-    if (template.startsWith('template-vue')) {
-      pkg.devDependencies['@vitejs/plugin-vue'] =
-         '^' + require('../packages/plugin-vue/package.json').version
-    }
-    writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n')
-  }
 }

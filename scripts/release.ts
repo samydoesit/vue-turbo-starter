@@ -1,5 +1,7 @@
+/* eslint-disable no-console */
+// eslint-disable-next-line import/no-named-as-default
 import prompts from 'prompts'
-import semver from 'semver'
+import { valid } from 'semver'
 import colors from 'picocolors'
 import {
   args,
@@ -11,7 +13,6 @@ import {
   run,
   runIfNotDry,
   step,
-  updateTemplateVersions,
   updateVersion
 } from './releaseUtils'
 
@@ -52,7 +53,7 @@ async function main (): Promise<void> {
     }
   }
 
-  if (!semver.valid(targetVersion)) {
+  if (!valid(targetVersion)) {
     throw new Error(`invalid target version: ${targetVersion}`)
   }
 
@@ -75,7 +76,6 @@ async function main (): Promise<void> {
 
   step('\nUpdating package version...')
   updateVersion(pkgPath, targetVersion)
-  if (pkgName === 'create-vite') { updateTemplateVersions() }
 
   step('\nGenerating changelog...')
   const changelogArgs = [
@@ -95,17 +95,17 @@ async function main (): Promise<void> {
   const { stdout } = await run('git', ['diff'], { stdio: 'pipe' })
   if (stdout) {
     step('\nCommitting changes...')
-    // await runIfNotDry('git', ['add', '-A'])
-    // await runIfNotDry('git', ['commit', '-m', `release: ${tag}`])
-    // await runIfNotDry('git', ['tag', tag])
+    await runIfNotDry('git', ['add', '-A'])
+    await runIfNotDry('git', ['commit', '-m', `release: ${tag}`])
+    await runIfNotDry('git', ['tag', tag])
   } else {
     console.log('No changes to commit.')
     return
   }
 
   step('\nPushing to GitHub...')
-  // await runIfNotDry('git', ['push', 'origin', `refs/tags/${tag}`])
-  // await runIfNotDry('git', ['push'])
+  await runIfNotDry('git', ['push', 'origin', `refs/tags/${tag}`])
+  await runIfNotDry('git', ['push'])
 
   if (isDryRun) {
     console.log('\nDry run finished - run git diff to see package changes.')
