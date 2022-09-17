@@ -6,15 +6,17 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "start": "vite preview"
+    "start": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
   },
   "dependencies": {
     "vue": "3.2.39"
   },
   "devDependencies": {
-    "config": "workspace:*",
+    "tsconfig": "workspace:*",
     "ui": "workspace:*",
     "pinia-store": "workspace:*",
+    "windicss-config": "workspace:*",
     "@vitejs/plugin-vue": "3.1.0",
     "typescript": "4.8.3",
     "vite": "3.1.1",

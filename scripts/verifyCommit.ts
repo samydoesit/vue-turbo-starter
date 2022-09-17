@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // Invoked on the commit-msg git hook by simple-git-hooks.
 
 import { readFileSync } from 'fs'

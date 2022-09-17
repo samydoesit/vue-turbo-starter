@@ -14,13 +14,14 @@
     "lint:root": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "lint": "turbo run lint",
     "test": "turbo run test",
+    "test:watch": "vitest -w --dir",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "release": "tsx scripts/release.ts"
   },
   "devDependencies": {
     "@types/prompts": "2.4.0",
     "@types/semver": "7.3.12",
-    "config": "workspace:*",
+    "eslint-config-custom": "workspace:*",
     "conventional-changelog-cli": "2.2.2",
     "execa": "6.1.0",
     "picocolors": "1.0.0",
@@ -37,6 +38,7 @@
     "pnpm": ">=3"
   },
   "simple-git-hooks": {
+    "pre-push": "pnpm lint:root",
     "commit-msg": "pnpm exec ts-node scripts/verifyCommit.ts $1"
   },
   "packageManager": "pnpm@7.11.0",
