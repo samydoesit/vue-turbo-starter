@@ -1,18 +1,9 @@
 {
+  "extends": "tsconfig/vite.json",
   "compilerOptions": {
-    "skipLibCheck": true,
-    "module": "es2022",
-    "moduleResolution": "node",
-    "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["../ui/src/*"]
     }
-  },
-  "exclude": ["node_modules", ".turbo"],
-  "references": [
-    {
-      "path": "./vitest.json"
-    }
-  ]
+  }
 }

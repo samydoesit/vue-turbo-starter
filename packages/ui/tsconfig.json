@@ -1,24 +1,9 @@
 {
+  "extends": "tsconfig/vite.json",
   "compilerOptions": {
-    "jsx": "preserve",
-    "skipLibCheck": true,
-    "module": "es2022",
-    "moduleResolution": "node",
-    "allowJs": true,
-    "types": ["vite/client"],
     "baseUrl": ".",
-    "noEmit": true,
     "paths": {
       "@ui/*": ["./src/*"]
     }
-  },
-  "exclude": ["node_modules",".turbo"],
-  "references": [
-    {
-      "path": "./ui-config.json"
-    },
-    {
-      "path": "./ui-app.json"
-    }
-  ]
+  }
 }

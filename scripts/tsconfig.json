@@ -1,13 +1,10 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../packages/tsconfig/vite.json",
+  "include": ["."],
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "es2019",
+    "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": ["node"]
+    "noUnusedLocals": true
   }
 }
