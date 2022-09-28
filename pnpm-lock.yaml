@@ -41,7 +41,7 @@ importers:
       nuxt-windicss: 2.5.2
       pinia: 2.0.22
       pinia-store: workspace:*
-      sass: 1.54.9
+      sass: 1.55.0
       sass-loader: 13.0.2
       tsconfig: workspace:*
       typescript: 4.8.4
@@ -55,16 +55,16 @@ importers:
       '@pinia/nuxt': 0.4.2_lzpwfyzw6d75ecxi3ugii5dofy
       jsbarcode: 3.11.5
       mitt: 3.0.0
-      nuxt: 3.0.0-rc.11_v4opkkoe2weuhf4y7pwgvhdyjm
+      nuxt: 3.0.0-rc.11_ze7vjoepsljtaioibjkr3hh36u
       nuxt-windicss: 2.5.2_vite@3.1.3+webpack@5.74.0
       pinia: 2.0.22_au6dg7fdzqoqm3u7yvxyyjrfmi
       pinia-store: link:../../packages/pinia-store
-      sass: 1.54.9
-      sass-loader: 13.0.2_sass@1.54.9+webpack@5.74.0
+      sass: 1.55.0
+      sass-loader: 13.0.2_sass@1.55.0+webpack@5.74.0
       tsconfig: link:../../packages/tsconfig
       typescript: 4.8.4
       ui: link:../../packages/ui
-      vite: 3.1.3_sass@1.54.9
+      vite: 3.1.3_sass@1.55.0
       vue: 3.2.39
       vue-toastification: 2.0.0-rc.5_vue@3.2.39
       webpack: 5.74.0
@@ -2777,7 +2777,7 @@ packages:
     resolution: {integrity: sha512-oFjUfn9r9U4vNljd5uU08+6M3mF6OSxZfCrfqJQaN5TtqVTcZmZFzOZ4H866Lq+Eaugv/Vte225kuaZCB3FR/g==}
     dev: true
 
-  /@nuxt/vite-builder/3.0.0-rc.11_r4hqj6m6canzsaehnnw6sv5lom:
+  /@nuxt/vite-builder/3.0.0-rc.11_4rcge3ikliltismmj6at7ylczq:
     resolution: {integrity: sha512-WkQ+/cfdIf5XVZea8xD+ciLXpmQkNu8d5p16WJSp10hEhj3Vt/cQ8OkXDVHGGRML+NsDL0bQXDeg3PcM/bw94w==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     peerDependencies:
@@ -2812,8 +2812,8 @@ packages:
       rollup-plugin-visualizer: 5.8.1_rollup@2.79.0
       ufo: 0.8.5
       unplugin: 0.9.5_4pa7dyfssuab6evxprhaiaqhda
-      vite: 3.1.3_sass@1.54.9
-      vite-node: 0.23.4_sass@1.54.9
+      vite: 3.1.3_sass@1.55.0
+      vite-node: 0.23.4_sass@1.55.0
       vite-plugin-checker: 0.5.1_ufzwjtbgumhusbzp2bjdylvirm
       vue: 3.2.39
       vue-bundle-renderer: 0.4.3
@@ -5299,7 +5299,7 @@ packages:
       '@babel/plugin-syntax-import-meta': 7.10.4_@babel+core@7.19.3
       '@babel/plugin-transform-typescript': 7.18.12_@babel+core@7.19.3
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.19.3
-      vite: 3.1.3_sass@1.54.9
+      vite: 3.1.3_sass@1.55.0
       vue: 3.2.39
     transitivePeerDependencies:
       - supports-color
@@ -14272,7 +14272,7 @@ packages:
       - webpack
     dev: true
 
-  /nuxt/3.0.0-rc.11_v4opkkoe2weuhf4y7pwgvhdyjm:
+  /nuxt/3.0.0-rc.11_ze7vjoepsljtaioibjkr3hh36u:
     resolution: {integrity: sha512-I0wyxPHnUoJBWoROKUx91PLKaAFZ/TsxSpcm3/jn/Ysq2RGU5Q3o9AzqT0YcXW4rgH35QPFvGpqopU9X0vS7Qw==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     hasBin: true
@@ -14282,7 +14282,7 @@ packages:
       '@nuxt/schema': 3.0.0-rc.11_vite@3.1.3+webpack@5.74.0
       '@nuxt/telemetry': 2.1.5_vite@3.1.3+webpack@5.74.0
       '@nuxt/ui-templates': 0.4.0
-      '@nuxt/vite-builder': 3.0.0-rc.11_r4hqj6m6canzsaehnnw6sv5lom
+      '@nuxt/vite-builder': 3.0.0-rc.11_4rcge3ikliltismmj6at7ylczq
       '@vue/reactivity': 3.2.39
       '@vue/shared': 3.2.39
       '@vueuse/head': 0.7.12_vue@3.2.39
@@ -16590,7 +16590,7 @@ packages:
       - supports-color
     dev: true
 
-  /sass-loader/13.0.2_sass@1.54.9+webpack@5.74.0:
+  /sass-loader/13.0.2_sass@1.55.0+webpack@5.74.0:
     resolution: {integrity: sha512-BbiqbVmbfJaWVeOOAu2o7DhYWtcNmTfvroVgFXa6k2hHheMxNAeDHLNoDy/Q5aoaVlz0LH+MbMktKwm9vN/j8Q==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -16611,12 +16611,12 @@ packages:
     dependencies:
       klona: 2.0.5
       neo-async: 2.6.2
-      sass: 1.54.9
+      sass: 1.55.0
       webpack: 5.74.0
     dev: true
 
-  /sass/1.54.9:
-    resolution: {integrity: sha512-xb1hjASzEH+0L0WI9oFjqhRi51t/gagWnxLiwUNMltA0Ab6jIDkAacgKiGYKM9Jhy109osM7woEEai6SXeJo5Q==}
+  /sass/1.55.0:
+    resolution: {integrity: sha512-Pk+PMy7OGLs9WaxZGJMn7S96dvlyVBwwtToX895WmCpAOr5YiJYEUJfiJidMuKb613z2xNWcXCHEuOvjZbqC6A==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -18361,7 +18361,7 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.15.8
       rollup: 2.79.0
-      vite: 3.1.3_sass@1.54.9
+      vite: 3.1.3_sass@1.55.0
       webpack: 5.74.0
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.4
@@ -18386,7 +18386,7 @@ packages:
     dependencies:
       acorn: 8.8.0
       chokidar: 3.5.3
-      vite: 3.1.3_sass@1.54.9
+      vite: 3.1.3_sass@1.55.0
       webpack: 5.74.0
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.4
@@ -18606,7 +18606,7 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite-node/0.23.4_sass@1.54.9:
+  /vite-node/0.23.4_sass@1.55.0:
     resolution: {integrity: sha512-8VuDGwTWIvwPYcbw8ZycMlwAwqCmqZfLdFrDK75+o+6bWYpede58k6AAXN9ioU+icW82V4u1MzkxLVhhIoQ9xA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -18614,7 +18614,7 @@ packages:
       debug: 4.3.4
       mlly: 0.5.16
       pathe: 0.2.0
-      vite: 3.1.3_sass@1.54.9
+      vite: 3.1.3_sass@1.55.0
     transitivePeerDependencies:
       - less
       - sass
@@ -18654,7 +18654,7 @@ packages:
       strip-ansi: 6.0.1
       tiny-invariant: 1.2.0
       typescript: 4.8.4
-      vite: 3.1.3_sass@1.54.9
+      vite: 3.1.3_sass@1.55.0
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.5
@@ -18702,7 +18702,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/3.1.3_sass@1.54.9:
+  /vite/3.1.3_sass@1.55.0:
     resolution: {integrity: sha512-/3XWiktaopByM5bd8dqvHxRt5EEgRikevnnrpND0gRfNkrMrPaGGexhtLCzv15RcCMtV2CLw+BPas8YFeSG0KA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -18725,7 +18725,7 @@ packages:
       postcss: 8.4.16
       resolve: 1.22.1
       rollup: 2.78.1
-      sass: 1.54.9
+      sass: 1.55.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
