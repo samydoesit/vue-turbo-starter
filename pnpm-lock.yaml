@@ -159,7 +159,7 @@ importers:
 
   apps/vite:
     specifiers:
-      '@vitejs/plugin-vue': 3.1.0
+      '@vitejs/plugin-vue': 3.1.2
       pinia: 2.0.22
       pinia-store: workspace:*
       tsconfig: workspace:*
@@ -175,7 +175,7 @@ importers:
     dependencies:
       vue: 3.2.40
     devDependencies:
-      '@vitejs/plugin-vue': 3.1.0_vite@3.1.4+vue@3.2.40
+      '@vitejs/plugin-vue': 3.1.2_vite@3.1.4+vue@3.2.40
       pinia: 2.0.22_bfjwoga25wxjazzogo7o372nwq
       pinia-store: link:../../packages/pinia-store
       tsconfig: link:../../packages/tsconfig
@@ -223,7 +223,7 @@ importers:
   packages/vitest:
     specifiers:
       '@types/jsdom': 20.0.0
-      '@vitejs/plugin-vue': 3.1.0
+      '@vitejs/plugin-vue': 3.1.2
       '@vue/test-utils': 2.1.0
       jsdom: 20.0.1
       pinia: 2.0.22
@@ -238,7 +238,7 @@ importers:
       vue: 3.2.40
     devDependencies:
       '@types/jsdom': 20.0.0
-      '@vitejs/plugin-vue': 3.1.0_vite@3.1.4+vue@3.2.40
+      '@vitejs/plugin-vue': 3.1.2_vite@3.1.4+vue@3.2.40
       '@vue/test-utils': 2.1.0_vue@3.2.40
       jsdom: 20.0.1
       pinia: 2.0.22_bfjwoga25wxjazzogo7o372nwq
@@ -2769,7 +2769,7 @@ packages:
     dependencies:
       '@nuxt/kit': 3.0.0-rc.11_yfg2tk222uiggq2kim4jnhspdm
       '@rollup/plugin-replace': 4.0.0_rollup@2.79.0
-      '@vitejs/plugin-vue': 3.1.0_vite@3.1.4+vue@3.2.40
+      '@vitejs/plugin-vue': 3.1.2_vite@3.1.4+vue@3.2.40
       '@vitejs/plugin-vue-jsx': 2.0.1_vite@3.1.4+vue@3.2.40
       autoprefixer: 10.4.11_postcss@8.4.17
       chokidar: 3.5.3
@@ -5278,8 +5278,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vitejs/plugin-vue/3.1.0_vite@3.1.4+vue@3.2.40:
-    resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
+  /@vitejs/plugin-vue/3.1.2_vite@3.1.4+vue@3.2.40:
+    resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0 || 3
