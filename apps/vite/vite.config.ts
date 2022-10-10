@@ -1,4 +1,4 @@
-import { fileURLToPath, URL } from 'url'
+import { resolve } from 'path'
 import WindiCSS from 'vite-plugin-windicss'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -11,8 +11,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@ui': fileURLToPath(new URL('../../packages/ui/src', import.meta.url))
+      '@': resolve(__dirname, './src'),
+      '@ui': resolve(__dirname, '../../packages/ui/src')
     }
   }
 })
