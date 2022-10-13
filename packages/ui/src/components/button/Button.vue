@@ -9,36 +9,36 @@ defineEmits<{(e: 'click'): void }>()
 defineProps({
   prefix: {
     type: String,
-    required: true
+    required: true,
   },
   type: {
     type: String as PropType<ButtonType>,
-    default: ButtonEnum.Primary
+    default: ButtonEnum.Primary,
   },
   iconSize: {
     type: String as PropType<ButtonIconSizeType>,
-    default: ButtonIconSizeEnum.Normal
+    default: ButtonIconSizeEnum.Normal,
   },
   loading: {
     type: Boolean,
-    default: false
+    default: false,
   },
   disabled: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 })
 
 const classes = {
   primary: 'bg-primary text-white w-full border-primary border-2 border-solid rounded-md active:(bg-primary-700 border-primary-700)',
   secondary: 'bg-transparent text-primary w-full border-primary border-2 border-solid rounded-md active:(text-primary-700 border-primary-700)',
   tertiary: 'bg-white text-normal w-full border-2 border-gray-400 border-solid rounded-full',
-  quaternary: 'bg-white text-normal border-2 border-gray border-solid rounded-full shadow-lg'
+  quaternary: 'bg-white text-normal border-2 border-gray border-solid rounded-full shadow-lg',
 }
 
 const iconSizeClasses = {
   small: 'h-1 w-1',
-  normal: 'h-1.5 w-1.5'
+  normal: 'h-1.5 w-1.5',
 }
 </script>
 

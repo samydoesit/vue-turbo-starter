@@ -4,12 +4,12 @@ export const user = {
   state: () => ({
     firstName: 'Lebron',
     lastName: 'James',
-    title: 'Herr'
+    title: 'Herr',
   }),
   getters: {
     getName () {
       return `${this.title} ${this.firstName} ${this.lastName}`
-    }
+    },
   },
   actions: {
     setFirstName (payload: string) {
@@ -22,9 +22,9 @@ export const user = {
       const code = {
         mr: 'Herr',
         mrs: 'Frau',
-        mx: 'Divers'
+        mx: 'Divers',
       }
       this.title = code[payload]
-    }
-  }
+    },
+  },
 }

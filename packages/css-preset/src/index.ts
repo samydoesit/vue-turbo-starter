@@ -10,10 +10,10 @@ export const rollerUiPreset = (): Preset => {
     name: 'unocss-preset-vue-turbo',
     rules,
     safelist: [
-      'hidden'
+      'hidden',
     ],
     shortcuts: [],
-    theme
+    theme,
   }
 }
 
@@ -35,11 +35,11 @@ export function extendUnocssOptions (user: UnocssNuxtOptions = {}): UnocssNuxtOp
       //   ...(user?.icons || {})
       // }),
       rollerUiPreset(),
-      ...(user.presets || [])
+      ...(user.presets || []),
     ],
     transformers: [
       transformerDirectives(),
-      transformerVariantGroup()
-    ]
+      transformerVariantGroup(),
+    ],
   }
 }

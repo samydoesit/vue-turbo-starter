@@ -4,5 +4,5 @@ import { customRules } from './customRules'
 
 export const rules: Rule[] = [
   // safeArea // not ready yet
-  customRules
+  customRules,
 ].flat(1)

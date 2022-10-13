@@ -12,5 +12,5 @@ export const theme: Theme = mergeDeep(windTheme, {
   colors,
   fontFamily,
   fontSize,
-  lineHeight
+  lineHeight,
 })

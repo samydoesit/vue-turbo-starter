@@ -6,6 +6,6 @@ export default defineConfig({
   ...extendUnocssOptions(),
   include: [
     '**.ts',
-    '**.vue'
-  ]
+    '**.vue',
+  ],
 })

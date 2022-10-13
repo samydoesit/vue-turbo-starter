@@ -2,7 +2,7 @@ import { defineBuildConfig } from 'unbuild'
 
 export default defineBuildConfig({
   entries: [
-    { input: 'src/index', format: 'esm' }
+    { input: 'src/index', format: 'esm' },
   ],
   clean: true,
   declaration: true,
@@ -14,12 +14,12 @@ export default defineBuildConfig({
     '@unocss/preset-wind',
     '@unocss/preset-mini',
     '@unocss/preset-mini/utils',
-    '@unocss/transformer-variant-group'
+    '@unocss/transformer-variant-group',
   ],
   rollup: {
     emitCJS: true,
     dts: {
-      respectExternal: false
-    }
-  }
+      respectExternal: false,
+    },
+  },
 })

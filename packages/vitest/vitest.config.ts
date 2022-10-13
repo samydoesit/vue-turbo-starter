@@ -8,15 +8,15 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@ui': resolve(__dirname, '../ui/src')
+      '@ui': resolve(__dirname, '../ui/src'),
       // '@ui': fileURLToPath(new URL('../ui/src', import.meta.url))
-    }
+    },
   },
   test: {
     include: [
       '../ui/src/components/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
       '../pinia-store/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
-      '../../apps/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'
-    ]
-  }
+      '../../apps/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
+    ],
+  },
 })

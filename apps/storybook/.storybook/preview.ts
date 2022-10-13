@@ -16,5 +16,5 @@ window.jest = jest as any
 export const parameters = {
   layout: 'centered',
   controls: { expanded: true },
-  actions: { argTypesRegex: '^on[A-Z].*' }
+  actions: { argTypesRegex: '^on[A-Z].*' },
 }

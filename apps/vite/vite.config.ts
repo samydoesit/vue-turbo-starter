@@ -7,12 +7,12 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue(), Unocss()],
   server: {
-    port: 4000
+    port: 4000,
   },
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
-      '@ui': resolve(__dirname, '../../packages/ui/src')
-    }
-  }
+      '@ui': resolve(__dirname, '../../packages/ui/src'),
+    },
+  },
 })
