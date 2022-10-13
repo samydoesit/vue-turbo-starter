@@ -5,7 +5,7 @@ import { rules } from './rules'
 import { theme } from './theme'
 export type { Theme } from '@unocss/preset-wind'
 
-export const rollerUiPreset = (): Preset => {
+export const vueTurboCssPreset = (): Preset => {
   return {
     name: 'unocss-preset-vue-turbo',
     rules,
@@ -34,7 +34,7 @@ export function extendUnocssOptions (user: UnocssNuxtOptions = {}): UnocssNuxtOp
       //   }
       //   ...(user?.icons || {})
       // }),
-      rollerUiPreset(),
+      vueTurboCssPreset(),
       ...(user.presets || []),
     ],
     transformers: [

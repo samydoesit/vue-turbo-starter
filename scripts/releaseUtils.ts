@@ -29,7 +29,7 @@ export const realPackages = [
   'ui',
   'vitest',
   'pinia-store',
-  'eslint-config-roller',
+  'eslint-config',
   'tsconfig',
   'css-preset',
 ]
