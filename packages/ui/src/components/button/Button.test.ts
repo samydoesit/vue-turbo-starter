@@ -10,8 +10,8 @@ describe('Test Button Button', () => {
       disabled: false,
       loading: false,
       prefix: 'first',
-      iconMobile: false
-    }
+      iconMobile: false,
+    },
   })
   it('Trigger Button click event', async () => {
     await wrapper.get('#firstButtonButton').trigger('click')
