@@ -18,8 +18,8 @@
     <a href="https://nuxtjs.org" target="_blank">
         <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Nuxt.js&color=222222&logo=Nuxt.js&logoColor=00DC82&label=">
     </a>
-    <a href="https://windicss.org" target="_blank">
-        <img src="https://img.shields.io/badge/windicss-48B0F1.svg?style=for-the-badge&logo=windi-css&logoColor=white">
+    <a href="https://uno.antfu.me/" target="_blank">
+        <img src="https://img.shields.io/badge/unocss-000.svg?style=for-the-badge&logo=unocss&logoColor=white">
     </a>
     <a href="https://github.com/storybooks/storybook" target="_blank">
         <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Storybook&color=FF4785&logo=Storybook&logoColor=FFFFFF&label=">
