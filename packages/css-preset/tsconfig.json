@@ -1,0 +1,9 @@
+{
+  "extends": "@rollercoaster/tsconfig/vite.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["../ui/src/*"]
+    }
+  }
+}

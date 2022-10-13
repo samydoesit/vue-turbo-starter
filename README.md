@@ -55,7 +55,7 @@ uses:
 - nuxt3
 - vite
 - storybook + storybook-builder-vite
-- windicss
+- unoCSS (presetWind - tailwind/windi)
 - vitest
 
 ## 💻 Development

@@ -1,6 +1,6 @@
-import { join, resolve } from 'path'
+import { resolve } from 'path'
 import type { StorybookViteConfig } from '@storybook/builder-vite'
-import WindiCSS from 'vite-plugin-windicss'
+import Unocss from 'unocss/vite'
 
 const config: StorybookViteConfig = {
   core: {
@@ -35,12 +35,7 @@ const config: StorybookViteConfig = {
     // config.resolve.modules = [resolve(__dirname, '@', '../components'), 'node_modules'];
     config.plugins = config.plugins ?? []
     config.plugins.push([
-      WindiCSS({
-        config: join(__dirname, '../', 'windi.config.ts'),
-        scan: {
-          include: ['../../packages/ui/src/components/**/*.{vue,html,jsx,tsx}']
-        }
-      })
+      Unocss()
     ])
     config.resolve.dedupe = ['@storybook/client-api', '@emotion/react']
 

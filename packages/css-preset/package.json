@@ -1,0 +1,47 @@
+{
+  "name": "css-preset",
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
+    "build": "rimraf dist && unbuild",
+    "dev": "stub",
+    "stub": "unbuild --stub"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.css"
+  ],
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "@unocss/core": "^0.45.29",
+    "@unocss/nuxt": "^0.45.29",
+    "@unocss/preset-attributify": "^0.45.29",
+    "@unocss/preset-icons": "^0.45.29",
+    "@unocss/preset-mini": "^0.45.29",
+    "@unocss/preset-rem-to-px": "^0.45.29",
+    "@unocss/preset-wind": "^0.45.29",
+    "@unocss/reset": "^0.45.29",
+    "@unocss/transformer-variant-group": "^0.45.29",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4",
+    "unbuild": "^0.8.11",
+    "unocss": "^0.45.29",
+    "vite": "^3.1.7"
+  }
+}

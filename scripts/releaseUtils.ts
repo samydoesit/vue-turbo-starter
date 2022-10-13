@@ -31,7 +31,7 @@ export const realPackages = [
   'pinia-store',
   'eslint-config-roller',
   'tsconfig',
-  'windicss-config'
+  'css-preset'
 ]
 export const packages = [
   ...apps,

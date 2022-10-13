@@ -1,6 +1,8 @@
 // import { app } from '@storybook/vue3'
 import * as jest from '@storybook/jest'
-import 'virtual:windi.css'
+
+import '@unocss/reset/tailwind.css'
+import 'virtual:uno.css'
 
 // Fix: fn() is not defined, see: https://github.com/storybookjs/storybook/issues/15391
 window.jest = jest as any

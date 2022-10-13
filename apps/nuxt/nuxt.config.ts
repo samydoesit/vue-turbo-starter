@@ -1,16 +1,23 @@
 import path from 'path'
-import { defineNuxtConfig } from 'nuxt'
+import Unocss from 'unocss/vite'
 
 export default defineNuxtConfig({
-  buildModules: ['nuxt-windicss', '@pinia/nuxt'],
+  buildModules: ['@pinia/nuxt'],
   alias: {
     '@ui': path.resolve(__dirname, '../../packages/ui/src')
   },
+  css: [
+    '@unocss/reset/tailwind.css',
+    'uno.css'
+  ],
   components: [{ path: '../../packages/ui/src/components', extensions: ['vue'] }],
   typescript: {
     shim: false
   },
   vite: {
+    plugins: [
+      Unocss(),
+    ],
     optimizeDeps: {
       exclude: ['pinia']
     },
