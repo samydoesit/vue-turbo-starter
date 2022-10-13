@@ -3,11 +3,11 @@ export const helloWorld = {
     /**
      * this is a test for message
      */
-    message: 'Testmessage'
+    message: 'Testmessage',
   }),
   actions: {
     setMessage (payload) {
       this.message = payload
-    }
-  }
+    },
+  },
 }

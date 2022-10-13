@@ -29,7 +29,7 @@
       "commitMessageTopic": "vite-group dependency {{depName}}",
       "matchPackagePrefixes": ["vite"],
       "excludePackagePatterns": [
-        "windicss"
+        "unocss"
       ],
       "excludePackageNames": [
         "vitest"
@@ -109,9 +109,9 @@
       ]
     },
     {
-      "groupName": "windicss",
-      "commitMessageTopic": "windicss-group dependency {{depName}}",
-      "matchPackagePatterns": ["windicss"],
+      "groupName": "unocss",
+      "commitMessageTopic": "unocss-group dependency {{depName}}",
+      "matchPackagePatterns": ["unocss"],
       "matchUpdateTypes": [
         "patch",
         "minor",

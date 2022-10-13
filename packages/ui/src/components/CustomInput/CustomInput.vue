@@ -4,12 +4,12 @@ import { ref } from 'vue'
 defineProps({
   foo: {
     type: String,
-    required: true
+    required: true,
   },
   blabla: {
     type: String,
-    default: 'Test'
-  }
+    default: 'Test',
+  },
 })
 
 const textInput = ref('')
