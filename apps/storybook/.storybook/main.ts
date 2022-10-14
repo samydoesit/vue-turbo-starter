@@ -16,14 +16,6 @@ const config: StorybookViteConfig = {
   },
   framework: '@storybook/vue3',
   addons: [
-    {
-      name: '@storybook/addon-postcss',
-      options: {
-        postcssLoaderOptions: {
-          implementation: require('postcss'),
-        },
-      },
-    },
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
   ],
@@ -37,6 +29,7 @@ const config: StorybookViteConfig = {
     config.plugins.push([
       Unocss(),
     ])
+
     config.resolve.dedupe = ['@storybook/client-api', '@emotion/react']
 
     if (configType !== 'PRODUCTION') {
