@@ -26,9 +26,9 @@ const config: StorybookViteConfig = {
     }
     // config.resolve.modules = [resolve(__dirname, '@', '../components'), 'node_modules'];
     config.plugins = config.plugins ?? []
-    config.plugins.push([
+    config.plugins.push(
       Unocss(),
-    ])
+    )
 
     config.resolve.dedupe = ['@storybook/client-api', '@emotion/react']
 
