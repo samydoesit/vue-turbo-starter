@@ -12,14 +12,8 @@ export default defineBuildConfig({
     '@unocss/config',
     '@unocss/nuxt',
     '@unocss/preset-wind',
-    '@unocss/preset-mini',
-    '@unocss/preset-mini/utils',
-    '@unocss/transformer-variant-group',
   ],
   rollup: {
     emitCJS: true,
-    dts: {
-      respectExternal: false,
-    },
   },
 })
