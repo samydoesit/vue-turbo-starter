@@ -7,12 +7,12 @@ console.log(message)
 </script>
 
 <template>
-  <div>
-    <div class="absolute">
+  <div class="flex place-items-center h-screen w-full justify-center">
+    <div>
       <Button prefix="test" type="primary">
         Button1
       </Button>
     </div>
-    <NuxtWelcome />
+    <!-- <NuxtWelcome /> -->
   </div>
 </template>

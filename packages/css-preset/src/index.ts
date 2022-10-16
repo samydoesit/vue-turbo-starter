@@ -1,45 +1,86 @@
 import type { Preset } from '@unocss/core'
-import { presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
 import type { UnocssNuxtOptions } from '@unocss/nuxt'
+import type { Theme, PresetWindOptions } from '@unocss/preset-wind'
+import { presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { UserConfig } from '@unocss/core'
 import { rules } from './rules'
 import { theme } from './theme'
-export type { Theme } from '@unocss/preset-wind'
 
-export const vueTurboCssPreset = (): Preset => {
+// @unocss-include
+
+/**
+ * Preset Vue Turbo for UnoCSS
+ */
+export const presetVueTurbo = (): Preset<Theme> => {
   return {
     name: 'unocss-preset-vue-turbo',
     rules,
     safelist: [
       'hidden',
     ],
+    preflights: [
+      // {
+      //   layer: 'basestyles',
+      //   getCSS: () => `
+      //     :root {
+      //       color-scheme: light dark;
+      //       color: rgba(255, 255, 255, 0.87);
+      //       background-color: #242424;
+      //     }
+
+      //     @media (prefers-color-scheme: light) {
+      //       :root {
+      //         color: #213547;
+      //         background-color: #ffffff;
+      //       }
+      //       a:hover {
+      //         color: #747bff;
+      //       }
+      //     }
+      //   `,
+      // },
+    ],
     shortcuts: [],
     theme,
   }
 }
 
-export function extendUnocssOptions (user: UnocssNuxtOptions = {}): UnocssNuxtOptions {
+interface customOptions {
+  /**
+   * Custom options for PresetWind
+   */
+  customPresetWindOptions?: PresetWindOptions
+}
+interface customUserConfig extends UserConfig, customOptions {}
+interface customNuxtConfig extends UnocssNuxtOptions, customOptions {}
+
+/**
+ * Extends unocss/vite Plugin Options Config
+ */
+export const extendUnocssOptions = ({ customPresetWindOptions, ...options }: customUserConfig = {}): UserConfig => {
   return {
-    ...user,
-    preflight: true,
+    ...options,
     presets: [
-      presetWind(),
-      // presetAttributify(),
-      // presetTypography(),
-      // presetIcons({
-      //   prefix: '',
-      //   scale: 1.2,
-      //   extraProperties: {
-      //     display: 'inline-block',
-      //     'vertical-align': 'middle'
-      //   }
-      //   ...(user?.icons || {})
-      // }),
-      vueTurboCssPreset(),
-      ...(user.presets || []),
+      presetWind({
+        ...(customPresetWindOptions || {}),
+      }),
+      presetVueTurbo(),
+      ...(options.presets || []),
     ],
     transformers: [
       transformerDirectives(),
       transformerVariantGroup(),
+      ...(options.transformers || []),
     ],
+  }
+}
+
+/**
+ * Extends unocss/nuxt Plugin Options Config
+ */
+export function extendUnocssNuxtOptions (options: customNuxtConfig = {}): UnocssNuxtOptions {
+  return {
+    preflight: true,
+    ...extendUnocssOptions(options),
   }
 }

@@ -2,7 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import CustomButton from '@ui/components/button/Button.vue'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import { useHelloWorld } from '@/store/helloWorld'
 
 const store = useHelloWorld()
@@ -11,11 +11,15 @@ console.log(message)
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <CustomButton prefix="dscds" type="primary">
-    Test
-  </CustomButton>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
+  <div class="flex place-items-center h-screen w-full justify-center">
+    <div>
+      <CustomButton prefix="dscds" type="primary">
+        Test
+      </CustomButton>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -25,6 +29,6 @@ console.log(message)
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
