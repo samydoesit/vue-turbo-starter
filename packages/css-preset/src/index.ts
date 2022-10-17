@@ -45,19 +45,19 @@ export const presetVueTurbo = (): Preset<Theme> => {
   }
 }
 
-interface customOptions {
+interface CustomOptions {
   /**
    * Custom options for PresetWind
    */
   customPresetWindOptions?: PresetWindOptions
 }
-interface customUserConfig extends UserConfig, customOptions {}
-interface customNuxtConfig extends UnocssNuxtOptions, customOptions {}
+interface CustomUserConfig extends UserConfig, CustomOptions {}
+interface CustomNuxtConfig extends UnocssNuxtOptions, CustomOptions {}
 
 /**
  * Extends unocss/vite Plugin Options Config
  */
-export const extendUnocssOptions = ({ customPresetWindOptions, ...options }: customUserConfig = {}): UserConfig => {
+export const extendUnocssOptions = ({ customPresetWindOptions, ...options }: CustomUserConfig = {}): UserConfig => {
   return {
     ...options,
     presets: [
@@ -78,7 +78,7 @@ export const extendUnocssOptions = ({ customPresetWindOptions, ...options }: cus
 /**
  * Extends unocss/nuxt Plugin Options Config
  */
-export function extendUnocssNuxtOptions (options: customNuxtConfig = {}): UnocssNuxtOptions {
+export function extendUnocssNuxtOptions (options: CustomNuxtConfig = {}): UnocssNuxtOptions {
   return {
     preflight: true,
     ...extendUnocssOptions(options),
