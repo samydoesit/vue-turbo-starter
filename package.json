@@ -13,9 +13,10 @@
     "start:storybook": "turbo run start --filter storybook",
     "lint:root": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "lint": "turbo run lint",
-    "test": "turbo run test",
+    "test": "pnpm test --filter vitest",
     "test:watch": "vitest -w --dir",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "simple-git-hooks",
     "release": "tsx scripts/release.ts"
   },
   "devDependencies": {
