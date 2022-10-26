@@ -11,7 +11,6 @@
     "start:vite-app": "turbo run start --filter vite-app",
     "start:nuxt-app": "turbo run start --filter nuxt-app",
     "start:storybook": "turbo run start --filter storybook",
-    "lint:root": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "lint": "turbo run lint",
     "test": "pnpm test --filter vitest",
     "test:watch": "vitest -w --dir",
@@ -39,7 +38,7 @@
     "pnpm": ">=3"
   },
   "simple-git-hooks": {
-    "pre-push": "pnpm lint:root",
+    "pre-push": "pnpm lint",
     "commit-msg": "pnpm exec ts-node scripts/verifyCommit.ts $1"
   },
   "packageManager": "pnpm@7.14.0",
