@@ -40,7 +40,6 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 ### Apps and Packages
 
 - `nuxt`: another [Nuxt3](https://nuxtjs.org) app - https://localhost:3000/
-- `vite`: another [Vite Vue](https://vuejs.org) app - https://localhost:4000/
 - `storybook`: another [Storybook](https://storybook.js.org/) - https://localhost:6006/
 - `ui`: a stub Vue component library shared by `nuxt`, `vite` and `storybook` applications
 - `config`: `eslint` configurations (includes [nuxt/eslint-config](https://github.com/nuxt/eslint-config) standardjs flavor)

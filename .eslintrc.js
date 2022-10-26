@@ -7,16 +7,6 @@ const nuxtPath = `${apps}/web`
 module.exports = defineConfig({
   extends: ['custom'],
   root: true,
-  rules: {
-    'comma-dangle': ['error', 'always-multiline'],
-    'vue/component-tags-order': [
-      'error',
-      {
-        order: ['script', 'template', 'style'],
-      },
-    ],
-    'vue/no-multiple-template-root': 'off',
-  },
   overrides: [
     // Welche Regeln brauchen wir?
 
@@ -36,5 +26,4 @@ module.exports = defineConfig({
       },
     },
   ],
-  ignorePatterns: ['**/*.json', 'dist', 'node_modules', '.turbo', '.nuxt', 'public', '.output', '!.storybook'],
 })
