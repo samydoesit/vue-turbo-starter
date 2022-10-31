@@ -87,7 +87,7 @@ importers:
       '@storybook/ui': 7.0.0-alpha.43
       '@storybook/vue3-vite': 7.0.0-alpha.46
       '@types/node': 18.11.8
-      babel-loader: 9.0.0
+      babel-loader: 9.0.1
       css-preset: workspace:*
       http-server: 14.1.1
       jest: 28.1.3
@@ -125,9 +125,9 @@ importers:
       '@storybook/test-runner': 0.9.1-next.0_zdlumrbm2p74lsxkypnqyfotaa
       '@storybook/testing-library': 0.0.14-next.0_sfoxds7t5ydpegc3knd667wn6m
       '@storybook/ui': 7.0.0-alpha.43
-      '@storybook/vue3-vite': 7.0.0-alpha.46_ubvwuauongxa3haagqobiezvoy
+      '@storybook/vue3-vite': 7.0.0-alpha.46_7gq4emegnlj2bhn56vdxkwxjz4
       '@types/node': 18.11.8
-      babel-loader: 9.0.0_6zc4kxld457avlfyhj3lzsljlm
+      babel-loader: 9.0.1_6zc4kxld457avlfyhj3lzsljlm
       css-preset: link:../../packages/css-preset
       http-server: 14.1.1
       jest: 28.1.3_@types+node@18.11.8
@@ -5046,7 +5046,7 @@ packages:
     resolution: {integrity: sha512-PI0y55gSdMGndJ5GHPwX49C08DncrQhv7c9Uk7PjoGXOaXacc0aMBqFEmV31KGR6ogWK2PIsHDakrqW6nzbK8w==}
     dev: true
 
-  /@storybook/vue3-vite/7.0.0-alpha.46_ubvwuauongxa3haagqobiezvoy:
+  /@storybook/vue3-vite/7.0.0-alpha.46_7gq4emegnlj2bhn56vdxkwxjz4:
     resolution: {integrity: sha512-YE5qthAE1BRRK6Ep/C604r/4CreXPE88RVsmLTcakJTZOotCP/VBO05PQSMG/lwm8rtbajZuGZUqhJxJxIzIWw==}
     engines: {node: ^14.18 || >=16}
     dependencies:
@@ -5057,7 +5057,7 @@ packages:
       '@storybook/client-api': 7.0.0-alpha.46_sfoxds7t5ydpegc3knd667wn6m
       '@storybook/core-server': 7.0.0-alpha.46_56jbash75ng5psbctf36wqywr4
       '@storybook/preview-web': 7.0.0-alpha.46_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/vue3': 7.0.0-alpha.46_qrikc6qo4ml5udkckqnpsm6ts4
+      '@storybook/vue3': 7.0.0-alpha.46_gu7zed2pi2eq4ziwwgwnfm4h3i
       '@vitejs/plugin-vue': 3.2.0_vite@3.2.2+vue@3.2.41
       magic-string: 0.26.7
       vite: 3.2.2
@@ -5081,7 +5081,7 @@ packages:
       - vue
     dev: true
 
-  /@storybook/vue3/7.0.0-alpha.46_qrikc6qo4ml5udkckqnpsm6ts4:
+  /@storybook/vue3/7.0.0-alpha.46_gu7zed2pi2eq4ziwwgwnfm4h3i:
     resolution: {integrity: sha512-s6w8VgTSDzG0Nn15qLC0OBc4Ph5vg7hVd+Y8SBh6Bg/jqa9dajLa8/abLZsBe9Z7fLmy5xPrhHVgHOJEgeYvqw==}
     engines: {node: '>=10.13.0'}
     peerDependencies:
@@ -5098,7 +5098,7 @@ packages:
       '@storybook/docs-tools': 7.0.0-alpha.46_zvdcumho7mqj3lfknr2wnpofbm
       '@storybook/store': 7.0.0-alpha.46_wcqkhtmu7mswc6yz4uyexck3ty
       '@storybook/types': 7.0.0-alpha.46
-      babel-loader: 9.0.0_6zc4kxld457avlfyhj3lzsljlm
+      babel-loader: 9.0.1_6zc4kxld457avlfyhj3lzsljlm
       global: 4.4.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -6923,8 +6923,8 @@ packages:
       webpack: 4.46.0
     dev: true
 
-  /babel-loader/9.0.0_6zc4kxld457avlfyhj3lzsljlm:
-    resolution: {integrity: sha512-qVGQb0PNw/B1sGhPf0/KKsHZAPfa2Bk+JbjkW7yGjAHZyvjAULXYq0et0+/+7DL/rGYU+y8UoGPzA32NP29pVQ==}
+  /babel-loader/9.0.1_6zc4kxld457avlfyhj3lzsljlm:
+    resolution: {integrity: sha512-szYjslOXFlj/po5KfrVmiuBAcI6GVHFuAgC96Qd6mMPHdwl4lmAJkYtvjQ1RxxPjgdkKjd3LQgXDE4jxEutNuw==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       '@babel/core': ^7.12.0
