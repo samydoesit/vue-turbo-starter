@@ -29,9 +29,7 @@
     </a>  
 </p>
 
-# 🚧 WIP 🚧 Vue / Vite / Nuxt / Turborepo starter with pnpm
-
-This is an unofficial starter turborepo/monorepo.
+# Vue3 | Nuxt3 | Storybook v7 | Mono-/Turborepo starter using pnpm
 
 ## What's inside?
 
@@ -53,13 +51,36 @@ uses:
 - vue3
 - nuxt3
 - vite
-- storybook + storybook-builder-vite
+- storybook v7
 - unoCSS (presetWind - tailwind/windi)
 - vitest
 
-## 💻 Development
+### GitHub Template
 
-- Clone this repository
+[Create a repo from this template on GitHub](https://github.com/samydoesit/vue-turbo-starter/generate).
+
+### Clone to local
+
+If you prefer to do it manually with the cleaner git history
+
+```bash
+npx degit samydoesit/vue-turbo-starter my-vue-turbo-starter-monorepo
+cd my-vue-turbo-starter-monorepo
+pnpm i # If you don't have pnpm installed, run: `corepack enable` (or use `npm i -g corepack` for Node.js < 16.10)
+```
+
+## Checklist
+
+When you use this template, try follow the checklist to update your info properly
+
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the title in `App.vue`
+- [ ] Change the hostname in `vite.config.ts`
+- [ ] Change the favicon in `public`
+- [ ] Remove the `.github` folder which contains the funding info
+- [ ] Clean up the READMEs and remove routes
+
+## 💻 Development
 - Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable` (use `npm i -g corepack` for Node.js < 16.10)
 - Install dependencies using `pnpm install`
 - Run development servers `pnpm dev`
