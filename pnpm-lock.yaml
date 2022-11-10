@@ -49,7 +49,7 @@ importers:
       vite: 3.2.3
       vue: 3.2.44
       vue-toastification: 2.0.0-rc.5
-      webpack: 5.74.0
+      webpack: 5.75.0
     devDependencies:
       '@pinia/nuxt': 0.4.3_d45o5shxrtvj6wh4y524t7cqnm
       css-preset: link:../../packages/css-preset
@@ -59,14 +59,14 @@ importers:
       pinia: 2.0.23_d45o5shxrtvj6wh4y524t7cqnm
       pinia-store: link:../../packages/pinia-store
       sass: 1.56.1
-      sass-loader: 13.2.0_sass@1.56.1+webpack@5.74.0
+      sass-loader: 13.2.0_sass@1.56.1+webpack@5.75.0
       tsconfig: link:../../packages/tsconfig
       typescript: 4.8.4
       ui: link:../../packages/ui
       vite: 3.2.3_sass@1.56.1
       vue: 3.2.44
       vue-toastification: 2.0.0-rc.5_vue@3.2.44
-      webpack: 5.74.0
+      webpack: 5.75.0
 
   apps/storybook:
     specifiers:
@@ -105,7 +105,7 @@ importers:
       ui: workspace:*
       vite: 3.2.3
       vue: 3.2.44
-      webpack: 5.74.0
+      webpack: 5.75.0
     dependencies:
       mitt: 3.0.0
       pinia: 2.0.23_d45o5shxrtvj6wh4y524t7cqnm
@@ -127,7 +127,7 @@ importers:
       '@storybook/ui': 7.0.0-alpha.43
       '@storybook/vue3-vite': 7.0.0-alpha.48_oi456qmgzpowolnyqta6tl2rnq
       '@types/node': 18.11.9
-      babel-loader: 9.1.0_hkczypimj4evef4hfazf6yfxte
+      babel-loader: 9.1.0_npabyccmuonwo2rku4k53xo3hi
       css-preset: link:../../packages/css-preset
       http-server: 14.1.1
       jest: 28.1.3_@types+node@18.11.9
@@ -143,7 +143,7 @@ importers:
       ui: link:../../packages/ui
       vite: 3.2.3_@types+node@18.11.9
       vue: 3.2.44
-      webpack: 5.74.0
+      webpack: 5.75.0
 
   packages/css-preset:
     specifiers:
@@ -5160,7 +5160,7 @@ packages:
       '@storybook/docs-tools': 7.0.0-alpha.48_zvdcumho7mqj3lfknr2wnpofbm
       '@storybook/store': 7.0.0-alpha.48_wcqkhtmu7mswc6yz4uyexck3ty
       '@storybook/types': 7.0.0-alpha.48
-      babel-loader: 9.1.0_hkczypimj4evef4hfazf6yfxte
+      babel-loader: 9.1.0_npabyccmuonwo2rku4k53xo3hi
       global: 4.4.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -6997,7 +6997,7 @@ packages:
       webpack: 4.46.0
     dev: true
 
-  /babel-loader/9.1.0_hkczypimj4evef4hfazf6yfxte:
+  /babel-loader/9.1.0_npabyccmuonwo2rku4k53xo3hi:
     resolution: {integrity: sha512-Antt61KJPinUMwHwIIz9T5zfMgevnfZkEVWYDWlG888fgdvRRGD0JTuf/fFozQnfT+uq64sk1bmdHDy/mOEWnA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -7007,7 +7007,7 @@ packages:
       '@babel/core': 7.20.2
       find-cache-dir: 3.3.2
       schema-utils: 4.0.0
-      webpack: 5.74.0
+      webpack: 5.75.0
     dev: true
 
   /babel-plugin-apply-mdx-type-prop/1.6.22_@babel+core@7.12.9:
@@ -7403,17 +7403,6 @@ packages:
     resolution: {integrity: sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==}
     dependencies:
       pako: 1.0.11
-    dev: true
-
-  /browserslist/4.21.3:
-    resolution: {integrity: sha512-898rgRXLAyRkM1GryrrBHGkqA5hlpkV5MhtZwg9QXeiyLUYs2k00Un05aX5l2/yJIOObYKOpS2JNo8nJDE7fWQ==}
-    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
-    hasBin: true
-    dependencies:
-      caniuse-lite: 1.0.30001430
-      electron-to-chromium: 1.4.284
-      node-releases: 2.0.6
-      update-browserslist-db: 1.0.10_browserslist@4.21.3
     dev: true
 
   /browserslist/4.21.4:
@@ -17395,7 +17384,7 @@ packages:
       - supports-color
     dev: true
 
-  /sass-loader/13.2.0_sass@1.56.1+webpack@5.74.0:
+  /sass-loader/13.2.0_sass@1.56.1+webpack@5.75.0:
     resolution: {integrity: sha512-JWEp48djQA4nbZxmgC02/Wh0eroSUutulROUusYJO9P9zltRbNN80JCBHqRGzjd4cmZCa/r88xgfkjGD0TXsHg==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -17417,7 +17406,7 @@ packages:
       klona: 2.0.5
       neo-async: 2.6.2
       sass: 1.56.1
-      webpack: 5.74.0
+      webpack: 5.75.0
     dev: true
 
   /sass/1.56.1:
@@ -18302,7 +18291,7 @@ packages:
       worker-farm: 1.7.0
     dev: true
 
-  /terser-webpack-plugin/5.3.3_webpack@5.74.0:
+  /terser-webpack-plugin/5.3.3_webpack@5.75.0:
     resolution: {integrity: sha512-Fx60G5HNYknNTNQnzQ1VePRuu89ZVYWfjRAeT5rITuCY/1b08s49e5kSQwHDirKZWuoKOBRFS98EUUoZ9kLEwQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -18323,7 +18312,7 @@ packages:
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
       terser: 5.14.2
-      webpack: 5.74.0
+      webpack: 5.75.0
     dev: true
 
   /terser/4.8.1:
@@ -19252,17 +19241,6 @@ packages:
     dev: true
     optional: true
 
-  /update-browserslist-db/1.0.10_browserslist@4.21.3:
-    resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
-    hasBin: true
-    peerDependencies:
-      browserslist: '>= 4.21.0'
-    dependencies:
-      browserslist: 4.21.3
-      escalade: 3.1.1
-      picocolors: 1.0.0
-    dev: true
-
   /update-browserslist-db/1.0.10_browserslist@4.21.4:
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
     hasBin: true
@@ -19986,8 +19964,8 @@ packages:
       - supports-color
     dev: true
 
-  /webpack/5.74.0:
-    resolution: {integrity: sha512-A2InDwnhhGN4LYctJj6M1JEaGL7Luj6LOmyBHjcI8529cm5p6VXiTIW2sn6ffvEAKmveLzvu4jrihwXtPojlAA==}
+  /webpack/5.75.0:
+    resolution: {integrity: sha512-piaIaoVJlqMsPtX/+3KTTO6jfvrSYgauFVdt8cr9LTHKmcq/AMd4mhzsiP7ZF/PGRNPGA8336jldh9l2Kt2ogQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -20003,7 +19981,7 @@ packages:
       '@webassemblyjs/wasm-parser': 1.11.1
       acorn: 8.8.0
       acorn-import-assertions: 1.8.0_acorn@8.8.0
-      browserslist: 4.21.3
+      browserslist: 4.21.4
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.10.0
       es-module-lexer: 0.9.3
@@ -20017,7 +19995,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.1.1
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.3_webpack@5.74.0
+      terser-webpack-plugin: 5.3.3_webpack@5.75.0
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
