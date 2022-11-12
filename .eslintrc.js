@@ -2,7 +2,7 @@
 const { defineConfig } = require('eslint-define-config')
 
 const apps = 'apps/'
-const nuxtPath = `${apps}/web`
+const nuxtPath = `${apps}/nuxt`
 
 module.exports = defineConfig({
   extends: ['custom'],
