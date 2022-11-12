@@ -7,7 +7,7 @@ We recommend to look at the [documentation](https://v3.nuxtjs.org).
 Make sure to install the dependencies
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ## Development
@@ -15,7 +15,7 @@ yarn install
 Start the development server on http://localhost:3000
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ## Production
@@ -23,7 +23,18 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn build
+pnpm build
 ```
+## Build Docker Production Image
+
+It is necessary to pass the whole monorepo as context.
+Monorepo pruning happens on docker build to leverage docker caching.
+
+```bash
+docker build -f Dockerfile ../../
+
+docker run -d -p 3000:3000 <image-id>
+```
+
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
