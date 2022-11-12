@@ -7,5 +7,6 @@ export default defineConfig({
   include: [
     '**.ts',
     '**.vue',
+    '**/*.mdx',
   ],
 })
