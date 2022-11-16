@@ -1,6 +1,7 @@
-import { resolve } from 'path'
 import type { StorybookConfig } from '@storybook/vue3-vite'
 import Unocss from 'unocss/vite'
+
+import { alias } from '../../../alias'
 
 const config: StorybookConfig = {
   stories: [
@@ -19,7 +20,7 @@ const config: StorybookConfig = {
   viteFinal (config) {
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@ui': resolve(__dirname, '../../../packages/ui/src'),
+      ...alias,
     }
 
     config.plugins = config.plugins ?? []
