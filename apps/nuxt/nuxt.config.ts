@@ -1,11 +1,10 @@
-import path from 'path'
 import Unocss from 'unocss/vite'
 
+import { alias } from '../../alias'
+
 export default defineNuxtConfig({
-  buildModules: ['@pinia/nuxt'],
-  alias: {
-    '@ui': path.resolve(__dirname, '../../packages/ui/src'),
-  },
+  modules: ['@pinia/nuxt'],
+  alias,
   css: [
     '@unocss/reset/tailwind.css',
     'uno.css',
@@ -20,12 +19,6 @@ export default defineNuxtConfig({
     ],
     optimizeDeps: {
       exclude: ['pinia'],
-    },
-    resolve: {
-      alias: {
-        // This is at the moment necessary for a working build
-        pinia: path.resolve(__dirname, './node_modules/pinia/dist/pinia.mjs'),
-      },
     },
   },
 })
