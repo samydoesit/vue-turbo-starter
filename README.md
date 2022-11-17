@@ -74,11 +74,11 @@ pnpm i # If you don't have pnpm installed, run: `corepack enable` (or use `npm i
 When you use this template, try follow the checklist to update your info properly
 
 - [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `App.vue`
-- [ ] Change the hostname in `vite.config.ts`
+- [ ] Change `App.vue`
+- [ ] Change/Edit `vite.config.ts` | `nuxt.config.ts`
 - [ ] Change the favicon in `public`
 - [ ] Remove the `.github` folder which contains the funding info
-- [ ] Clean up the READMEs and remove routes
+- [ ] Clean up the READMEs and remove demo content
 
 ## 💻 Development
 - Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable` (use `npm i -g corepack` for Node.js < 16.10)
@@ -87,3 +87,16 @@ When you use this template, try follow the checklist to update your info properl
 
 ## 🚀 Build
 - Build for production `pnpm build`
+
+## Docker Container
+- To build docker images it is necessary to pass monorepo root as context.
+
+```bash
+cd <repo-root>
+# Storybook Dockerfile
+docker build -f apps/storybook/Dockerfile .
+docker run -d -p 6006:6006 <image-id>
+# Nuxt Dockerfile
+docker build -f apps/nuxt/Dockerfile .
+docker run -d -p 3000:3000 <image-id>
+```
