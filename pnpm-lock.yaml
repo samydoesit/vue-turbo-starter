@@ -10,7 +10,7 @@ importers:
       eslint-config-custom: link:packages/eslint-config-custom
       execa: 6.1.0
       picocolors: 1.0.0
-      prettier: 2.7.1
+      prettier: 2.8.0
       prompts: 2.4.2
       semver: 7.3.8
       simple-git-hooks: 2.8.1
@@ -24,7 +24,7 @@ importers:
       eslint-config-custom: link:packages/eslint-config-custom
       execa: 6.1.0
       picocolors: 1.0.0
-      prettier: 2.7.1
+      prettier: 2.8.0
       prompts: 2.4.2
       semver: 7.3.8
       simple-git-hooks: 2.8.1
@@ -4051,7 +4051,7 @@ packages:
       globby: 11.1.0
       jscodeshift: 0.13.1_@babel+preset-env@7.20.2
       lodash: 4.17.21
-      prettier: 2.7.1
+      prettier: 2.8.0
       recast: 0.19.1
       util: 0.12.5
     transitivePeerDependencies:
@@ -4782,7 +4782,7 @@ packages:
       '@storybook/types': 7.0.0-alpha.52
       estraverse: 5.3.0
       lodash: 4.17.21
-      prettier: 2.7.1
+      prettier: 2.8.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     transitivePeerDependencies:
@@ -16232,6 +16232,12 @@ packages:
 
   /prettier/2.7.1:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier/2.8.0:
+    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
