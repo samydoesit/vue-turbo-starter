@@ -41,7 +41,7 @@
     "pre-push": "pnpm lint",
     "commit-msg": "pnpm exec tsx scripts/verifyCommit.ts $1"
   },
-  "packageManager": "pnpm@7.17.1",
+  "packageManager": "pnpm@7.18.0",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": ["@types/react"],
