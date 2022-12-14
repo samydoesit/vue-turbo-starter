@@ -72,8 +72,8 @@ importers:
     specifiers:
       '@babel/core': 7.20.5
       '@babel/preset-env': 7.20.2
-      '@mdx-js/mdx': 2.1.5
-      '@mdx-js/vue': 2.1.5
+      '@mdx-js/mdx': 2.2.1
+      '@mdx-js/vue': 2.2.1
       '@storybook/addon-docs': 7.0.0-beta.3
       '@storybook/addon-essentials': 7.0.0-beta.3
       '@storybook/addon-interactions': 7.0.0-beta.3
@@ -112,8 +112,8 @@ importers:
     devDependencies:
       '@babel/core': 7.20.5
       '@babel/preset-env': 7.20.2_@babel+core@7.20.5
-      '@mdx-js/mdx': 2.1.5
-      '@mdx-js/vue': 2.1.5_vue@3.2.45
+      '@mdx-js/mdx': 2.2.1
+      '@mdx-js/vue': 2.2.1_vue@3.2.45
       '@storybook/addon-docs': 7.0.0-beta.3_lhsnqlb35hvawm3f6bviuzo2eu
       '@storybook/addon-essentials': 7.0.0-beta.3_lhsnqlb35hvawm3f6bviuzo2eu
       '@storybook/addon-interactions': 7.0.0-beta.3_lhsnqlb35hvawm3f6bviuzo2eu
@@ -2570,8 +2570,8 @@ packages:
       - supports-color
     dev: true
 
-  /@mdx-js/mdx/2.1.5:
-    resolution: {integrity: sha512-zEG0lt+Bl/r5U6e0TOS7qDbsXICtemfAPquxWFsMbdzrvlWaqMGemLl+sjVpqlyaaiCiGVQBSGdCk0t1qXjkQg==}
+  /@mdx-js/mdx/2.2.1:
+    resolution: {integrity: sha512-hZ3ex7exYLJn6FfReq8yTvA6TE53uW9UHJQM9IlSauOuS55J9y8RtA7W+dzp6Yrzr00/U1sd7q+Wf61q6SfiTQ==}
     dependencies:
       '@types/estree-jsx': 1.0.0
       '@types/mdx': 2.0.2
@@ -2608,8 +2608,8 @@ packages:
     resolution: {integrity: sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==}
     dev: true
 
-  /@mdx-js/vue/2.1.5_vue@3.2.45:
-    resolution: {integrity: sha512-qFtPcAbPGmRh9NVkLv5pvF9yrHMmgk2EkrcJqXQVxfIzeTzX/bJUWlfTFWcPU1F8Ry8t9SEXrXHQUcyPExHOQA==}
+  /@mdx-js/vue/2.2.1_vue@3.2.45:
+    resolution: {integrity: sha512-ubq97KwuwyYMvpZDr8TlxNALMZA76rkFC1HniiFjZ60q/6rRm5GjoHVpZgj4vhqI7Xz4UQBKjdWscMgsxbsqqg==}
     peerDependencies:
       vue: '>=3.0.0'
     dependencies:
@@ -4188,7 +4188,7 @@ packages:
       '@storybook/core-events': 7.0.0-beta.3
       '@storybook/csf': 0.0.2-next.8
       '@storybook/csf-tools': 7.0.0-beta.3
-      '@storybook/docs-mdx': 0.0.1-next.4
+      '@storybook/docs-mdx': 0.0.1-next.5
       '@storybook/node-logger': 7.0.0-beta.3
       '@storybook/preview-api': 7.0.0-beta.3
       '@storybook/telemetry': 7.0.0-beta.3_typescript@4.9.4
@@ -4293,8 +4293,8 @@ packages:
       type-fest: 2.19.0
     dev: true
 
-  /@storybook/docs-mdx/0.0.1-next.4:
-    resolution: {integrity: sha512-a1wiJbxBzikxl73dxyteeylPN7fpVd2JHrcnpX8O3ztPiaX2XQOJM4+7u0xndvn07ZtZzOnH5m9iHP8BJOwXZQ==}
+  /@storybook/docs-mdx/0.0.1-next.5:
+    resolution: {integrity: sha512-EowXFPq4TBZQguKCdU8y7EzpuSv2vSu5gy7pgF/1P5mq7LG9h8YIrerOW9DL4zfp9E0GHIWlSXR5KuFIqqKc/Q==}
     dev: true
 
   /@storybook/docs-tools/7.0.0-beta.3_typescript@4.9.4:
