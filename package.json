@@ -3,20 +3,21 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "start": "turbo run start --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "simple-git-hooks",
+    "release": "tsx scripts/release.ts",
     "start:apps": "turbo run start --parallel --filter='./apps/*'",
-    "start:vite-app": "turbo run start --filter vite-app",
     "start:nuxt-app": "turbo run start --filter nuxt-app",
     "start:storybook": "turbo run start --filter storybook",
-    "lint": "turbo run lint",
-    "test": "pnpm test --filter vitest",
+    "start:vite-app": "turbo run start --filter vite-app",
+    "start": "turbo run start --parallel",
     "test:watch": "vitest -w --dir",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "simple-git-hooks",
-    "release": "tsx scripts/release.ts"
+    "test": "pnpm test --filter vitest",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "@types/prompts": "2.4.2",
@@ -34,8 +35,8 @@
     "typescript": "4.9.4"
   },
   "engines": {
-    "node": ">=10",
-    "pnpm": ">=3"
+    "node": ">=18",
+    "pnpm": ">=7"
   },
   "simple-git-hooks": {
     "pre-push": "pnpm lint",
