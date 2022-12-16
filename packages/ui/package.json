@@ -4,7 +4,7 @@
   "scripts": {
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
-    "typecheck": "vue-tsc --noEmit -p vitest.json --composite false",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
   },
   "main": "main.ts",

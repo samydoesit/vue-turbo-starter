@@ -20,6 +20,10 @@
     },
     "start": {
       "dependsOn": ["build"]
+    },
+    "typecheck": {
+      "outputs": []
     }
-  }
+  },
+  "globalDependencies": ["pnpm-lock.yaml"]
 }

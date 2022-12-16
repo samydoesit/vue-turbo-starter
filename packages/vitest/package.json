@@ -2,10 +2,10 @@
   "name": "vitest",
   "version": "0.0.0",
   "scripts": {
-    "test": "vitest --environment jsdom --run",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "test:watch": "vitest --environment jsdom",
-    "typecheck": "vue-tsc --noEmit -p vitest.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
+    "test": "vitest --environment jsdom --run",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
   },
   "main": "main.ts",
   "dependencies": {

@@ -1,0 +1,11 @@
+{
+  "extends": "tsconfig/vite.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["../../packages/ui/src/*"]
+    },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
