@@ -217,7 +217,7 @@ importers:
       tsconfig: workspace:*
       typescript: 4.9.4
       vite: 4.0.2
-      vitest: 0.25.8
+      vitest: 0.26.1
       vue: 3.2.45
       vue-tsc: 1.0.14
     dependencies:
@@ -232,7 +232,7 @@ importers:
       tsconfig: link:../tsconfig
       typescript: 4.9.4
       vite: 4.0.2
-      vitest: 0.25.8_jsdom@20.0.3
+      vitest: 0.26.1_jsdom@20.0.3
       vue-tsc: 1.0.14_typescript@4.9.4
 
 packages:
@@ -18522,6 +18522,27 @@ packages:
       - terser
     dev: true
 
+  /vite-node/0.26.1_@types+node@18.11.17:
+    resolution: {integrity: sha512-5FJSKZZJz48zFRKHE55WyevZe61hLMQEsqGn+ungfd60kxEztFybZ3yG9ToGFtOWNCCy7Vn5EVuXD8bdeHOSdw==}
+    engines: {node: '>=v14.16.0'}
+    hasBin: true
+    dependencies:
+      debug: 4.3.4
+      mlly: 1.0.0
+      pathe: 0.2.0
+      source-map: 0.6.1
+      source-map-support: 0.5.21
+      vite: 4.0.2_@types+node@18.11.17
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+    dev: true
+
   /vite-plugin-checker/0.5.1_7g3uriyb4kqeq2yf2bucr7z2ea:
     resolution: {integrity: sha512-NFiO1PyK9yGuaeSnJ7Whw9fnxLc1AlELnZoyFURnauBYhbIkx9n+PmIXxSFUuC9iFyACtbJQUAEuQi6yHs2Adg==}
     engines: {node: '>=14.16'}
@@ -18695,8 +18716,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.25.8_jsdom@20.0.3:
-    resolution: {integrity: sha512-X75TApG2wZTJn299E/TIYevr4E9/nBo1sUtZzn0Ci5oK8qnpZAZyhwg0qCeMSakGIWtc6oRwcQFyFfW14aOFWg==}
+  /vitest/0.26.1_jsdom@20.0.3:
+    resolution: {integrity: sha512-qTLRnjYmjmJpHlLUtErxtlRqGCe8WItFhGXKklpWivu7CLP9KXN9iTezROe+vf51Kb+BB/fzxK6fUG9DvFGL5Q==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -18732,6 +18753,7 @@ packages:
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 4.0.2_@types+node@18.11.17
+      vite-node: 0.26.1_@types+node@18.11.17
     transitivePeerDependencies:
       - less
       - sass
