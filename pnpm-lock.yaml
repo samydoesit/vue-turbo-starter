@@ -82,7 +82,7 @@ importers:
       '@storybook/jest': 0.0.10
       '@storybook/node-logger': 7.0.0-beta.12
       '@storybook/store': 7.0.0-beta.12
-      '@storybook/test-runner': 0.9.1
+      '@storybook/test-runner': 0.9.2
       '@storybook/testing-library': 0.0.14-next.1
       '@storybook/ui': 7.0.0-alpha.43
       '@storybook/vue3-vite': 7.0.0-beta.12
@@ -122,7 +122,7 @@ importers:
       '@storybook/jest': 0.0.10_sfoxds7t5ydpegc3knd667wn6m
       '@storybook/node-logger': 7.0.0-beta.12
       '@storybook/store': 7.0.0-beta.12
-      '@storybook/test-runner': 0.9.1_vctfwqfzhlt2scokzsntzt2peq
+      '@storybook/test-runner': 0.9.2_vctfwqfzhlt2scokzsntzt2peq
       '@storybook/testing-library': 0.0.14-next.1
       '@storybook/ui': 7.0.0-alpha.43
       '@storybook/vue3-vite': 7.0.0-beta.12_43emkho6jtrnkn725kgabmc4ym
@@ -324,15 +324,6 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@babel/generator/7.20.2:
-    resolution: {integrity: sha512-SD75PMIK6i9H8G/tfGvB4KKl4Nw6Ssos9nGgYwxbgyTP0iX/Z55DveoH86rmUB/YHTQQ+ZC0F7xxaY8l2OF44Q==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/types': 7.20.5
-      '@jridgewell/gen-mapping': 0.3.2
-      jsesc: 2.5.2
     dev: true
 
   /@babel/generator/7.20.5:
@@ -4571,17 +4562,17 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/test-runner/0.9.1_vctfwqfzhlt2scokzsntzt2peq:
-    resolution: {integrity: sha512-oTtiFPziHcK3N2TMqiw9p//8CpEhDVFA14vAYeLvWqZ9D2oJMBLi/XevKt8ev6PymI5Kp2o7EuxEeXMREOj9yg==}
+  /@storybook/test-runner/0.9.2_vctfwqfzhlt2scokzsntzt2peq:
+    resolution: {integrity: sha512-S2TJqslCWaxM9Z9Y9qt5soYUNFlgNJZ1qS8rsvUcyzofG0BXvKlRviuM15/lj58KGA2FnhoX6IPGOJtuNVaoBQ==}
     hasBin: true
     dependencies:
       '@babel/core': 7.20.5
-      '@babel/generator': 7.20.2
+      '@babel/generator': 7.20.5
       '@babel/preset-env': 7.20.2_@babel+core@7.20.5
       '@babel/preset-react': 7.18.6_@babel+core@7.20.5
       '@babel/preset-typescript': 7.18.6_@babel+core@7.20.5
       '@babel/template': 7.18.10
-      '@babel/types': 7.20.2
+      '@babel/types': 7.20.5
       '@storybook/core-common': 6.5.13_lhsnqlb35hvawm3f6bviuzo2eu
       '@storybook/csf': 0.0.2--canary.4566f4d.1
       '@storybook/csf-tools': 6.5.13
