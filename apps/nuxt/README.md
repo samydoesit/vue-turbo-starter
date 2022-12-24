@@ -25,6 +25,7 @@ Build the application for production:
 ```bash
 pnpm build
 ```
+
 ## Build Docker Production Image
 
 It is necessary to pass the whole monorepo as context.
@@ -35,6 +36,5 @@ docker build -f Dockerfile ../../
 
 docker run -d -p 3000:3000 <image-id>
 ```
-
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
