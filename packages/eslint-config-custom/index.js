@@ -1,4 +1,5 @@
 // @ts-check
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { defineConfig } = require('eslint-define-config')
 
 module.exports = defineConfig({
@@ -39,4 +40,20 @@ module.exports = defineConfig({
     'vue/no-multiple-template-root': 'off',
   },
   ignorePatterns: ['**/*.json', 'dist', 'node_modules', '.turbo', '.nuxt', 'public', '.output', '!.storybook'],
+  overrides: [
+    {
+      files: ['*.mdx', '*.md'],
+      extends: ['plugin:mdx/recommended'],
+      settings: {
+        'mdx/code-blocks': false,
+        'import/ignore': [ // TODO: atm necessary otherwise strange lint errors
+          '@storybook/addon-docs',
+        ],
+      },
+      rules: {
+        indent: 'off',
+        'prettier/prettier': 'off',
+      },
+    },
+  ],
 })

@@ -2,7 +2,7 @@
   "name": "css-preset",
   "version": "0.0.0",
   "scripts": {
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
+    "lint": "eslint . --ext vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,md,mdx --ignore-path .gitignore",
     "build": "rimraf dist && unbuild",
     "stub": "unbuild --stub"
   },

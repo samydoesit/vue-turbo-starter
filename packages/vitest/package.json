@@ -2,7 +2,7 @@
   "name": "vitest",
   "version": "0.0.0",
   "scripts": {
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
+    "lint": "eslint . --ext vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,md,mdx --ignore-path .gitignore",
     "test:watch": "vitest --environment jsdom",
     "test": "vitest --environment jsdom --run",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json"
@@ -16,9 +16,9 @@
     "@types/jsdom": "20.0.1",
     "@vitejs/plugin-vue": "4.0.0",
     "@vue/test-utils": "2.2.6",
-    "tsconfig": "workspace:*",
     "jsdom": "20.0.3",
     "pinia": "2.0.28",
+    "tsconfig": "workspace:*",
     "typescript": "4.9.4",
     "vite": "4.0.3",
     "vitest": "0.26.2",

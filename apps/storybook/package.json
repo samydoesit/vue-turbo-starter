@@ -5,7 +5,7 @@
     "dev": "storybook dev -p 6006",
     "build": "storybook build -o '.output'",
     "start": "http-server .output -p 6006 -c-1 -s",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore --ignore-pattern '!.storybook'",
+    "lint": "eslint . --ext vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,md,mdx --ignore-path .gitignore --ignore-pattern '!.storybook'",
     "test-storybook": "test-storybook --stories-json"
   },
   "devDependencies": {
