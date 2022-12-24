@@ -21,9 +21,8 @@ if (isDryRun) {
 }
 
 export const apps = [
-  'nuxt-app',
+  'nuxt',
   'storybook',
-  'vite-app',
 ]
 
 export const realPackages = [
