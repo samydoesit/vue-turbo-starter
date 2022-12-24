@@ -9,8 +9,9 @@ import type { Options as ExecaOptions } from 'execa'
 import { execa } from 'execa'
 import type { ReleaseType } from 'semver'
 import { inc as semverInc } from 'semver'
+import minimist from 'minimist'
 
-export const args = require('minimist')(process.argv.slice(2))
+export const args = minimist(process.argv.slice(2))
 
 export const isDryRun = !!args.dry
 
@@ -48,7 +49,7 @@ export const versionIncrements: ReleaseType[] = [
   // 'prerelease'
 ]
 
-export function getPackageInfo (pkgName: string) {
+export async function getPackageInfo (pkgName: string) {
   const projectPath = realPackages.includes(pkgName) ? 'packages/' : 'apps/'
   const pkgDir = path.resolve(__dirname, `../${projectPath}${pkgName}`)
 
@@ -61,7 +62,7 @@ export function getPackageInfo (pkgName: string) {
      name: string
      version: string
      private?: boolean
-   } = require(pkgPath)
+   } = await import(pkgPath)
   const currentVersion = pkg.version
 
   if (pkg.private) {
@@ -77,7 +78,8 @@ export function getPackageInfo (pkgName: string) {
   }
 }
 
-export function run (
+// eslint-disable-next-line require-await
+export async function run (
   bin: string,
   args: string[],
   opts: ExecaOptions<string> = {},

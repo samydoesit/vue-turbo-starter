@@ -30,7 +30,7 @@ async function main (): Promise<void> {
 
   await logRecentCommits(pkg)
 
-  const { currentVersion, pkgName, pkgPath, pkgDir } = getPackageInfo(pkg)
+  const { currentVersion, pkgName, pkgPath, pkgDir } = await getPackageInfo(pkg)
 
   if (!targetVersion) {
     const { release }: { release: string } = await prompts({
