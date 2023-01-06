@@ -1,4 +1,4 @@
-FROM node:18.12.1-alpine3.16 AS builder
+FROM node:18.13.0-alpine3.16 AS builder
 
 WORKDIR /app
 COPY . .
@@ -12,7 +12,7 @@ RUN corepack enable pnpm &&\
     pnpm dlx turbo prune --scope sb --docker
 
 # Add lockfile and package.json's of isolated subworkspace
-FROM node:18.12.1-alpine3.16 AS installer
+FROM node:18.13.0-alpine3.16 AS installer
 
 ENV NODE_OPTIONS="--max_old_space_size=4096"
 
