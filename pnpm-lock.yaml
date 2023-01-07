@@ -212,7 +212,7 @@ importers:
       '@types/jsdom': 20.0.1
       '@vitejs/plugin-vue': 4.0.0
       '@vue/test-utils': 2.2.7
-      jsdom: 20.0.3
+      jsdom: 21.0.0
       pinia: 2.0.28
       tsconfig: workspace:*
       typescript: 4.9.4
@@ -227,12 +227,12 @@ importers:
       '@types/jsdom': 20.0.1
       '@vitejs/plugin-vue': 4.0.0_vite@4.0.4+vue@3.2.45
       '@vue/test-utils': 2.2.7_vue@3.2.45
-      jsdom: 20.0.3
+      jsdom: 21.0.0
       pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
       tsconfig: link:../tsconfig
       typescript: 4.9.4
       vite: 4.0.4
-      vitest: 0.26.3_jsdom@20.0.3
+      vitest: 0.26.3_jsdom@21.0.0
       vue-tsc: 1.0.22_typescript@4.9.4
 
 packages:
@@ -12659,8 +12659,8 @@ packages:
       - supports-color
     dev: true
 
-  /jsdom/20.0.3:
-    resolution: {integrity: sha512-SYhBvTh89tTfCD/CRdSOm13mOBa42iTaTyfyEWBdKcGdPxPtLFBXuHR8XHb33YNYaP+lLbmSvBTsnoesCNJEsQ==}
+  /jsdom/21.0.0:
+    resolution: {integrity: sha512-AIw+3ZakSUtDYvhwPwWHiZsUi3zHugpMEKlNPaurviseYoBqo0zBd3zqoUi3LPCNtPFlEP8FiW9MqCZdjb2IYA==}
     engines: {node: '>=14'}
     peerDependencies:
       canvas: ^2.5.0
@@ -18551,7 +18551,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.26.3_jsdom@20.0.3:
+  /vitest/0.26.3_jsdom@21.0.0:
     resolution: {integrity: sha512-FmHxU9aUCxTi23keF3vxb/Qp0lYXaaJ+jRLGOUmMS3qVTOJvgGE+f1VArupA6pEhaG2Ans4X+zV9dqM5WISMbg==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -18580,7 +18580,7 @@ packages:
       acorn-walk: 8.2.0
       chai: 4.3.7
       debug: 4.3.4
-      jsdom: 20.0.3
+      jsdom: 21.0.0
       local-pkg: 0.4.2
       source-map: 0.6.1
       strip-literal: 1.0.0
