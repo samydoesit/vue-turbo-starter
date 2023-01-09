@@ -30,7 +30,7 @@
     "prompts": "2.4.2",
     "semver": "7.3.8",
     "simple-git-hooks": "2.8.1",
-    "tsx": "3.12.1",
+    "tsx": "3.12.2",
     "turbo": "1.6.3",
     "typescript": "4.9.4"
   },
@@ -42,7 +42,7 @@
     "pre-push": "pnpm lint",
     "commit-msg": "pnpm exec tsx scripts/verifyCommit.ts $1"
   },
-  "packageManager": "pnpm@7.22.0",
+  "packageManager": "pnpm@7.23.0",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": ["@types/react"],
