@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
-    "build": "rimraf dist && unbuild",
+    "build": "unbuild",
     "stub": "unbuild --stub"
   },
   "keywords": [
@@ -33,7 +33,6 @@
     "@unocss/preset-mini": "0.48.4",
     "@unocss/preset-wind": "0.48.4",
     "@unocss/reset": "0.48.4",
-    "rimraf": "3.0.2",
     "typescript": "4.9.4",
     "unbuild": "1.1.1",
     "unocss": "0.48.4",
