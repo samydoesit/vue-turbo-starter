@@ -152,7 +152,7 @@ importers:
       '@unocss/preset-mini': 0.48.4
       '@unocss/preset-wind': 0.48.4
       '@unocss/reset': 0.48.4
-      rimraf: 3.0.2
+      rimraf: 4.1.0
       tsconfig: workspace:*
       typescript: 4.9.4
       unbuild: 1.1.1
@@ -164,7 +164,7 @@ importers:
       '@unocss/preset-mini': 0.48.4
       '@unocss/preset-wind': 0.48.4
       '@unocss/reset': 0.48.4
-      rimraf: 3.0.2
+      rimraf: 4.1.0
       tsconfig: link:../tsconfig
       typescript: 4.9.4
       unbuild: 1.1.1
@@ -16555,6 +16555,12 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rimraf/4.1.0:
+    resolution: {integrity: sha512-ZJdkUR5/dRrRJHdcSKJLrpRn6tVjl9ALxd4yrTCxFsMpjQNzwHF6GLqMsuEzEYIXxHlFPDSk21Vr8VPuFBEz0g==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /ripemd160/2.0.2:
