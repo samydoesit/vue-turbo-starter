@@ -1,4 +1,6 @@
-export const helloWorld = {
+import { defineStore } from 'pinia'
+
+export const useHelloWorld = defineStore('helloWorld', {
   state: () => ({
     /**
      * this is a test for message
@@ -6,8 +8,8 @@ export const helloWorld = {
     message: 'Testmessage',
   }),
   actions: {
-    setMessage (payload) {
+    setMessage (payload: string) {
       this.message = payload
     },
   },
-}
+})

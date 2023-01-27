@@ -1,3 +1,4 @@
+import { Meta, StoryFn } from '@storybook/vue3'
 import IconCamera from '../icon/Camera.vue'
 import Button from './Button.vue'
 import { ButtonEnum, ButtonIconSizeEnum } from './Button.model'
@@ -23,9 +24,9 @@ export default {
       control: { type: 'select' },
     },
   },
-}
+} as Meta
 
-const Template = args => ({
+const Template: StoryFn<typeof Button> = args => ({
   components: { Button, IconCamera },
   setup () {
     return { args }

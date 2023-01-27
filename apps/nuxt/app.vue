@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useHelloWorld } from '@/store/helloWorld'
+import { useHelloWorld } from 'pinia-store'
 
 const store = useHelloWorld()
 const { message } = store
