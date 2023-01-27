@@ -1,0 +1,9 @@
+[build.environment]
+  NODE_VERSION = "18"
+
+[build]
+  command = "cd ../.. && pnpm install && pnpm build"
+  publish = ".output"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
