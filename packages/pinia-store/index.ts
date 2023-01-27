@@ -1,3 +1,3 @@
-import { helloWorld } from './helloWorld'
-import { user } from './user/user'
-export { user, helloWorld }
+import { useHelloWorld } from './helloWorld'
+import { useUserStore } from './user/user'
+export { useUserStore, useHelloWorld }

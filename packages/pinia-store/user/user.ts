@@ -1,13 +1,15 @@
+import { defineStore } from 'pinia'
+
 type TCode = 'mr' | 'mrs' | 'mx'
 
-export const user = {
+export const useUserStore = defineStore('user', {
   state: () => ({
     firstName: 'Lebron',
     lastName: 'James',
     title: 'Herr',
   }),
   getters: {
-    getName () {
+    getName (): string {
       return `${this.title} ${this.firstName} ${this.lastName}`
     },
   },
@@ -27,4 +29,4 @@ export const user = {
       this.title = code[payload]
     },
   },
-}
+})
