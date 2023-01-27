@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     shim: false,
   },
   vite: {
+    /* sasaseeesdass */
     plugins: [
       Unocss(),
     ],
