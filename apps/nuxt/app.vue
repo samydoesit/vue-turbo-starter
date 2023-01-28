@@ -8,7 +8,8 @@ console.log(message)
 
 <template>
   <div class="flex place-items-center h-screen w-full justify-center">
-    <div>
+    <h1>vue turbo starter</h1>
+    <div class="block">
       <Button prefix="test" type="primary">
         Button1
       </Button>
