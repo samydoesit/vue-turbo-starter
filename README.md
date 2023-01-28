@@ -29,6 +29,12 @@
     </a>  
 </p>
 
+Demo - Nuxt:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/56300feb-c43a-486b-896a-88ba674ec4f6/deploy-status)](https://vue-turbo-starter-nuxt.netlify.app/)
+
+Demo - Storybook:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3fe35172-6d1a-472b-a5c6-5682a55e5e5a/deploy-status)](https://vue-turbo-starter-storybook.netlify.app/)
+
 # Vue3 | Nuxt3 | Storybook v7 | Mono-/Turborepo starter using pnpm
 
 ## What's inside?
