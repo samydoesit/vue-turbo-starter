@@ -19,26 +19,39 @@ export const presetVueTurbo = (): Preset<Theme> => {
       'hidden',
     ],
     preflights: [
-      // {
-      //   layer: 'basestyles',
-      //   getCSS: () => `
-      //     :root {
-      //       color-scheme: light dark;
-      //       color: rgba(255, 255, 255, 0.87);
-      //       background-color: #242424;
-      //     }
+      {
+        layer: 'basestyles',
+        getCSS: () => `
+          html,
+          body,
+          #app {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          
+          html.dark {
+            background: #121212;
+            color-scheme: dark;
+          }
 
-      //     @media (prefers-color-scheme: light) {
-      //       :root {
-      //         color: #213547;
-      //         background-color: #ffffff;
-      //       }
-      //       a:hover {
-      //         color: #747bff;
-      //       }
-      //     }
-      //   `,
-      // },
+          :root {
+            color-scheme: light dark;
+            color: rgba(255, 255, 255, 0.87);
+            background-color: #242424;
+          }
+
+          @media (prefers-color-scheme: light) {
+            :root {
+              color: #213547;
+              background-color: #ffffff;
+            }
+            a:hover {
+              color: #747bff;
+            }
+          }
+        `,
+      },
     ],
     shortcuts: [],
     theme,
