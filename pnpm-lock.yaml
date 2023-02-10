@@ -72,8 +72,8 @@ importers:
     specifiers:
       '@babel/core': 7.20.12
       '@babel/preset-env': 7.20.2
-      '@mdx-js/mdx': 2.2.1
-      '@mdx-js/vue': 2.2.1
+      '@mdx-js/mdx': 2.3.0
+      '@mdx-js/vue': 2.3.0
       '@storybook/addon-docs': 7.0.0-beta.45
       '@storybook/addon-essentials': 7.0.0-beta.45
       '@storybook/addon-interactions': 7.0.0-beta.45
@@ -112,8 +112,8 @@ importers:
     devDependencies:
       '@babel/core': 7.20.12
       '@babel/preset-env': 7.20.2_@babel+core@7.20.12
-      '@mdx-js/mdx': 2.2.1
-      '@mdx-js/vue': 2.2.1_vue@3.2.47
+      '@mdx-js/mdx': 2.3.0
+      '@mdx-js/vue': 2.3.0_vue@3.2.47
       '@storybook/addon-docs': 7.0.0-beta.45_sfoxds7t5ydpegc3knd667wn6m
       '@storybook/addon-essentials': 7.0.0-beta.45_sfoxds7t5ydpegc3knd667wn6m
       '@storybook/addon-interactions': 7.0.0-beta.45_sfoxds7t5ydpegc3knd667wn6m
@@ -2838,15 +2838,15 @@ packages:
       - supports-color
     dev: true
 
-  /@mdx-js/mdx/2.2.1:
-    resolution: {integrity: sha512-hZ3ex7exYLJn6FfReq8yTvA6TE53uW9UHJQM9IlSauOuS55J9y8RtA7W+dzp6Yrzr00/U1sd7q+Wf61q6SfiTQ==}
+  /@mdx-js/mdx/2.3.0:
+    resolution: {integrity: sha512-jLuwRlz8DQfQNiUCJR50Y09CGPq3fLtmtUQfVrj79E0JWu3dvsVcxVIcfhR5h0iXu+/z++zDrYeiJqifRynJkA==}
     dependencies:
       '@types/estree-jsx': 1.0.0
       '@types/mdx': 2.0.2
       estree-util-build-jsx: 2.2.0
       estree-util-is-identifier-name: 2.0.1
       estree-util-to-js: 1.1.0
-      estree-walker: 3.0.1
+      estree-walker: 3.0.3
       hast-util-to-estree: 2.1.0
       markdown-extensions: 1.1.1
       periscopic: 3.0.4
@@ -2876,8 +2876,8 @@ packages:
     resolution: {integrity: sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==}
     dev: true
 
-  /@mdx-js/vue/2.2.1_vue@3.2.47:
-    resolution: {integrity: sha512-ubq97KwuwyYMvpZDr8TlxNALMZA76rkFC1HniiFjZ60q/6rRm5GjoHVpZgj4vhqI7Xz4UQBKjdWscMgsxbsqqg==}
+  /@mdx-js/vue/2.3.0_vue@3.2.47:
+    resolution: {integrity: sha512-49FXTzhO4ZvhLVC+/PLr32dUC60Lz/yIkSKRs6hYaZ+6db6Azi12+yP41hQem9PV/fpv5kWK/1dImODUVGSbEg==}
     peerDependencies:
       vue: '>=3.0.0'
     dependencies:
@@ -9982,10 +9982,6 @@ packages:
 
   /estree-walker/2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
-
-  /estree-walker/3.0.1:
-    resolution: {integrity: sha512-woY0RUD87WzMBUiZLx8NsYr23N5BKsOMZHhu2hoNRVh6NXGfoiT1KOL8G3UHlJAnEDGmfa5ubNA/AacfG+Kb0g==}
-    dev: true
 
   /estree-walker/3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
