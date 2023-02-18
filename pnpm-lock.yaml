@@ -15,7 +15,7 @@ importers:
       semver: 7.3.8
       simple-git-hooks: 2.8.1
       tsx: 3.12.3
-      turbo: 1.7.4
+      turbo: 1.8.1
       typescript: 4.9.5
     devDependencies:
       '@types/prompts': 2.4.2
@@ -29,7 +29,7 @@ importers:
       semver: 7.3.8
       simple-git-hooks: 2.8.1
       tsx: 3.12.3
-      turbo: 1.7.4
+      turbo: 1.8.1
       typescript: 4.9.5
 
   apps/nuxt:
@@ -4015,6 +4015,17 @@ packages:
       telejson: 7.0.4
     dev: true
 
+  /@storybook/channel-postmessage/7.0.0-beta.50:
+    resolution: {integrity: sha512-gV6DVPNM3VFPT088kICTYrcFwgskEkHl83VoUEjok16aYKAauya2Jb+7hbO/pFsCNH4HO6VOQMWTaP00CEGgZA==}
+    dependencies:
+      '@storybook/channels': 7.0.0-beta.50
+      '@storybook/client-logger': 7.0.0-beta.50
+      '@storybook/core-events': 7.0.0-beta.50
+      '@storybook/global': 5.0.0
+      qs: 6.11.0
+      telejson: 7.0.4
+    dev: true
+
   /@storybook/channel-websocket/7.0.0-alpha.43:
     resolution: {integrity: sha512-P0Q7aVtywHetvs2areZiFRlw3C/n+I+jHjF1B9FR3uOhAqZB/IQ4BEpkupkeX2YSbYq2vzZmIN8HN9iFVtnbYA==}
     dependencies:
@@ -4055,6 +4066,10 @@ packages:
 
   /@storybook/channels/7.0.0-beta.49:
     resolution: {integrity: sha512-8D+yxazxMq1WPoHhPjFbFPJy+CLoqhmEH4ty6DWxodgoVUnBQ40e+IMN0I+LYGPXwbyZh/dwuUIq9vmar8Dzkg==}
+    dev: true
+
+  /@storybook/channels/7.0.0-beta.50:
+    resolution: {integrity: sha512-Apq2SEbhvBlh70VVyL4+X7Nwk+t6ABbkkFRtCtA5+cgXcACyArC0ycmn/xqypttjnk5tYkf1PjzEHqS6bLpo8A==}
     dev: true
 
   /@storybook/cli/7.0.0-beta.49:
@@ -4148,6 +4163,12 @@ packages:
 
   /@storybook/client-logger/7.0.0-beta.49:
     resolution: {integrity: sha512-SNTQ4uWm0PJjsMUDZpCDJY4G2SE0VltatQ5oZ0Lx9Ou4DGrjeVpjIiG8SpPZS0oY4SdRi+LZ5XowygdJf5Xr8g==}
+    dependencies:
+      '@storybook/global': 5.0.0
+    dev: true
+
+  /@storybook/client-logger/7.0.0-beta.50:
+    resolution: {integrity: sha512-Ug9aZcUuLzNYYtpPWgoPOmwHtKPCkHdknlbovkpTLoRpHH36/+ueCX8rQQoKu+27HKa07oKTBtHhUMlVmHPAtA==}
     dependencies:
       '@storybook/global': 5.0.0
     dev: true
@@ -4341,6 +4362,10 @@ packages:
     resolution: {integrity: sha512-qc7ptg58MLRkyucua2EsU5Sva3QfoRTuEUUcACTu1HqY7WkTpyK0TwikxgtfssKmjrTyYxA6r2Wl7Cczl37VSg==}
     dev: true
 
+  /@storybook/core-events/7.0.0-beta.50:
+    resolution: {integrity: sha512-XOun2KZqlLNHCQlPNEUEE7mczGT/+mQSayDOMYHfFSpgKYNGYI69AdXf/kq52A0BeXao8S29KeuP1Cxu8Lo56A==}
+    dev: true
+
   /@storybook/core-server/7.0.0-beta.49:
     resolution: {integrity: sha512-UsZ5V2HWXv7WKM5iF7xBUSbWDt1f0av/d9OeY3IMnOzqNuJYhbd39d7Sieiw0LWtUC+neeKyi+JrxKJVGDT8VQ==}
     dependencies:
@@ -4501,6 +4526,16 @@ packages:
       '@storybook/preview-api': 7.0.0-beta.49
     dev: true
 
+  /@storybook/instrumenter/7.0.0-beta.50:
+    resolution: {integrity: sha512-Ch5Hqdm9GoMY7a32TpibU5nbI/tvAPjrFJCLrshaYagfhOtfssmPfdhT6XvpKekrJvxrjY5SnmnLoIpTJuhUcw==}
+    dependencies:
+      '@storybook/channels': 7.0.0-beta.50
+      '@storybook/client-logger': 7.0.0-beta.50
+      '@storybook/core-events': 7.0.0-beta.50
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 7.0.0-beta.50
+    dev: true
+
   /@storybook/jest/0.0.10_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-qeYLIplpcOUQXboJde5pRCjTvkGmF80jEszRUoNYCNcEPfC2sMK68Wq6Ct8EQj3CoEdJqsK54O2YYh+7D9S+ag==}
     dependencies:
@@ -4598,6 +4633,27 @@ packages:
       '@storybook/csf': 0.0.2-next.10
       '@storybook/global': 5.0.0
       '@storybook/types': 7.0.0-beta.49
+      '@types/qs': 6.9.7
+      dequal: 2.0.3
+      lodash: 4.17.21
+      memoizerific: 1.11.3
+      qs: 6.11.0
+      slash: 3.0.0
+      synchronous-promise: 2.0.15
+      ts-dedent: 2.2.0
+      util-deprecate: 1.0.2
+    dev: true
+
+  /@storybook/preview-api/7.0.0-beta.50:
+    resolution: {integrity: sha512-E7gYzYf0zrT3qJOSWeANaL0MIYxG4+EpyBq/5BKaMle7S33yVt/+UBTVE3szPNO6Y7/UjakjyeFaj62gMbuVeQ==}
+    dependencies:
+      '@storybook/channel-postmessage': 7.0.0-beta.50
+      '@storybook/channels': 7.0.0-beta.50
+      '@storybook/client-logger': 7.0.0-beta.50
+      '@storybook/core-events': 7.0.0-beta.50
+      '@storybook/csf': 0.0.2-next.10
+      '@storybook/global': 5.0.0
+      '@storybook/types': 7.0.0-beta.50
       '@types/qs': 6.9.7
       dequal: 2.0.3
       lodash: 4.17.21
@@ -4838,8 +4894,8 @@ packages:
   /@storybook/testing-library/0.0.14-next.1:
     resolution: {integrity: sha512-1CAl40IKIhcPaCC4pYCG0b9IiYNymktfV/jTrX7ctquRY3akaN7f4A1SippVHosksft0M+rQTFE0ccfWW581fw==}
     dependencies:
-      '@storybook/client-logger': 7.0.0-beta.49
-      '@storybook/instrumenter': 7.0.0-beta.49
+      '@storybook/client-logger': 7.0.0-beta.50
+      '@storybook/instrumenter': 7.0.0-beta.50
       '@testing-library/dom': 8.17.1
       '@testing-library/user-event': 13.5.0_wl4iynrlixafokvgqnhzlvigei
       ts-dedent: 2.2.0
@@ -4904,6 +4960,15 @@ packages:
     resolution: {integrity: sha512-/sVb4v8liE7dfYcLl/QYSUb6QErh0H9SZ2DvZWbTuiWRZNJkC7HjKB4RYBBeqCrhc9XyakfhfLKG76HPJVq+Sw==}
     dependencies:
       '@storybook/channels': 7.0.0-beta.49
+      '@types/babel__core': 7.1.20
+      '@types/express': 4.17.14
+      file-system-cache: 2.0.1
+    dev: true
+
+  /@storybook/types/7.0.0-beta.50:
+    resolution: {integrity: sha512-c8X1VI/BmzxbnORMJZ0DzMaiikNJ5/o1nvWvpcxP+QCz8SV49DGGE5w8euBiccvzl6EQ8wp8AmAQaoCmsOR7WA==}
+    dependencies:
+      '@storybook/channels': 7.0.0-beta.50
       '@types/babel__core': 7.1.20
       '@types/express': 4.17.14
       file-system-cache: 2.0.1
@@ -18202,65 +18267,65 @@ packages:
     resolution: {integrity: sha512-JVa5ijo+j/sOoHGjw0sxw734b1LhBkQ3bvUGNdxnVXDCX81Yx7TFgnZygxrIIWn23hbfTaMYLwRmAxFyDuFmIw==}
     dev: true
 
-  /turbo-darwin-64/1.7.4:
-    resolution: {integrity: sha512-ZyYrQlUl8K/mYN1e6R7bEhPPYjMakz0DYMaexkyD7TAijQtWmTSd4a+I7VknOYNEssnUZ/v41GU3gPV1JAzxxQ==}
+  /turbo-darwin-64/1.8.1:
+    resolution: {integrity: sha512-H7pxGF/vsYG7kbY+vB8h+3r8VXn2L6hhYQi0XWA+EjZ1e2zu7+TzEMRWFYmvJPx8TRo5cV5txtg0I22/Y7bxUA==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64/1.7.4:
-    resolution: {integrity: sha512-CKIXg9uqp1a+Yeq/c4U0alPOqvwLUq5SBZf1PGYhGqJsfG0fRBtJfkUjHuBsuJIOGXg8rCmcGSWGIsIF6fqYuw==}
+  /turbo-darwin-arm64/1.8.1:
+    resolution: {integrity: sha512-zMcvplVGluR6v4oJXW7S1/R9QFsHdDkXMhPq8PIdvT3HwTb69ms0MNv7aKiQ0ZFy5D/eKCTyBRUFZvjorZmBqA==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64/1.7.4:
-    resolution: {integrity: sha512-RIUl4RUFFyzD2T024vL7509Ygwcw+SEa8NOwPfaN6TtJHK7RZV/SBP3fLNVOptG9WRLnOWX3OvsLMbiOqDLLyA==}
+  /turbo-linux-64/1.8.1:
+    resolution: {integrity: sha512-eJNx8iWDn5Lt8d0221RFd6lBjViLiPCVWNFF5JtqOohgRYplvepY3y/THa1GivMxY4px6zjTiy2oPE/VscVP4w==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64/1.7.4:
-    resolution: {integrity: sha512-Bg65F0AjYYYxqE6RPf2H5TIGuA/EyWMeGOATHVSZOWAbYcnG3Ly03GZii8AHnUi7ntWBdjwvXf/QbOS1ayNB6A==}
+  /turbo-linux-arm64/1.8.1:
+    resolution: {integrity: sha512-hFZkm8tq9kLE8tdbOzD6EbNzftdzMR4JEuuoKC6AbTzx1ZsWRvXJ/BGTeSH9/dYYm/wfuIEUiOP7HeXWiZRx7g==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64/1.7.4:
-    resolution: {integrity: sha512-rTaV50XZ2BRxRHOHqt1UsWfeDmYLbn8UKE6g2D2ED+uW+kmnTvR9s01nmlGWd2sAuWcRYQyQ2V+O09VfKPKcQw==}
+  /turbo-windows-64/1.8.1:
+    resolution: {integrity: sha512-o3oDg0lTYZl5KZD3Mi753On2vQT51unIiungoUmHDCeDH5JXfWPFu+6p+GAoIyRwQkZPvaEzMLuUtRgklKcBJw==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64/1.7.4:
-    resolution: {integrity: sha512-h8sxdKPvHTnWUPtwnYszFMmSO0P/iUUwmYY9n7iYThA71zSao28UeZ0H0Gw75cY3MPjvkjn2C4EBAUGPjuZJLw==}
+  /turbo-windows-arm64/1.8.1:
+    resolution: {integrity: sha512-NDYr2Mra21KOdl18BhMRoH2jQmlu+oqkpqRd+cGB8+c5P0B6LDVCM83cfcXQ+PNqX9S3Y1eZDRENZJx9I03sSw==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo/1.7.4:
-    resolution: {integrity: sha512-8RLedDoUL0kkVKWEZ/RMM70BvKLyDFen06QuKKhYC2XNOfNKqFDqzIdcY/vGick869bNIWalChoy4O07k0HLsA==}
+  /turbo/1.8.1:
+    resolution: {integrity: sha512-g8RltmG5zd0nYbKpkBQwnTSXTWUiup9+yileQ1TETNzpjxI3TL5k7kt2WkgUHEqR947IPUV+ckIduZHVITJmIQ==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.7.4
-      turbo-darwin-arm64: 1.7.4
-      turbo-linux-64: 1.7.4
-      turbo-linux-arm64: 1.7.4
-      turbo-windows-64: 1.7.4
-      turbo-windows-arm64: 1.7.4
+      turbo-darwin-64: 1.8.1
+      turbo-darwin-arm64: 1.8.1
+      turbo-linux-64: 1.8.1
+      turbo-linux-arm64: 1.8.1
+      turbo-windows-64: 1.8.1
+      turbo-windows-arm64: 1.8.1
     dev: true
 
   /type-check/0.3.2:
