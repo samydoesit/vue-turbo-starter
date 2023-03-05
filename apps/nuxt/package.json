@@ -8,12 +8,13 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
   },
   "devDependencies": {
+    "@nuxt/devtools": "^0.2.5",
     "@pinia/nuxt": "0.4.7",
+    "css-preset": "workspace:*",
     "jsbarcode": "3.11.5",
     "mitt": "3.0.0",
     "nuxt": "3.2.3",
     "pinia": "2.0.32",
-    "css-preset": "workspace:*",
     "pinia-store": "workspace:*",
     "sass": "1.58.3",
     "sass-loader": "13.2.0",
