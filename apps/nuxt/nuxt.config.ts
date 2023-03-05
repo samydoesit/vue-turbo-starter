@@ -3,7 +3,7 @@ import Unocss from 'unocss/vite'
 import { alias } from '../../alias'
 
 export default defineNuxtConfig({
-  modules: ['@pinia/nuxt'],
+  modules: ['@pinia/nuxt', '@nuxt/devtools'],
   alias,
   css: [
     '@unocss/reset/tailwind.css',
