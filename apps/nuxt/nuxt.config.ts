@@ -1,4 +1,5 @@
 import Unocss from 'unocss/vite'
+import VueTypeImports from 'vite-plugin-vue-type-imports'
 
 import { alias } from '../../alias'
 
@@ -15,6 +16,10 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [
+      /**
+       *  https://github.com/vuejs/core/issues/4294
+       */
+      VueTypeImports(),
       Unocss(),
     ],
     optimizeDeps: {
