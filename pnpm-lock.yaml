@@ -48,6 +48,7 @@ importers:
       typescript: 4.9.5
       ui: workspace:*
       vite: 4.1.4
+      vite-plugin-vue-type-imports: 0.2.4
       vue: 3.2.47
       vue-toastification: 2.0.0-rc.5
       webpack: 5.75.0
@@ -66,6 +67,7 @@ importers:
       typescript: 4.9.5
       ui: link:../../packages/ui
       vite: 4.1.4_sass@1.58.3
+      vite-plugin-vue-type-imports: 0.2.4_vite@4.1.4+vue@3.2.47
       vue: 3.2.47
       vue-toastification: 2.0.0-rc.5_vue@3.2.47
       webpack: 5.75.0
@@ -106,6 +108,7 @@ importers:
       typescript: 4.9.5
       ui: workspace:*
       vite: 4.1.4
+      vite-plugin-vue-type-imports: 0.2.4
       vue: 3.2.47
       webpack: 5.75.0
     dependencies:
@@ -144,6 +147,7 @@ importers:
       typescript: 4.9.5
       ui: link:../../packages/ui
       vite: 4.1.4_@types+node@18.14.6
+      vite-plugin-vue-type-imports: 0.2.4_vite@4.1.4+vue@3.2.47
       vue: 3.2.47
       webpack: 5.75.0
 
@@ -14117,6 +14121,13 @@ packages:
     dependencies:
       sourcemap-codec: 1.4.8
 
+  /magic-string/0.26.7:
+    resolution: {integrity: sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==}
+    engines: {node: '>=12'}
+    dependencies:
+      sourcemap-codec: 1.4.8
+    dev: true
+
   /magic-string/0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
     engines: {node: '>=12'}
@@ -19850,6 +19861,25 @@ packages:
       magic-string: 0.27.0
       shell-quote: 1.8.0
       vite: 4.1.4_sass@1.58.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /vite-plugin-vue-type-imports/0.2.4_vite@4.1.4+vue@3.2.47:
+    resolution: {integrity: sha512-qjz1RMd1MgG1gd2KNGo2uDSpGbaB7KwcuUVFZfC8mBdzUG63eR/gJzMUvfpM9JWQ+JTEfEGiLxe6NJvg4n3Kuw==}
+    peerDependencies:
+      vite: ^3.0.0 || 3
+      vue: ^2.7.0 || ^3.2.24
+    dependencies:
+      '@babel/types': 7.21.2
+      '@vue/compiler-sfc': 3.2.47
+      debug: 4.3.4
+      fast-glob: 3.2.12
+      local-pkg: 0.4.3
+      magic-string: 0.26.7
+      picocolors: 1.0.0
+      vite: 4.1.4_sass@1.58.3
+      vue: 3.2.47
     transitivePeerDependencies:
       - supports-color
     dev: true
