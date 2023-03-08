@@ -4,13 +4,60 @@
     "config:base"
   ],
   "rebaseWhen": "behind-base-branch",
-  "labels": ["dependencies"],
-  "ignoreDeps": ["@mdx-js/react", "react", "react-dom"],
+  "labels": [
+    "dependencies"
+  ],
+  "ignoreDeps": [
+    "@mdx-js/react",
+    "react",
+    "react-dom"
+  ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "nuxt"
+      "groupName": "eslint",
+      "commitMessageTopic": "linting dependency {{depName}}",
+      "matchPackagePatterns": [
+        "eslint"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
       ]
+    },
+    {
+      "groupName": "nuxt core",
+      "groupSlug": "nuxt",
+      "matchPackageNames": [
+        "nuxt",
+        "nuxt3",
+        "nuxt-delay-hydration"
+      ],
+      "matchPackagePatterns": [
+        "^@nuxt/"
+      ]
+    },
+    {
+      "groupName": "pinia",
+      "commitMessageTopic": "pinia-group dependency {{depName}}",
+      "matchPackagePatterns": [
+        "pinia"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "remark",
+      "matchPackagePatterns": ["^remark-"]
     },
     {
       "groupName": "root-packages",
@@ -25,45 +72,12 @@
       ]
     },
     {
-      "groupName": "nuxt core",
-      "groupSlug": "nuxt",
-      "matchPackageNames": ["nuxt", "nuxt3"],
-      "matchPackagePatterns": ["^@nuxt/"]
-    },
-    {
-      "groupName": "vite",
-      "commitMessageTopic": "vite-group dependency {{depName}}",
-      "matchPackagePrefixes": ["vite"],
-      "matchPackagePatterns": ["^@vitejs/"],
-      "excludePackagePatterns": [
-        "unocss"
-      ],
-      "excludePackageNames": [
-        "vitest"
-      ],
-      "matchUpdateTypes": [
-        "patch",
-        "minor",
-        "major"
-      ],
-      "matchDatasources": [
-        "npm"
-      ]
-    },
-    {
-      "groupName": "vue",
-      "commitMessageTopic": "vue-group dependency {{depName}}",
-      "matchPackagePrefixes": ["vue", "@vue"],
-      "excludePackagePatterns": [
-        "storybook"
-      ],
-      "matchUpdateTypes": [
-        "patch",
-        "minor",
-        "major"
-      ],
-      "matchDatasources": [
-        "npm"
+      "groupName": "schema.org",
+      "commitMessageTopic": "schemaorg {{depName}}",
+      "matchPackagePatterns": [
+        "@unhead/schema",
+        "@unhead/vue",
+        "nuxt-schema-org"
       ]
     },
     {
@@ -92,20 +106,9 @@
       "matchPackageNames": [
         "vitest"
       ],
-      "matchPackagePatterns": ["jsdom"],
-      "matchUpdateTypes": [
-        "patch",
-        "minor",
-        "major"
+      "matchPackagePatterns": [
+        "jsdom"
       ],
-      "matchDatasources": [
-        "npm"
-      ]
-    },
-    {
-      "groupName": "eslint",
-      "commitMessageTopic": "linting dependency {{depName}}",
-      "matchPackagePatterns": ["eslint"],
       "matchUpdateTypes": [
         "patch",
         "minor",
@@ -118,7 +121,9 @@
     {
       "groupName": "unocss",
       "commitMessageTopic": "unocss-group dependency {{depName}}",
-      "matchPackagePatterns": ["unocss"],
+      "matchPackagePatterns": [
+        "unocss"
+      ],
       "matchUpdateTypes": [
         "patch",
         "minor",
@@ -129,9 +134,20 @@
       ]
     },
     {
-      "groupName": "pinia",
-      "commitMessageTopic": "pinia-group dependency {{depName}}",
-      "matchPackagePatterns": ["pinia"],
+      "groupName": "vite",
+      "commitMessageTopic": "vite-group dependency {{depName}}",
+      "matchPackagePrefixes": [
+        "vite"
+      ],
+      "matchPackagePatterns": [
+        "^@vitejs/"
+      ],
+      "excludePackagePatterns": [
+        "unocss"
+      ],
+      "excludePackageNames": [
+        "vitest"
+      ],
       "matchUpdateTypes": [
         "patch",
         "minor",
@@ -140,6 +156,36 @@
       "matchDatasources": [
         "npm"
       ]
+    },
+    {
+      "groupName": "vue",
+      "commitMessageTopic": "vue-group dependency {{depName}}",
+      "matchPackagePrefixes": [
+        "vue",
+        "@vue"
+      ],
+      "excludePackagePatterns": [
+        "storybook"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "node",
+      "matchPackageNames": [
+        "node",
+        "@types/node"
+      ]
+    },
+    {
+      "groupName": "@types",
+      "matchPackagePatterns": ["^@?types"]
     }
   ]
 }
