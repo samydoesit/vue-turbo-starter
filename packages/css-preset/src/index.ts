@@ -1,6 +1,7 @@
 import type { Preset } from '@unocss/core'
 import type { UnocssNuxtOptions } from '@unocss/nuxt'
 import type { Theme, PresetWindOptions } from '@unocss/preset-wind'
+import { presetIcons } from '@unocss/preset-icons'
 import { presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
 import { UserConfig } from '@unocss/core'
 import { rules } from './rules'
@@ -79,6 +80,11 @@ export const extendUnocssOptions = ({ customPresetWindOptions, ...options }: Cus
       }),
       presetVueTurbo(),
       ...(options.presets || []),
+      presetIcons({
+        extraProperties: {
+          display: 'inline-block',
+        },
+      }),
     ],
     transformers: [
       transformerDirectives(),
