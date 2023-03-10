@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/vue3-vite'
+import remarkGfm from 'remark-gfm'
 // https://github.com/storybookjs/storybook/issues/20583
 // import Unocss from 'unocss/vite'
 
@@ -17,7 +18,18 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-links',
-    '@storybook/addon-mdx-gfm',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        mdxPluginOptions: {
+          mdxCompileOptions: {
+            // MDX2 turned off Github flavoured markdown
+            // https://storybook.js.org/docs/7.0/react/writing-docs/mdx#lack-of-github-flavored-markdown-gfm
+            remarkPlugins: [remarkGfm],
+          },
+        },
+      },
+    },
   ],
   // https://github.com/storybookjs/storybook/issues/20583
   // viteFinal (config) {
