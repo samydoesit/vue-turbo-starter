@@ -51,7 +51,7 @@ importers:
       vite-plugin-vue-type-imports: 0.2.4
       vue: 3.2.47
       vue-toastification: 2.0.0-rc.5
-      webpack: 5.76.0
+      webpack: 5.76.1
     devDependencies:
       '@nuxt/devtools': 0.2.5_nuxt@3.2.3+vite@4.1.4
       '@pinia/nuxt': 0.4.7_hmuptsblhheur2tugfgucj7gc4
@@ -62,7 +62,7 @@ importers:
       pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
       pinia-store: link:../../packages/pinia-store
       sass: 1.59.2
-      sass-loader: 13.2.0_sass@1.59.2+webpack@5.76.0
+      sass-loader: 13.2.0_sass@1.59.2+webpack@5.76.1
       tsconfig: link:../../packages/tsconfig
       typescript: 4.9.5
       ui: link:../../packages/ui
@@ -70,7 +70,7 @@ importers:
       vite-plugin-vue-type-imports: 0.2.4_vite@4.1.4+vue@3.2.47
       vue: 3.2.47
       vue-toastification: 2.0.0-rc.5_vue@3.2.47
-      webpack: 5.76.0
+      webpack: 5.76.1
 
   apps/storybook:
     specifiers:
@@ -114,7 +114,7 @@ importers:
       vite: 4.1.4
       vite-plugin-vue-type-imports: 0.2.4
       vue: 3.2.47
-      webpack: 5.76.0
+      webpack: 5.76.1
     dependencies:
       mitt: 3.0.0
       pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
@@ -139,7 +139,7 @@ importers:
       '@storybook/vue3': 7.0.0-rc.1_vue@3.2.47
       '@storybook/vue3-vite': 7.0.0-rc.1_c3m4mj3baupqvl4ugmdlrnojeq
       '@types/node': 18.15.0
-      babel-loader: 9.1.2_tkx7iv5lytdmlhrwm4n6r336ei
+      babel-loader: 9.1.2_olvwa26bkc7sescpzrxlktjrvi
       css-preset: link:../../packages/css-preset
       http-server: 14.1.1
       jest: 29.5.0_@types+node@18.15.0
@@ -157,7 +157,7 @@ importers:
       vite: 4.1.4_@types+node@18.15.0
       vite-plugin-vue-type-imports: 0.2.4_vite@4.1.4+vue@3.2.47
       vue: 3.2.47
-      webpack: 5.76.0
+      webpack: 5.76.1
 
   packages/css-preset:
     specifiers:
@@ -5212,13 +5212,13 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.21.1
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.21.1:
     resolution: {integrity: sha512-rc9K8ZpVjNcLs8Fp0dkozd5Pt2Apk1glO4Vgz8ix1u6yFByxfqo5Yavpy65o+93TAe24jr7v+eSBtFLvOQtCRQ==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: true
 
@@ -6946,7 +6946,7 @@ packages:
       webpack: 4.46.0
     dev: true
 
-  /babel-loader/9.1.2_tkx7iv5lytdmlhrwm4n6r336ei:
+  /babel-loader/9.1.2_olvwa26bkc7sescpzrxlktjrvi:
     resolution: {integrity: sha512-mN14niXW43tddohGl8HPu5yfQq70iUThvFL/4QzESA7GcZoC0eVOhvWdQ8+3UlSjaDE9MVtsW9mxDY07W7VpVA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -6956,7 +6956,7 @@ packages:
       '@babel/core': 7.21.0
       find-cache-dir: 3.3.2
       schema-utils: 4.0.0
-      webpack: 5.76.0
+      webpack: 5.76.1
     dev: true
 
   /babel-plugin-apply-mdx-type-prop/1.6.22_@babel+core@7.12.9:
@@ -17269,7 +17269,7 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass-loader/13.2.0_sass@1.59.2+webpack@5.76.0:
+  /sass-loader/13.2.0_sass@1.59.2+webpack@5.76.1:
     resolution: {integrity: sha512-JWEp48djQA4nbZxmgC02/Wh0eroSUutulROUusYJO9P9zltRbNN80JCBHqRGzjd4cmZCa/r88xgfkjGD0TXsHg==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -17291,7 +17291,7 @@ packages:
       klona: 2.0.6
       neo-async: 2.6.2
       sass: 1.59.2
-      webpack: 5.76.0
+      webpack: 5.76.1
     dev: true
 
   /sass/1.59.2:
@@ -18233,7 +18233,7 @@ packages:
       worker-farm: 1.7.0
     dev: true
 
-  /terser-webpack-plugin/5.3.7_webpack@5.76.0:
+  /terser-webpack-plugin/5.3.7_webpack@5.76.1:
     resolution: {integrity: sha512-AfKwIktyP7Cu50xNjXF/6Qb5lBNzYaWpU6YfoX3uZicTx0zTy0stDDCsvjDapKsSDvOeWo5MEq4TmdBy2cNoHw==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -18254,7 +18254,7 @@ packages:
       schema-utils: 3.1.1
       serialize-javascript: 6.0.1
       terser: 5.16.6
-      webpack: 5.76.0
+      webpack: 5.76.1
     dev: true
 
   /terser/4.8.1:
@@ -19980,8 +19980,8 @@ packages:
       - supports-color
     dev: true
 
-  /webpack/5.76.0:
-    resolution: {integrity: sha512-l5sOdYBDunyf72HW8dF23rFtWq/7Zgvt/9ftMof71E/yUb1YLOBmTgA2K4vQthB3kotMrSj609txVE0dnr2fjA==}
+  /webpack/5.76.1:
+    resolution: {integrity: sha512-4+YIK4Abzv8172/SGqObnUjaIHjLEuUasz9EwQj/9xmPPkYJy2Mh03Q/lJfSD3YLzbxy5FeTq5Uw0323Oh6SJQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -20011,7 +20011,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.1.1
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.7_webpack@5.76.0
+      terser-webpack-plugin: 5.3.7_webpack@5.76.1
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
