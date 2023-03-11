@@ -15,7 +15,12 @@ const config: StorybookConfig = {
     options: {},
   },
   addons: [
-    '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        docs: false,
+      },
+    },
     '@storybook/addon-interactions',
     '@storybook/addon-links',
     {

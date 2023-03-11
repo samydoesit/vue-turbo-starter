@@ -34,7 +34,7 @@ importers:
 
   apps/nuxt:
     specifiers:
-      '@nuxt/devtools': ^0.2.5
+      '@nuxt/devtools': 0.2.5
       '@pinia/nuxt': 0.4.7
       css-preset: workspace:*
       jsbarcode: 3.11.5
@@ -82,8 +82,8 @@ importers:
       '@storybook/addon-essentials': 7.0.0-rc.1
       '@storybook/addon-interactions': 7.0.0-rc.1
       '@storybook/addon-links': 7.0.0-rc.1
-      '@storybook/blocks': ^7.0.0-rc.1
-      '@storybook/core-common': ^7.0.0-rc.1
+      '@storybook/blocks': 7.0.0-rc.1
+      '@storybook/core-common': 7.0.0-rc.1
       '@storybook/csf-tools': 7.0.0-rc.1
       '@storybook/jest': 0.0.10
       '@storybook/node-logger': 7.0.0-rc.1
@@ -104,9 +104,9 @@ importers:
       mitt: 3.0.0
       pinia: 2.0.33
       pinia-store: workspace:*
-      react: ^17.0.2
-      react-dom: ^17.0.2
-      remark-gfm: ^3.0.1
+      react: 17.0.2
+      react-dom: 17.0.2
+      remark-gfm: 3.0.1
       storybook: 7.0.0-rc.1
       tsconfig: workspace:*
       typescript: 4.9.5
@@ -217,7 +217,7 @@ importers:
 
   packages/ui:
     specifiers:
-      '@types/mdx': ^2.0.2
+      '@types/mdx': 2.0.3
       tsconfig: workspace:*
       typescript: 4.9.5
       vite: 4.1.4
