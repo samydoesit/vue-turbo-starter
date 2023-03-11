@@ -22,6 +22,7 @@
     />
   </svg>
 </template>
+
 <style scoped>
 @keyframes stroke--animation {
     from {

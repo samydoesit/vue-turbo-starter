@@ -6,10 +6,10 @@ export enum ButtonEnum {
   Primary = 'primary',
   Secondary = 'secondary',
   Tertiary = 'tertiary',
-  Quaternary = 'quaternary'
+  Quaternary = 'quaternary',
 }
 
 export enum ButtonIconSizeEnum {
   Small = 'small',
-  Normal = 'normal'
+  Normal = 'normal',
 }

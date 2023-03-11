@@ -9,18 +9,18 @@ export const useUserStore = defineStore('user', {
     title: 'Herr',
   }),
   getters: {
-    getName (): string {
+    getName(): string {
       return `${this.title} ${this.firstName} ${this.lastName}`
     },
   },
   actions: {
-    setFirstName (payload: string) {
+    setFirstName(payload: string) {
       this.firstName = payload
     },
-    setLastName (payload: string) {
+    setLastName(payload: string) {
       this.lastName = payload
     },
-    setTitle (payload: TCode) {
+    setTitle(payload: TCode) {
       const code = {
         mr: 'Herr',
         mrs: 'Frau',

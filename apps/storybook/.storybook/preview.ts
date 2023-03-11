@@ -24,7 +24,7 @@ setup((app) => {
       },
     },
     methods: {
-      log () {
+      log() {
         action('link target')(this.to)
       },
     },

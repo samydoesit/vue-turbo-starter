@@ -8,7 +8,7 @@ export const useHelloWorld = defineStore('helloWorld', {
     message: 'Testmessage',
   }),
   actions: {
-    setMessage (payload: string) {
+    setMessage(payload: string) {
       this.message = payload
     },
   },

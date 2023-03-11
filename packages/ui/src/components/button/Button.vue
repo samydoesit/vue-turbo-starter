@@ -1,10 +1,9 @@
 <script lang="ts" setup>
-import { PropType } from 'vue'
-import { ButtonType, ButtonEnum, ButtonIconSizeType, ButtonIconSizeEnum } from './Button.model'
+import type { PropType } from 'vue'
+import type { ButtonIconSizeType, ButtonType } from './Button.model'
+import { ButtonEnum, ButtonIconSizeEnum } from './Button.model'
 // eslint-disable-next-line import/order
 import IconSpinner from '@ui/components/icon/Spinner.vue'
-
-defineEmits<{(e: 'click'): void }>()
 
 defineProps({
   prefix: {
@@ -29,6 +28,8 @@ defineProps({
   },
 })
 
+defineEmits<{ (e: 'click'): void }>()
+
 const classes = {
   primary: 'bg-primary text-white w-full border-primary border-2 border-solid rounded-md active:(bg-primary-700 border-primary-700)',
   secondary: 'bg-transparent text-primary w-full border-primary border-2 border-solid rounded-md active:(text-primary-700 border-primary-700)',
@@ -46,7 +47,7 @@ const iconSizeClasses = {
   <button
     :id="`${prefix}ButtonButton`"
     class="cursor-pointer flex justify-center items-center h-3 mb-0.5 overflow-hidden overflow-ellipsis whitespace-nowrap transition-opacity text-lg focus:(outline-none ring) p-4"
-    :class="[{'opacity-20 cursor-not-allowed': disabled}, classes[type]]"
+    :class="[{ 'opacity-20 cursor-not-allowed': disabled }, classes[type]]"
     :disabled="disabled"
     @click="$emit('click')"
   >

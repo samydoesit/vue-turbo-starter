@@ -1,4 +1,3 @@
-
 import { defineConfig } from 'unocss'
 import { extendUnocssOptions } from './src'
 

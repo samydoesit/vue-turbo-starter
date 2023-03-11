@@ -29,8 +29,10 @@ describe('test css-preset', () => {
 
     const unmatched = []
     for (const i of targets) {
-      if (!css.includes(escapeSelector(i))) { unmatched.push(i) }
+      if (!css.includes(escapeSelector(i)))
+        unmatched.push(i)
     }
+
     expect(unmatched).toEqual([])
     expect(css).toMatchSnapshot()
     expect(css).toEqual(css2)

@@ -1,4 +1,4 @@
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 import { defineConfig } from 'vitest/config'
 // import config from './vite.config'
 import vue from '@vitejs/plugin-vue'
