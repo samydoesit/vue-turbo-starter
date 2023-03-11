@@ -9,14 +9,15 @@ const config: StorybookConfig = {
     '../stories/**/*.stories.@(js|jsx|ts|tsx|mdx)',
     '../../../packages/ui/src/components/**/*.stories.@(js|jsx|ts|tsx|mdx)',
   ],
-  features: {
-    interactionsDebugger: true,
-    buildStoriesJson: true,
+  framework: {
+    name: '@storybook/vue3-vite',
+    options: {},
   },
-  framework: '@storybook/vue3-vite',
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-links',
+    '@storybook/addon-mdx-gfm',
   ],
   // https://github.com/storybookjs/storybook/issues/20583
   // viteFinal (config) {
