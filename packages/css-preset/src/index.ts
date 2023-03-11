@@ -1,9 +1,8 @@
-import type { Preset } from '@unocss/core'
+import type { Preset, UserConfig } from '@unocss/core'
 import type { UnocssNuxtOptions } from '@unocss/nuxt'
-import type { Theme, PresetWindOptions } from '@unocss/preset-wind'
+import type { PresetWindOptions, Theme } from '@unocss/preset-wind'
 import { presetIcons } from '@unocss/preset-icons'
 import { presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
-import { UserConfig } from '@unocss/core'
 import { rules } from './rules'
 import { theme } from './theme'
 
@@ -97,7 +96,7 @@ export const extendUnocssOptions = ({ customPresetWindOptions, ...options }: Cus
 /**
  * Extends unocss/nuxt Plugin Options Config
  */
-export function extendUnocssNuxtOptions (options: CustomNuxtConfig = {}): UnocssNuxtOptions {
+export function extendUnocssNuxtOptions(options: CustomNuxtConfig = {}): UnocssNuxtOptions {
   return {
     preflight: true,
     ...extendUnocssOptions(options),

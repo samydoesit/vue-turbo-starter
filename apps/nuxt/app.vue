@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { useHelloWorld } from 'pinia-store'
+// import { useHelloWorld } from 'pinia-store'
 
-const store = useHelloWorld()
-const { message } = store
-console.log(message)
+// const store = useHelloWorld()
+// const { message } = store
+// console.log(message)
 </script>
 
 <template>

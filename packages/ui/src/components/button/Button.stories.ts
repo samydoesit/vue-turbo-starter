@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from '@storybook/vue3'
+import type { Meta, StoryFn } from '@storybook/vue3'
 import IconCamera from '../icon/Camera.vue'
 import Button from './Button.vue'
 import { ButtonEnum, ButtonIconSizeEnum } from './Button.model'
@@ -28,7 +28,7 @@ export default {
 
 const Template: StoryFn<typeof Button> = args => ({
   components: { Button, IconCamera },
-  setup () {
+  setup() {
     return { args }
   },
   template: '<Button v-bind="args"><template v-if="args.icon" #icon><IconCamera /></template>{{ args.text }}</Button>',
