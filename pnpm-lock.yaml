@@ -8,7 +8,7 @@ importers:
       '@types/semver': 7.3.13
       conventional-changelog-cli: 2.2.2
       eslint-config-custom: link:packages/eslint-config-custom
-      execa: 7.1.0
+      execa: 7.1.1
       picocolors: 1.0.0
       prettier: 2.8.4
       prompts: 2.4.2
@@ -22,7 +22,7 @@ importers:
       '@types/semver': 7.3.13
       conventional-changelog-cli: 2.2.2
       eslint-config-custom: link:packages/eslint-config-custom
-      execa: 7.1.0
+      execa: 7.1.1
       picocolors: 1.0.0
       prettier: 2.8.4
       prompts: 2.4.2
@@ -10030,6 +10030,21 @@ packages:
 
   /execa/7.1.0:
     resolution: {integrity: sha512-T6nIJO3LHxUZ6ahVRaxXz9WLEruXLqdcluA+UuTptXmLM7nDAn9lx9IfkxPyzEL21583qSt4RmL44pO71EHaJQ==}
+    engines: {node: ^14.18.0 || ^16.14.0 || >=18.0.0}
+    dependencies:
+      cross-spawn: 7.0.3
+      get-stream: 6.0.1
+      human-signals: 4.3.0
+      is-stream: 3.0.0
+      merge-stream: 2.0.0
+      npm-run-path: 5.1.0
+      onetime: 6.0.0
+      signal-exit: 3.0.7
+      strip-final-newline: 3.0.0
+    dev: true
+
+  /execa/7.1.1:
+    resolution: {integrity: sha512-wH0eMf/UXckdUYnO21+HDztteVv05rq2GXksxT4fCGeHkBhw1DROXh40wcjMcRqDOWE7iPJ4n3M7e2+YFP+76Q==}
     engines: {node: ^14.18.0 || ^16.14.0 || >=18.0.0}
     dependencies:
       cross-spawn: 7.0.3
