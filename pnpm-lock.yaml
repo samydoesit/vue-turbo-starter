@@ -194,14 +194,14 @@ importers:
       eslint: 8.36.0
       eslint-define-config: 1.17.0
       eslint-plugin-import: 2.27.5
-      prettier: 2.8.4
+      prettier: 2.8.5
       typescript: 5.0.2
     devDependencies:
       '@antfu/eslint-config': 0.37.0_j4766f7ecgqbon3u7zlxn5zszu
       eslint: 8.36.0
       eslint-define-config: 1.17.0
       eslint-plugin-import: 2.27.5_eslint@8.36.0
-      prettier: 2.8.4
+      prettier: 2.8.5
       typescript: 5.0.2
 
   packages/pinia-store:
@@ -4441,7 +4441,7 @@ packages:
       globby: 11.1.0
       jscodeshift: 0.14.0_@babel+preset-env@7.20.2
       leven: 3.1.0
-      prettier: 2.8.4
+      prettier: 2.8.5
       prompts: 2.4.2
       puppeteer-core: 2.1.1
       read-pkg-up: 7.0.1
@@ -4486,7 +4486,7 @@ packages:
       globby: 11.1.0
       jscodeshift: 0.14.0_@babel+preset-env@7.20.2
       lodash: 4.17.21
-      prettier: 2.8.4
+      prettier: 2.8.5
       recast: 0.23.1
     transitivePeerDependencies:
       - supports-color
@@ -16332,6 +16332,12 @@ packages:
 
   /prettier/2.8.4:
     resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier/2.8.5:
+    resolution: {integrity: sha512-3gzuxrHbKUePRBB4ZeU08VNkUcqEHaUaouNt0m7LGP4Hti/NuB07C7PPTM/LkWqXoJYJn2McEo5+kxPNrtQkLQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
