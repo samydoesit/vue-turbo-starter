@@ -14,8 +14,24 @@
   ],
   "packageRules": [
     {
+      "groupName": "devDependencies",
+      "matchDepTypes": ["devDependencies"],
+      "rangeStrategy": "bump"
+    },
+    {
+      "groupName": "dependencies",
+      "matchDepTypes": ["dependencies"],
+      "rangeStrategy": "replace"
+    },
+    {
       "groupName": "eslint",
       "commitMessageTopic": "linting dependency {{depName}}",
+      "matchPackageNames": [
+        "@antfu/eslint-config",
+        "@types/prettier",
+        "eslint",
+        "prettier"
+      ],
       "matchPackagePatterns": [
         "eslint"
       ],
@@ -27,6 +43,14 @@
       "matchDatasources": [
         "npm"
       ]
+    },
+    {
+      "groupName": "iconify",
+      "matchPackagePatterns": ["^@iconify"]
+    },
+    {
+      "groupName": "vueuse",
+      "matchPackagePatterns": ["^@vueuse"]
     },
     {
       "groupName": "nuxt core",
