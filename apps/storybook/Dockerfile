@@ -28,7 +28,7 @@ COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
 # Note: Linux builds of `turbo` link against `glibc`. For Alpine Docker environments, you will need to ensure libc6-compat is installed.
 RUN apk add --no-cache libc6-compat
 RUN corepack enable pnpm &&\
-    PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 pnpm install &&\
+    PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 pnpm install --ignore-scripts &&\
     rm -f .npmrc
 
 COPY --from=builder app/out/full/ .

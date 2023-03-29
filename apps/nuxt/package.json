@@ -2,10 +2,12 @@
   "name": "nuxt-app",
   "version": "0.0.0",
   "scripts": {
+    "prepare": "nuxi prepare",
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
   },
   "devDependencies": {
     "@nuxt/devtools": "0.2.5",
