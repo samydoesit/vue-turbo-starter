@@ -1,31 +1,20 @@
 <script lang="ts" setup>
-import type { PropType } from 'vue'
-import type { ButtonIconSizeType, ButtonType } from './Button.model'
+import type { ButtonType } from './Button.model'
 import { ButtonEnum, ButtonIconSizeEnum } from './Button.model'
 // eslint-disable-next-line import/order
 import IconSpinner from '@ui/components/icon/Spinner.vue'
 
-defineProps({
-  prefix: {
-    type: String,
-    required: true,
-  },
-  type: {
-    type: String as PropType<ButtonType>,
-    default: ButtonEnum.Primary,
-  },
-  iconSize: {
-    type: String as PropType<ButtonIconSizeType>,
-    default: ButtonIconSizeEnum.Normal,
-  },
-  loading: {
-    type: Boolean,
-    default: false,
-  },
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
+withDefaults(defineProps<{
+  prefix: string
+  type?: ButtonType
+  iconSize?: ButtonIconSizeEnum
+  loading?: boolean
+  disabled?: boolean
+}>(), {
+  type: () => ButtonEnum.Primary,
+  iconSize: () => ButtonIconSizeEnum.Normal,
+  loading: false,
+  disabled: false,
 })
 
 defineEmits<{ (e: 'click'): void }>()
