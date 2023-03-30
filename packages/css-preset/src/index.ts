@@ -11,7 +11,7 @@ import { theme } from './theme'
 /**
  * Preset Vue Turbo for UnoCSS
  */
-export const presetVueTurbo = (): Preset<Theme> => {
+export function presetVueTurbo(): Preset<Theme> {
   return {
     name: 'unocss-preset-vue-turbo',
     rules,
@@ -70,7 +70,7 @@ interface CustomNuxtConfig extends UnocssNuxtOptions, CustomOptions {}
 /**
  * Extends unocss/vite Plugin Options Config
  */
-export const extendUnocssOptions = ({ customPresetWindOptions, ...options }: CustomUserConfig = {}): UserConfig => {
+export function extendUnocssOptions({ customPresetWindOptions, ...options }: CustomUserConfig = {}): UserConfig {
   return {
     ...options,
     presets: [
