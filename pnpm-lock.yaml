@@ -50,8 +50,8 @@ importers:
         specifier: 0.3.1
         version: 0.3.1(nuxt@3.3.3)(vite@4.2.1)
       '@pinia/nuxt':
-        specifier: 0.4.7
-        version: 0.4.7(typescript@5.0.3)(vue@3.2.47)
+        specifier: 0.4.8
+        version: 0.4.8(typescript@5.0.3)(vue@3.2.47)
       css-preset:
         specifier: workspace:*
         version: link:../../packages/css-preset
@@ -65,8 +65,8 @@ importers:
         specifier: 3.3.3
         version: 3.3.3(sass@1.61.0)(typescript@5.0.3)
       pinia:
-        specifier: 2.0.33
-        version: 2.0.33(typescript@5.0.3)(vue@3.2.47)
+        specifier: 2.0.34
+        version: 2.0.34(typescript@5.0.3)(vue@3.2.47)
       pinia-store:
         specifier: workspace:*
         version: link:../../packages/pinia-store
@@ -107,8 +107,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       pinia:
-        specifier: 2.0.33
-        version: 2.0.33(typescript@5.0.3)(vue@3.2.47)
+        specifier: 2.0.34
+        version: 2.0.34(typescript@5.0.3)(vue@3.2.47)
     devDependencies:
       '@babel/core':
         specifier: 7.21.4
@@ -341,8 +341,8 @@ importers:
         specifier: 21.1.1
         version: 21.1.1
       pinia:
-        specifier: 2.0.33
-        version: 2.0.33(typescript@5.0.3)(vue@3.2.47)
+        specifier: 2.0.34
+        version: 2.0.34(typescript@5.0.3)(vue@3.2.47)
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -3242,11 +3242,11 @@ packages:
       - vue-tsc
     dev: true
 
-  /@pinia/nuxt@0.4.7(typescript@5.0.3)(vue@3.2.47):
-    resolution: {integrity: sha512-ifgA9PO/jmPlK1e/HtkrZa7OMSL8EUOpo8Z1O5vNLRr/OZ42kKGEaY1NbIoCz6dIf/pbkATTNHJmcrlPCo3zSA==}
+  /@pinia/nuxt@0.4.8(typescript@5.0.3)(vue@3.2.47):
+    resolution: {integrity: sha512-E0HKmW+6Ec5HYzomZl86xil2rGPRAqKG1d+slVVLBHC7PFZOM0VIw/1XFO9hwo+EiCuDEXZDReZwTqO7KQsMgQ==}
     dependencies:
-      '@nuxt/kit': 3.3.2(rollup@3.20.2)
-      pinia: 2.0.33(typescript@5.0.3)(vue@3.2.47)
+      '@nuxt/kit': 3.3.3
+      pinia: 2.0.34(typescript@5.0.3)(vue@3.2.47)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - rollup
@@ -13535,8 +13535,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /pinia@2.0.33(typescript@5.0.3)(vue@3.2.47):
-    resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
+  /pinia@2.0.34(typescript@5.0.3)(vue@3.2.47):
+    resolution: {integrity: sha512-cgOoGUiyqX0SSgX8XelK9+Ri4XA2/YyNtgjogwfzIx1g7iZTaZPxm7/bZYMCLU2qHRiHhxG7SuQO0eBacFNc2Q==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
