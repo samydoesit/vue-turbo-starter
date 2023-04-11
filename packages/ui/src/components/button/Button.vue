@@ -35,12 +35,12 @@ const iconSizeClasses = {
 <template>
   <button
     :id="`${prefix}ButtonButton`"
-    class="cursor-pointer flex justify-center items-center h-3 mb-0.5 overflow-hidden overflow-ellipsis whitespace-nowrap transition-opacity text-lg focus:(outline-none ring) p-4"
+    class="overflow-ellipsis mb-0.5 h-3 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap p-4 text-lg transition-opacity focus:(outline-none ring)"
     :class="[{ 'opacity-20 cursor-not-allowed': disabled }, classes[type]]"
     :disabled="disabled"
     @click="$emit('click')"
   >
-    <IconSpinner v-if="loading" class="w-2 h-2" />
+    <IconSpinner v-if="loading" class="h-2 w-2" />
     <div v-else class="flex items-center justify-center gap-0.25">
       <div v-if="$slots.icon" :class="iconSizeClasses[iconSize]">
         <slot name="icon" />
