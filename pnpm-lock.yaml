@@ -329,8 +329,8 @@ importers:
         version: 3.2.47
     devDependencies:
       '@nuxt/test-utils':
-        specifier: 3.3.3
-        version: 3.3.3(vue@3.2.47)
+        specifier: 3.4.0
+        version: 3.4.0(vue@3.2.47)
       '@types/jsdom':
         specifier: 21.1.1
         version: 21.1.1
@@ -3181,21 +3181,22 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/test-utils@3.3.3(vue@3.2.47):
-    resolution: {integrity: sha512-uZSRVWGZditPc7hfEtntV/42UxhOE1yuOyXrikpEkDDId2m1+yHg7hiBfjXMzZpiKH5hvjQa/gvO1Qj2Ni5TMw==}
+  /@nuxt/test-utils@3.4.0(vue@3.2.47):
+    resolution: {integrity: sha512-uYD2JNBQrUAwez6mvBHydfcPNA5rJcI0ikZ2YtR29j1uzPkF9+olR8PqZO3S5nU5RtIK+F9ZVrlKchvmsG33Dg==}
     engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     peerDependencies:
       vue: ^3.2.47
     dependencies:
-      '@nuxt/kit': 3.3.3
-      '@nuxt/schema': 3.3.3
-      consola: 2.15.3
+      '@nuxt/kit': 3.4.0(rollup@3.20.2)
+      '@nuxt/schema': 3.4.0(rollup@3.20.2)
+      consola: 3.0.1
       defu: 6.1.2
       execa: 7.1.1
       get-port-please: 3.0.1
       jiti: 1.18.2
       ofetch: 1.0.1
       pathe: 1.1.0
+      ufo: 1.1.1
       vue: 3.2.47
     transitivePeerDependencies:
       - rollup
