@@ -28,7 +28,7 @@
     "picocolors": "1.0.0",
     "prettier": "2.8.7",
     "prompts": "2.4.2",
-    "semver": "7.3.8",
+    "semver": "7.4.0",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.6",
     "turbo": "1.8.8",
@@ -42,7 +42,7 @@
     "pre-push": "pnpm lint",
     "commit-msg": "pnpm exec tsx scripts/verifyCommit.ts $1"
   },
-  "packageManager": "pnpm@8.1.1",
+  "packageManager": "pnpm@8.2.0",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": ["@types/react"],
