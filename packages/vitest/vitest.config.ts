@@ -1,7 +1,6 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vitest/config'
 import VueTypeImports from 'vite-plugin-vue-type-imports'
-// import config from './vite.config'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
