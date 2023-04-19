@@ -1,8 +1,7 @@
 <script lang="ts" setup>
+import IconSpinner from '@ui/components/icon/Spinner.vue'
 import type { ButtonType } from './Button.model'
 import { ButtonEnum, ButtonIconSizeEnum } from './Button.model'
-// eslint-disable-next-line import/order
-import IconSpinner from '@ui/components/icon/Spinner.vue'
 
 withDefaults(defineProps<{
   prefix: string
