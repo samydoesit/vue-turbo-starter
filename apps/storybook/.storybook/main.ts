@@ -1,9 +1,9 @@
 import type { StorybookConfig } from '@storybook/vue3-vite'
 import remarkGfm from 'remark-gfm'
-// https://github.com/storybookjs/storybook/issues/20583
-// import Unocss from 'unocss/vite'
+import Unocss from 'unocss/vite'
+import VueTypeImports from 'vite-plugin-vue-type-imports'
 
-// import { alias } from '../../../alias'
+import { alias } from '../../../alias'
 
 const config: StorybookConfig = {
   stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx|mdx)', '../../../packages/ui/src/components/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
@@ -28,20 +28,21 @@ const config: StorybookConfig = {
       },
     },
   }], // https://github.com/storybookjs/storybook/issues/20583
-  // viteFinal (config) {
-  //   config.resolve.alias = {
-  //     ...config.resolve.alias,
-  //     ...alias,
-  //   }
+  viteFinal(config) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      ...alias,
+    }
 
-  //   config.plugins = config.plugins ?? []
-  //   config.plugins.push(
-  //     Unocss(),
-  //   )
+    config.plugins = config.plugins ?? []
+    config.plugins.push(
+      Unocss(),
+      VueTypeImports(),
+    )
 
-  //   // return the customized config
-  //   return config
-  // },
+    // return the customized config
+    return config
+  },
   docs: {
     autodocs: true,
   },
