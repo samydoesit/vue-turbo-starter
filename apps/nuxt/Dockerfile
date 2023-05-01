@@ -1,4 +1,4 @@
-FROM node:18.16.0-alpine3.16 AS builder
+FROM node:20.0.0-alpine3.16 AS builder
 
 ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
 
@@ -14,7 +14,7 @@ RUN corepack enable pnpm &&\
     pnpm dlx turbo prune --scope="nuxt-app" --docker
 
 # Add lockfile and package.json's of isolated subworkspace
-FROM node:18.16.0-alpine3.16 AS installer
+FROM node:20.0.0-alpine3.16 AS installer
 
 WORKDIR /app
 
@@ -36,7 +36,7 @@ COPY turbo.json turbo.json
 
 RUN pnpm build
 
-FROM node:18.16.0-alpine3.16 AS runner
+FROM node:20.0.0-alpine3.16 AS runner
 
 WORKDIR /app
 
