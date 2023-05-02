@@ -341,8 +341,8 @@ importers:
         specifier: 2.3.2
         version: 2.3.2(vue@3.2.47)
       jsdom:
-        specifier: 21.1.1
-        version: 21.1.1
+        specifier: 21.1.2
+        version: 21.1.2
       pinia:
         specifier: 2.0.35
         version: 2.0.35(typescript@5.0.4)(vue@3.2.47)
@@ -360,7 +360,7 @@ importers:
         version: 0.2.4(vite@4.3.3)(vue@3.2.47)
       vitest:
         specifier: 0.30.1
-        version: 0.30.1(jsdom@21.1.1)
+        version: 0.30.1(jsdom@21.1.2)
       vue-tsc:
         specifier: 1.6.3
         version: 1.6.3(typescript@5.0.4)
@@ -3254,7 +3254,7 @@ packages:
       ofetch: 1.0.1
       pathe: 1.1.0
       ufo: 1.1.1
-      vitest: 0.30.1(jsdom@21.1.1)
+      vitest: 0.30.1(jsdom@21.1.2)
       vue: 3.2.47
     transitivePeerDependencies:
       - rollup
@@ -11610,8 +11610,8 @@ packages:
       - supports-color
     dev: true
 
-  /jsdom@21.1.1:
-    resolution: {integrity: sha512-Jjgdmw48RKcdAIQyUD1UdBh2ecH7VqwaXPN3ehoZN6MqgVbMn+lRm1aAT1AsdJRAJpwfa4IpwgzySn61h2qu3w==}
+  /jsdom@21.1.2:
+    resolution: {integrity: sha512-sCpFmK2jv+1sjff4u7fzft+pUh2KSUbUrEHYHyfSIbGTIcmnjyp83qg6qLwdJ/I3LpTXx33ACxeRL7Lsyc6lGQ==}
     engines: {node: '>=14'}
     peerDependencies:
       canvas: ^2.5.0
@@ -11632,7 +11632,7 @@ packages:
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
       is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.2
+      nwsapi: 2.2.4
       parse5: 7.1.2
       rrweb-cssom: 0.6.0
       saxes: 6.0.0
@@ -13456,8 +13456,8 @@ packages:
       - vue-tsc
     dev: true
 
-  /nwsapi@2.2.2:
-    resolution: {integrity: sha512-90yv+6538zuvUMnN+zCr8LuV6bPFdq50304114vJYJ8RDyK8D5O9Phpbd6SZWgI7PwzmmfN1upeOJlvybDSgCw==}
+  /nwsapi@2.2.4:
+    resolution: {integrity: sha512-NHj4rzRo0tQdijE9ZqAx6kYDcoRwYwSYzCA8MY3JzfxlrvEU0jhnhJT9BhqhJs7I/dKcrDm6TyulaRqZPIhN5g==}
     dev: true
 
   /nyc@15.1.0:
@@ -17134,7 +17134,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitest@0.30.1(jsdom@21.1.1):
+  /vitest@0.30.1(jsdom@21.1.2):
     resolution: {integrity: sha512-y35WTrSTlTxfMLttgQk4rHcaDkbHQwDP++SNwPb+7H8yb13Q3cu2EixrtHzF27iZ8v0XCciSsLg00RkPAzB/aA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -17179,7 +17179,7 @@ packages:
       chai: 4.3.7
       concordance: 5.0.4
       debug: 4.3.4
-      jsdom: 21.1.1
+      jsdom: 21.1.2
       local-pkg: 0.4.3
       magic-string: 0.30.0
       pathe: 1.1.0
