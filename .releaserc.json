@@ -1,0 +1,66 @@
+{
+  "branches": [
+    "main",
+    {
+      "name": "beta",
+      "prerelease": true
+    }
+  ],
+  "debug": true,
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "config": "conventional-changelog-angular",
+        "parserOpts": {
+          "noteKeywords": [
+            "BREAKING CHANGE",
+            "BREAKING CHANGES",
+            "BREAKING"
+          ]
+        },
+        "writerOpts": {
+          "commit": "commits",
+          "commitsSort": [
+            "subject",
+            "scope"
+          ]
+        }
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "pnpm -w exec tsx scripts/semantic-release-patch-workspace-versions.ts"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "./CHANGELOG.md",
+          "./apps/*/CHANGELOG.md",
+          "./packages/*/CHANGELOG.md",
+          "./package.json",
+          "./apps/*/package.json",
+          "./packages/*/package.json",
+          "./pnpm-lock.yaml"
+        ],
+        "message": "chore(release): ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}

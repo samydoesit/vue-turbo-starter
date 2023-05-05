@@ -84,6 +84,7 @@ When you use this template, try follow the checklist to update your info properl
 - [ ] Change/Edit `vite.config.ts` | `nuxt.config.ts`
 - [ ] Change the favicon in `public`
 - [ ] Remove the `.github` folder which contains the funding info
+- [ ] Clean up the Package.json's version fields and remove the contents of the changelog
 - [ ] Clean up the READMEs and remove demo content
 
 ## 💻 Development

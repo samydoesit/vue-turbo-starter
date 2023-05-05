@@ -1,26 +1,32 @@
-name: 'Continious Integration'
+name: 'Next Version'
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GIT_AUTHOR_NAME: samydoesit
+  GIT_AUTHOR_EMAIL: sxburk@gmail.com
+  GIT_COMMITTER_NAME: samydoesit
+  GIT_COMMITTER_EMAIL: sxburk@gmail.com
 
 on:
   push:
-    branches: ['main']
-  pull_request:
-    types: [opened, synchronize]
+    branches:
+      - main
+      - beta
 
 jobs:
-  build:
+  next-version:
     runs-on: ubuntu-latest
-    # Turborepo Remote Caching - https://turborepo.org/docs/ci/github-actions#remote-caching
-    # To use Remote Caching, uncomment the next lines and follow the steps below.
-    # env:
-    #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-    #  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+    strategy:
+      matrix:
+        node-version: [ 18 ]
 
     steps:
       - uses: actions/checkout@v3
       - run: corepack enable
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: ${{ matrix.node-version }}
       
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -36,18 +42,9 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: 📦 Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-scripts
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
 
-      - name: 💪 Lint
-        run: pnpm lint
-
-      - name: 🔗 Typecheck
-        run: pnpm typecheck
-
-      - name: 🧪 Test
-        run: pnpm test
-
-      - name: 🛠 Build
-        run: pnpm build
+      - name: 'Starting semantic release'
+        run: npm config set workspaces-update false && pnpx multi-semantic-release

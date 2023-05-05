@@ -16,12 +16,14 @@
     {
       "groupName": "devDependencies",
       "matchDepTypes": ["devDependencies"],
-      "rangeStrategy": "bump"
+      "rangeStrategy": "bump",
+      "automerge": true
     },
     {
       "groupName": "dependencies",
       "matchDepTypes": ["dependencies"],
-      "rangeStrategy": "replace"
+      "rangeStrategy": "replace",
+      "automerge": true
     },
     {
       "groupName": "eslint",
@@ -42,15 +44,18 @@
       ],
       "matchDatasources": [
         "npm"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "iconify",
-      "matchPackagePatterns": ["^@iconify"]
+      "matchPackagePatterns": ["^@iconify"],
+      "automerge": true
     },
     {
       "groupName": "vueuse",
-      "matchPackagePatterns": ["^@vueuse"]
+      "matchPackagePatterns": ["^@vueuse"],
+      "automerge": true
     },
     {
       "groupName": "nuxt core",
@@ -77,7 +82,8 @@
       ],
       "matchDatasources": [
         "npm"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "remark",
@@ -93,7 +99,8 @@
         "patch",
         "minor",
         "major"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "schema.org",
@@ -102,7 +109,8 @@
         "@unhead/schema",
         "@unhead/vue",
         "nuxt-schema-org"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "storybook",
@@ -118,7 +126,8 @@
       ],
       "matchDatasources": [
         "npm"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "testing",
@@ -140,7 +149,8 @@
       ],
       "matchDatasources": [
         "npm"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "unocss",
@@ -155,7 +165,8 @@
       ],
       "matchDatasources": [
         "npm"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "vite",
@@ -179,7 +190,8 @@
       ],
       "matchDatasources": [
         "npm"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "vue",
@@ -198,7 +210,8 @@
       ],
       "matchDatasources": [
         "npm"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "node",
@@ -209,7 +222,8 @@
     },
     {
       "groupName": "@types",
-      "matchPackagePatterns": ["^@?types"]
+      "matchPackagePatterns": ["^@?types"],
+      "automerge": true
     }
   ]
 }

@@ -16,15 +16,23 @@
     "start:vite-app": "turbo run start --filter vite-app",
     "start": "turbo run start --parallel",
     "test:watch": "vitest -w --dir",
-    "test": "pnpm test --filter vitest",
+    "test": "pnpm test --filter testing",
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
+    "@pnpm/find-workspace-packages": "^6.0.7",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "9.0.2",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/npm": "10.0.3",
+    "@semantic-release/release-notes-generator": "10.0.3",
     "@types/prompts": "2.4.4",
     "@types/semver": "7.3.13",
-    "eslint-config-custom": "link:packages/eslint-config-custom",
     "conventional-changelog-cli": "2.2.2",
+    "eslint-config-custom": "link:packages/eslint-config-custom",
     "execa": "7.1.1",
+    "multi-semantic-release": "3.0.2",
     "picocolors": "1.0.0",
     "prettier": "2.8.8",
     "prompts": "2.4.2",
@@ -45,7 +53,9 @@
   "packageManager": "pnpm@8.4.0",
   "pnpm": {
     "peerDependencyRules": {
-      "ignoreMissing": ["@types/react"],
+      "ignoreMissing": [
+        "@types/react"
+      ],
       "allowedVersions": {
         "vite": "3"
       }
