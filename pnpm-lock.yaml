@@ -50,8 +50,8 @@ importers:
         specifier: 0.4.6
         version: 0.4.6(nuxt@3.4.3)(vite@4.3.5)
       '@pinia/nuxt':
-        specifier: 0.4.9
-        version: 0.4.9(typescript@5.0.4)(vue@3.2.47)
+        specifier: 0.4.10
+        version: 0.4.10(typescript@5.0.4)(vue@3.2.47)
       css-preset:
         specifier: workspace:*
         version: link:../../packages/css-preset
@@ -65,8 +65,8 @@ importers:
         specifier: 3.4.3
         version: 3.4.3(@types/node@18.16.6)(sass@1.62.1)(typescript@5.0.4)
       pinia:
-        specifier: 2.0.35
-        version: 2.0.35(typescript@5.0.4)(vue@3.2.47)
+        specifier: 2.0.36
+        version: 2.0.36(typescript@5.0.4)(vue@3.2.47)
       pinia-store:
         specifier: workspace:*
         version: link:../../packages/pinia-store
@@ -107,8 +107,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       pinia:
-        specifier: 2.0.35
-        version: 2.0.35(typescript@5.0.4)(vue@3.2.47)
+        specifier: 2.0.36
+        version: 2.0.36(typescript@5.0.4)(vue@3.2.47)
     devDependencies:
       '@babel/core':
         specifier: 7.21.8
@@ -344,8 +344,8 @@ importers:
         specifier: 22.0.0
         version: 22.0.0
       pinia:
-        specifier: 2.0.35
-        version: 2.0.35(typescript@5.0.4)(vue@3.2.47)
+        specifier: 2.0.36
+        version: 2.0.36(typescript@5.0.4)(vue@3.2.47)
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -3100,33 +3100,6 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nuxt/kit@3.4.1:
-    resolution: {integrity: sha512-VeH26umZW6Rf4F1QX9nTIuTBp6HeL/MgmKY3+FgQiLD07afgFTLUJZohVE5xU7hb66zCnYvwKxa3JpjXFJZrhQ==}
-    engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
-    dependencies:
-      '@nuxt/schema': 3.4.1
-      c12: 1.2.0
-      consola: 3.1.0
-      defu: 6.1.2
-      globby: 13.1.4
-      hash-sum: 2.0.0
-      ignore: 5.2.4
-      jiti: 1.18.2
-      knitwork: 1.0.0
-      lodash.template: 4.5.0
-      mlly: 1.2.0
-      pathe: 1.1.0
-      pkg-types: 1.0.2
-      scule: 1.0.0
-      semver: 7.5.0
-      unctx: 2.2.0
-      unimport: 3.0.6(rollup@3.20.2)
-      untyped: 1.3.2
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
   /@nuxt/kit@3.4.3(rollup@3.20.2):
     resolution: {integrity: sha512-aQyzplYFCL292UsVZzlOZOC51ZKYFL0PBihbcPzxTzXQvAfMF8/DQ539kqzqXzxTCcmnUB9ROhIaNUrAeUkFYA==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -3152,28 +3125,6 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
-
-  /@nuxt/schema@3.4.1:
-    resolution: {integrity: sha512-xhPh9JfVKXRQVfdUT6BKieDTCljBjbIGgGCQnxplVi4FUTWRKUXR7MFwsobr5D9AJpeE0mg5/kRRh5gUX37vAQ==}
-    engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
-    dependencies:
-      c12: 1.4.1
-      create-require: 1.1.1
-      defu: 6.1.2
-      hookable: 5.5.3
-      jiti: 1.18.2
-      pathe: 1.1.0
-      pkg-types: 1.0.3
-      postcss-import-resolver: 2.0.0
-      scule: 1.0.0
-      std-env: 3.3.2
-      ufo: 1.1.2
-      unimport: 3.0.6(rollup@3.20.2)
-      untyped: 1.3.2
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
 
   /@nuxt/schema@3.4.3(rollup@3.20.2):
     resolution: {integrity: sha512-8bv0/mRDw6THQguSz+cKG5FzDZc2XBkjcc5VZ7yET84r4aWzW9/R274cjlEagFKrw9BDaPEQhnkwpg+kZnpOUA==}
@@ -3317,11 +3268,11 @@ packages:
       - vue-tsc
     dev: true
 
-  /@pinia/nuxt@0.4.9(typescript@5.0.4)(vue@3.2.47):
-    resolution: {integrity: sha512-ojzUMHKrQ7ZFjhWqMYKYetcqHSfgtIhjc6Hxw4alfQaGTlFdj38Vpz8Ol36YvmNdSjLFTNWYAgxEWCvg6HcSSg==}
+  /@pinia/nuxt@0.4.10(typescript@5.0.4)(vue@3.2.47):
+    resolution: {integrity: sha512-/16Eac9B9BT+LnhGL2np3bO3DXYcIEjUIGmU9MzUu7y2exDYq1eOce4Yt+ZtLpb0hN0BBGNyP0ZWoHJ6KJIVfA==}
     dependencies:
-      '@nuxt/kit': 3.4.1
-      pinia: 2.0.35(typescript@5.0.4)(vue@3.2.47)
+      '@nuxt/kit': 3.4.3(rollup@3.20.2)
+      pinia: 2.0.36(typescript@5.0.4)(vue@3.2.47)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - rollup
@@ -6776,21 +6727,6 @@ packages:
   /bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
     engines: {node: '>= 0.8'}
-    dev: true
-
-  /c12@1.2.0:
-    resolution: {integrity: sha512-CMznkE0LpNEuD8ILp5QvsQVP+YvcpJnrI/zFeFnosU2PyDtx1wT7tXfZ8S3Tl3l9MTTXbKeuhDYKwgvnAPOx3w==}
-    dependencies:
-      defu: 6.1.2
-      dotenv: 16.0.3
-      giget: 1.1.2
-      jiti: 1.18.2
-      mlly: 1.2.0
-      pathe: 1.1.0
-      pkg-types: 1.0.3
-      rc9: 2.1.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /c12@1.4.1:
@@ -13981,8 +13917,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /pinia@2.0.35(typescript@5.0.4)(vue@3.2.47):
-    resolution: {integrity: sha512-P1IKKQWhxGXiiZ3atOaNI75bYlFUbRxtJdhPLX059Z7+b9Z04rnTZdSY8Aph1LA+/4QEMAYHsTQ638Wfe+6K5g==}
+  /pinia@2.0.36(typescript@5.0.4)(vue@3.2.47):
+    resolution: {integrity: sha512-4UKApwjlmJH+VuHKgA+zQMddcCb3ezYnyewQ9NVrsDqZ/j9dMv5+rh+1r48whKNdpFkZAWVxhBp5ewYaYX9JcQ==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -16501,15 +16437,6 @@ packages:
 
   /uncrypto@0.1.2:
     resolution: {integrity: sha512-kuZwRKV615lEw/Xx3Iz56FKk3nOeOVGaVmw0eg+x4Mne28lCotNFbBhDW7dEBCBKyKbRQiCadEZeNAFPVC5cgw==}
-    dev: true
-
-  /unctx@2.2.0:
-    resolution: {integrity: sha512-th8S0zg9m35lirV7FYI6AYMKHfmLoEGC87yjuS4MGLS/OZ3Pv1Qx+HyXtnlwteL2YL47xN1ADDKoFWYw3VZoEA==}
-    dependencies:
-      acorn: 8.8.2
-      estree-walker: 3.0.3
-      magic-string: 0.30.0
-      unplugin: 1.3.1
     dev: true
 
   /unctx@2.3.0:
