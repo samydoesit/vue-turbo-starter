@@ -1,7 +1,6 @@
 import type { StorybookConfig } from '@storybook/vue3-vite'
 import remarkGfm from 'remark-gfm'
 import Unocss from 'unocss/vite'
-import VueTypeImports from 'vite-plugin-vue-type-imports'
 
 import { alias } from '../../../alias'
 
@@ -37,7 +36,6 @@ const config: StorybookConfig = {
     config.plugins = config.plugins ?? []
     config.plugins.push(
       Unocss(),
-      VueTypeImports(),
     )
 
     // return the customized config

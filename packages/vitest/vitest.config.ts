@@ -1,16 +1,10 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vitest/config'
-import VueTypeImports from 'vite-plugin-vue-type-imports'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   // ...config,
   plugins: [
-    /**
-     * TODO
-     *  https://github.com/vuejs/core/issues/4294
-     */
-    VueTypeImports(),
     vue(),
   ],
   resolve: {
