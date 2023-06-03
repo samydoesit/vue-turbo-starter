@@ -1,53 +1,100 @@
-name: ci
+name: CI
 
 on:
   push:
     branches: ['main']
   pull_request:
     types: [opened, synchronize]
+    paths-ignore:
+      - 'LICENSE'
+      - '.vscode/**'
+      - '.github/CODEOWNERS'
+      - '.github/FUNDING.yml'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.gitattributes'
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
-    # Turborepo Remote Caching - https://turborepo.org/docs/ci/github-actions#remote-caching
-    # To use Remote Caching, uncomment the next lines and follow the steps below.
-    # env:
-    #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-    #  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-
     steps:
       - uses: actions/checkout@v3
-      - run: corepack enable
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
 
-      - name: 📦 Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: pnpm
+
+      - name: Setup
+        run: npm i -g @antfu/ni
+
+      - name: Install
+        run: nci
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
 
       - name: 💪 Lint
-        run: pnpm lint
+        run: nr lint
+
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: pnpm
+
+      - name: Setup
+        run: npm i -g @antfu/ni
+
+      - name: 📦 Install
+        run: nci
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
 
       - name: 🔗 Typecheck
-        run: pnpm typecheck
+        run: nr typecheck
 
-      - name: 🧪 Test
-        run: pnpm test
+  test:
+    runs-on: ${{ matrix.os }}
 
-      - name: 🛠 Build
-        run: pnpm build
+    strategy:
+      matrix:
+        node: [18.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set node ${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: pnpm
+
+      - name: Setup
+        run: npm i -g @antfu/ni
+
+      - name: Install
+        run: nci
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+
+      - name: Build
+        run: nr build
+
+      - name: Test
+        run: nr test
