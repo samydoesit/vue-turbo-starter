@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
+import { action } from '@storybook/addon-actions'
 import IconCamera from '../icon/Camera.vue'
 import Button from './Button.vue'
 import { ButtonIconSizes, ButtonTypes } from './Button.model'
@@ -9,6 +10,8 @@ const meta = {
   args: {
     // type: ButtonTypes.Primary,
     type: 'primary',
+    // @ts-expect-error TODO: fix this
+    text: 'test',
     icon: false,
     iconSize: ButtonIconSizes.Normal,
     disabled: false,
@@ -27,9 +30,10 @@ const meta = {
   render: (args: any) => ({
     components: { Button, IconCamera },
     setup() {
-      return { args }
+      const click = action('click')
+      return { args, click }
     },
-    template: '<Button v-bind="args"><template v-if="args.icon" #icon><IconCamera /></template>{{ args.text }}</Button>',
+    template: '<Button v-bind="args" @click="click"><template v-if="args.icon" #icon><IconCamera /></template>{{ args.text }}</Button>',
   }),
 } satisfies Meta<typeof Button>
 

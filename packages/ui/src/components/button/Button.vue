@@ -16,7 +16,9 @@ withDefaults(defineProps<{
   disabled: false,
 })
 
-defineEmits<{ (e: 'click'): void }>()
+defineEmits<{
+  (e: 'click'): void
+}>()
 
 const classes = {
   primary: 'bg-primary text-white w-full border-primary border-2 border-solid rounded-md active:(bg-primary-700 border-primary-700)',
