@@ -1,17 +1,17 @@
 <script lang="ts" setup>
 import IconSpinner from '@ui/components/icon/Spinner.vue'
-import type { ButtonType } from './Button.model'
-import { ButtonEnum, ButtonIconSizeEnum } from './Button.model'
+import type { ButtonIconSize, ButtonType } from './Button.model'
+import { ButtonIconSizes, ButtonTypes } from './Button.model'
 
 withDefaults(defineProps<{
   prefix: string
   type?: ButtonType
-  iconSize?: ButtonIconSizeEnum
+  iconSize?: ButtonIconSize
   loading?: boolean
   disabled?: boolean
 }>(), {
-  type: () => ButtonEnum.Primary,
-  iconSize: () => ButtonIconSizeEnum.Normal,
+  type: () => ButtonTypes.Primary,
+  iconSize: () => ButtonIconSizes.Normal,
   loading: false,
   disabled: false,
 })

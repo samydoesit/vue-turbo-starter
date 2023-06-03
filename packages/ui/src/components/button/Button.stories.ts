@@ -1,56 +1,62 @@
-import type { Meta, StoryFn } from '@storybook/vue3'
+import type { Meta, StoryObj } from '@storybook/vue3'
 import IconCamera from '../icon/Camera.vue'
 import Button from './Button.vue'
-import { ButtonEnum, ButtonIconSizeEnum } from './Button.model'
+import { ButtonIconSizes, ButtonTypes } from './Button.model'
 
-export default {
-  component: { Button },
+const meta = {
+  component: Button,
   title: 'Button',
   args: {
-    type: '',
-    text: 'Button Button',
+    // type: ButtonTypes.Primary,
+    type: 'primary',
     icon: false,
-    iconSize: ButtonIconSizeEnum.Normal,
+    iconSize: ButtonIconSizes.Normal,
     disabled: false,
     loading: false,
   },
   argTypes: {
     type: {
-      options: [ButtonEnum.Primary, ButtonEnum.Secondary, ButtonEnum.Tertiary, ButtonEnum.Quaternary],
+      options: [ButtonTypes.Primary, ButtonTypes.Secondary, ButtonTypes.Tertiary, ButtonTypes.Quaternary],
       control: { type: 'select' },
     },
     iconSize: {
-      options: [ButtonIconSizeEnum.Normal, ButtonIconSizeEnum.Small],
+      options: [ButtonIconSizes.Normal, ButtonIconSizes.Small],
       control: { type: 'select' },
     },
   },
-} as Meta
+  render: (args: any) => ({
+    components: { Button, IconCamera },
+    setup() {
+      return { args }
+    },
+    template: '<Button v-bind="args"><template v-if="args.icon" #icon><IconCamera /></template>{{ args.text }}</Button>',
+  }),
+} satisfies Meta<typeof Button>
 
-const Template: StoryFn<typeof Button> = args => ({
-  components: { Button, IconCamera },
-  setup() {
-    return { args }
+export default meta
+type Story = StoryObj<typeof meta>
+
+export const Primary: Story = {
+  args: {
+    type: ButtonTypes.Primary,
+    prefix: 'Primary',
   },
-  template: '<Button v-bind="args"><template v-if="args.icon" #icon><IconCamera /></template>{{ args.text }}</Button>',
-})
-
-export const Primary = Template.bind({})
-Primary.args = {
-  type: ButtonEnum.Primary,
-  prefix: 'Primary',
 }
-export const Secondary = Template.bind({})
-Secondary.args = {
-  type: ButtonEnum.Secondary,
-  prefix: 'Secondary',
+export const Secondary: Story = {
+  args: {
+    type: ButtonTypes.Secondary,
+    prefix: 'Secondary',
+  },
 }
-export const Tertiary = Template.bind({})
-Tertiary.args = {
-  type: ButtonEnum.Tertiary,
-  prefix: 'Tertiary',
+export const Tertiary: Story = {
+  args: {
+    type: ButtonTypes.Tertiary,
+    prefix: 'Tertiary',
+  },
 }
-export const Quaternary = Template.bind({})
-Quaternary.args = {
-  type: ButtonEnum.Quaternary,
-  prefix: 'Quaternary',
+export const Quaternary: Story = {
+  args: {
+    type: ButtonTypes.Quaternary,
+    prefix: 'Quaternary',
+  },
 }

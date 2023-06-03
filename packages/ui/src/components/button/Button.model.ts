@@ -1,15 +1,16 @@
-export type ButtonType = 'primary' | 'secondary' | 'tertiary' | 'quaternary'
+type ObjectValues<T> = T[keyof T]
 
-export type ButtonIconSizeType = 'small' | 'normal'
+export const ButtonTypes = {
+  Primary: 'primary',
+  Secondary: 'secondary',
+  Tertiary: 'tertiary',
+  Quaternary: 'quaternary',
+} as const
 
-export enum ButtonEnum {
-  Primary = 'primary',
-  Secondary = 'secondary',
-  Tertiary = 'tertiary',
-  Quaternary = 'quaternary',
-}
+export const ButtonIconSizes = {
+  Small: 'small',
+  Normal: 'normal',
+} as const
 
-export enum ButtonIconSizeEnum {
-  Small = 'small',
-  Normal = 'normal',
-}
+export type ButtonType = ObjectValues<typeof ButtonTypes>
+export type ButtonIconSize = ObjectValues<typeof ButtonIconSizes>
