@@ -64,13 +64,13 @@ interface CustomOptions {
    */
   customPresetWindOptions?: PresetWindOptions
 }
-interface CustomUserConfig extends UserConfig, CustomOptions {}
+// interface CustomUserConfig extends UserConfig, CustomOptions {}
 interface CustomNuxtConfig extends UnocssNuxtOptions, CustomOptions {}
 
 /**
  * Extends unocss/vite Plugin Options Config
  */
-export function extendUnocssOptions({ customPresetWindOptions, ...options }: CustomUserConfig = {}): UserConfig {
+export function extendUnocssOptions({ customPresetWindOptions, ...options }: CustomNuxtConfig = {}): UserConfig {
   return {
     ...options,
     presets: [
@@ -93,12 +93,12 @@ export function extendUnocssOptions({ customPresetWindOptions, ...options }: Cus
   }
 }
 
-/**
- * Extends unocss/nuxt Plugin Options Config
- */
-export function extendUnocssNuxtOptions(options: CustomNuxtConfig = {}): UnocssNuxtOptions {
-  return {
-    preflight: true,
-    ...extendUnocssOptions(options),
-  }
-}
+// /**
+//  * Extends unocss/nuxt Plugin Options Config
+//  */
+// export function extendUnocssNuxtOptions(options: CustomNuxtConfig = {}): UnocssNuxtOptions {
+//   return {
+//     preflight: true,
+//     ...extendUnocssOptions(options),
+//   }
+// }
