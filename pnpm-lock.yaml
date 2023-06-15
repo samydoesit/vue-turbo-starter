@@ -51,8 +51,8 @@ importers:
   apps/nuxt:
     devDependencies:
       '@nuxt/devtools':
-        specifier: 0.6.0
-        version: 0.6.0(nuxt@3.5.3)(vite@4.3.9)
+        specifier: 0.6.1
+        version: 0.6.1(nuxt@3.5.3)(vite@4.3.9)
       '@pinia/nuxt':
         specifier: 0.4.11
         version: 0.4.11(typescript@5.1.3)(vue@3.3.4)
@@ -4273,8 +4273,8 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: true
 
-  /@nuxt/devtools-kit@0.6.0(nuxt@3.5.3)(vite@4.3.9):
-    resolution: {integrity: sha512-Vh/W80lf3HTGmGNq+rydKlBNQtzh3o9spiMtnEu0S3y3dh6bdumZ9vrcOzwfsgou95hm+YYAnmXIK5Ct89/TUw==}
+  /@nuxt/devtools-kit@0.6.1(nuxt@3.5.3)(vite@4.3.9):
+    resolution: {integrity: sha512-4x4f9MynFGRajUx91sh5GuDQGoZlmDxF4JOhTN/s90x5wkjRLN4hIb988E7NZ2ak3iH4+DTh7VQWZTBfLaBqlA==}
     peerDependencies:
       nuxt: ^3.5.1
       vite: '*'
@@ -4289,8 +4289,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/devtools-wizard@0.6.0:
-    resolution: {integrity: sha512-qtSRiBS3uWaldsRCtd/jeKM31uAvMUTjbHLTZvSvZwLw0msRNAdwyscteRGF1lx2HzlYGehI0+lN8R+8qEK0kA==}
+  /@nuxt/devtools-wizard@0.6.1:
+    resolution: {integrity: sha512-eQVYNZHw8wrVyZXeQpTAv4jc08VVNV7Db2D2KmMO08DipkrCqzCf7c6sFtcSmNIlGArm6lcObszTOpdZPhWTHw==}
     hasBin: true
     dependencies:
       consola: 3.1.0
@@ -4306,15 +4306,15 @@ packages:
       semver: 7.5.1
     dev: true
 
-  /@nuxt/devtools@0.6.0(nuxt@3.5.3)(vite@4.3.9):
-    resolution: {integrity: sha512-6Pmq/q+IGeXj8Dut2Nx7M3PximyABrKPWFt4rfxkEGLbMzZYb3nkToL2M1Lg9DHBZKNEal03OduKXaEhlx4KAQ==}
+  /@nuxt/devtools@0.6.1(nuxt@3.5.3)(vite@4.3.9):
+    resolution: {integrity: sha512-nz1FCJ2WViQWKUG9dTjwib/XZ7/dzeaP/r+++Y7W6a70y3ME5q58YldSNhNKJZXcbYWAU5UFzsoaslB5SWrlhw==}
     hasBin: true
     peerDependencies:
       nuxt: ^3.5.1
       vite: '*'
     dependencies:
-      '@nuxt/devtools-kit': 0.6.0(nuxt@3.5.3)(vite@4.3.9)
-      '@nuxt/devtools-wizard': 0.6.0
+      '@nuxt/devtools-kit': 0.6.1(nuxt@3.5.3)(vite@4.3.9)
+      '@nuxt/devtools-wizard': 0.6.1
       '@nuxt/kit': 3.5.3
       birpc: 0.2.12
       boxen: 7.1.0
