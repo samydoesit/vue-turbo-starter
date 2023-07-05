@@ -1,9 +1,7 @@
-import Unocss from 'unocss/vite'
-
 import { alias } from '../../alias'
 
 export default defineNuxtConfig({
-  modules: ['@pinia/nuxt', '@nuxt/devtools'],
+  modules: ['@pinia/nuxt', '@nuxt/devtools', '@unocss/nuxt'],
   alias,
   css: [
     '@unocss/reset/tailwind.css',
@@ -14,9 +12,6 @@ export default defineNuxtConfig({
     shim: false,
   },
   vite: {
-    plugins: [
-      Unocss(),
-    ],
     optimizeDeps: {
       exclude: ['pinia'],
     },
