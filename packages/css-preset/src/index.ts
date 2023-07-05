@@ -29,7 +29,7 @@ export function presetVueTurbo(): Preset<Theme> {
             margin: 0;
             padding: 0;
           }
-          
+
           html.dark {
             background: #121212;
             color-scheme: dark;
@@ -64,7 +64,7 @@ interface CustomOptions {
    */
   customPresetWindOptions?: PresetWindOptions
 }
-// interface CustomUserConfig extends UserConfig, CustomOptions {}
+
 interface CustomNuxtConfig extends UnocssNuxtOptions, CustomOptions {}
 
 /**
@@ -90,15 +90,14 @@ export function extendUnocssOptions({ customPresetWindOptions, ...options }: Cus
       transformerVariantGroup(),
       ...(options.transformers || []),
     ],
+    content: {
+      pipeline: {
+        include: [
+          '**.ts',
+          '**.vue',
+          '**.mdx',
+        ],
+      },
+    },
   }
 }
-
-// /**
-//  * Extends unocss/nuxt Plugin Options Config
-//  */
-// export function extendUnocssNuxtOptions(options: CustomNuxtConfig = {}): UnocssNuxtOptions {
-//   return {
-//     preflight: true,
-//     ...extendUnocssOptions(options),
-//   }
-// }
