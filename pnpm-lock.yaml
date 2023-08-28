@@ -51,8 +51,8 @@ importers:
   apps/nuxt:
     devDependencies:
       '@nuxt/devtools':
-        specifier: 0.8.1
-        version: 0.8.1(nuxt@3.7.0)(vite@4.4.9)
+        specifier: 0.8.2
+        version: 0.8.2(nuxt@3.7.0)(vite@4.4.9)
       '@pinia/nuxt':
         specifier: 0.4.11
         version: 0.4.11(typescript@5.2.2)(vue@3.3.4)
@@ -488,7 +488,6 @@ packages:
 
   /@antfu/utils@0.7.6:
     resolution: {integrity: sha512-pvFiLP2BeOKA/ZOS6jxx4XhKzdVLHDhGlFEaZ2flWWYf2xOqVniqpk38I04DFRyz+L0ASggl7SkItTc+ZLju4w==}
-    dev: true
 
   /@aw-web-design/x-default-browser@1.4.126:
     resolution: {integrity: sha512-Xk1sIhyNC/esHGGVjL/niHLowM0csl/kFO5uawBy4IrWwy0o1G8LGt3jP6nmWGz+USxeeqbihAmp/oVZju6wug==}
@@ -860,10 +859,8 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.22.11
-      '@babel/helper-create-class-features-plugin': 7.22.5(@babel/core@7.22.11)
+      '@babel/helper-create-class-features-plugin': 7.22.11(@babel/core@7.22.11)
       '@babel/helper-plugin-utils': 7.22.5
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@babel/plugin-proposal-nullish-coalescing-operator@7.18.6(@babel/core@7.22.11):
@@ -1087,16 +1084,6 @@ packages:
 
   /@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@7.22.11):
     resolution: {integrity: sha512-hx++upLv5U1rgYfwe1xBQUhRmU41NEvpUvrp8jkrSCdvGSnM5/qdRMtylJ6PG5OFkBaHkbTAKTnd3/YyESRHFw==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.22.11
-      '@babel/helper-plugin-utils': 7.22.5
-    dev: true
-
-  /@babel/plugin-syntax-typescript@7.20.0(@babel/core@7.22.11):
-    resolution: {integrity: sha512-rd9TkG+u1CExzS4SM1BlMEhMXwFLKVjOAFFCDx9PbX5ycJWDoWMcwdJH9RhkPu1dOgn5TrxLot/Gx6lWFuAUNQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -2866,7 +2853,7 @@ packages:
     resolution: {integrity: sha512-mo+A4n3MwLlWlg1SoSO+Dt6pOPWKElk9sSJ6ZpuzbB9OcjxN8RUWxU3ulPwB1nglErWKRam2x4BAohbYF7FiFA==}
     dependencies:
       '@antfu/install-pkg': 0.1.1
-      '@antfu/utils': 0.7.5
+      '@antfu/utils': 0.7.6
       '@iconify/types': 2.0.0
       debug: 4.3.4
       kolorist: 1.8.0
@@ -3641,8 +3628,8 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: true
 
-  /@nuxt/devtools-kit@0.8.1(nuxt@3.7.0)(vite@4.4.9):
-    resolution: {integrity: sha512-OmGZUGgIQIDsw6AD54OOTN+btOt8sI3aI9R5X6rcxg4rDzJT8jeWjqzAhLy8el+BDs4wRVw6PkW7JbYs1NxgSg==}
+  /@nuxt/devtools-kit@0.8.2(nuxt@3.7.0)(vite@4.4.9):
+    resolution: {integrity: sha512-GEqpBxa/ojfhAM9HN5L/OzCADpfH9nDbcC7INHFgao6KuAu6JclTpcuV6VZP6LthsETBsd2cKAt93WY+vEJnnQ==}
     peerDependencies:
       nuxt: ^3.6.5
       vite: '*'
@@ -3657,8 +3644,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/devtools-wizard@0.8.1:
-    resolution: {integrity: sha512-LQ7C3UCiRk95a6/2q8eli7gVnfKTlst5zy3zcvCnK0QGPHTJelmaWDX4WP4HE/tNb84R6Qmsq3YyGhyfD2CPNg==}
+  /@nuxt/devtools-wizard@0.8.2:
+    resolution: {integrity: sha512-d6uT98di8T6Bn/aQpRwMZPjUtrdBmjNAdrDS8s3e2SDy13HVMAsEVbJWKtfYV8oN8vrSkB0Z6tGgdbKyOLyiuw==}
     hasBin: true
     dependencies:
       consola: 3.2.3
@@ -3674,16 +3661,16 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /@nuxt/devtools@0.8.1(nuxt@3.7.0)(vite@4.4.9):
-    resolution: {integrity: sha512-+5V+iAVcDfjppMOPpvqmRMO/CCFhzsdQ1bXxMtcY+TVRifzL6YG/iFdrTrvX3cf7YCiI8NrEiafumLrL3srxdQ==}
+  /@nuxt/devtools@0.8.2(nuxt@3.7.0)(vite@4.4.9):
+    resolution: {integrity: sha512-E3ycLEkqTlXpdz3P7lJRMdB4AnC4tzALM6N6eCUskSCtUQfF57mjk0k7z1duHIjU8xTIFm6gnsotJnR/n6/B0g==}
     hasBin: true
     peerDependencies:
       nuxt: ^3.6.5
       vite: '*'
     dependencies:
       '@antfu/utils': 0.7.6
-      '@nuxt/devtools-kit': 0.8.1(nuxt@3.7.0)(vite@4.4.9)
-      '@nuxt/devtools-wizard': 0.8.1
+      '@nuxt/devtools-kit': 0.8.2(nuxt@3.7.0)(vite@4.4.9)
+      '@nuxt/devtools-wizard': 0.8.2
       '@nuxt/kit': 3.7.0
       birpc: 0.2.13
       boxen: 7.1.1
@@ -3777,7 +3764,7 @@ packages:
       scule: 1.0.0
       semver: 7.5.4
       unctx: 2.3.1
-      unimport: 3.1.3(rollup@3.20.2)
+      unimport: 3.2.0(rollup@3.20.2)
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
@@ -3949,8 +3936,8 @@ packages:
       estree-walker: 3.0.3
       externality: 1.0.2
       fs-extra: 11.1.1
-      get-port-please: 3.0.1
-      h3: 1.8.0
+      get-port-please: 3.0.2
+      h3: 1.8.1
       knitwork: 1.0.0
       magic-string: 0.30.3
       mlly: 1.4.1
@@ -8411,7 +8398,7 @@ packages:
       giget: 1.1.2
       jiti: 1.19.3
       mlly: 1.4.1
-      ohash: 1.1.2
+      ohash: 1.1.3
       pathe: 1.1.1
       perfect-debounce: 1.0.0
       pkg-types: 1.0.3
@@ -11336,7 +11323,7 @@ packages:
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 2.2.1
-      minimatch: 9.0.1
+      minimatch: 9.0.3
       minipass: 5.0.0
       path-scurry: 1.9.2
     dev: true
@@ -13176,7 +13163,7 @@ packages:
     dependencies:
       '@babel/core': 7.22.11
       '@babel/generator': 7.22.10
-      '@babel/plugin-syntax-typescript': 7.20.0(@babel/core@7.22.11)
+      '@babel/plugin-syntax-typescript': 7.22.5(@babel/core@7.22.11)
       '@babel/traverse': 7.22.11
       '@babel/types': 7.22.11
       '@jest/expect-utils': 28.1.3
@@ -13208,7 +13195,7 @@ packages:
       '@babel/core': 7.22.11
       '@babel/generator': 7.22.10
       '@babel/plugin-syntax-jsx': 7.18.6(@babel/core@7.22.11)
-      '@babel/plugin-syntax-typescript': 7.20.0(@babel/core@7.22.11)
+      '@babel/plugin-syntax-typescript': 7.22.5(@babel/core@7.22.11)
       '@babel/types': 7.22.11
       '@jest/expect-utils': 29.6.4
       '@jest/transform': 29.6.4
@@ -13711,8 +13698,8 @@ packages:
       clipboardy: 3.0.0
       consola: 3.2.3
       defu: 6.1.2
-      get-port-please: 3.0.1
-      h3: 1.8.0
+      get-port-please: 3.0.2
+      h3: 1.8.1
       http-shutdown: 1.2.2
       jiti: 1.19.3
       mlly: 1.4.1
@@ -13873,11 +13860,6 @@ packages:
     resolution: {integrity: sha512-RaPMZKiMy8/JruncMU5Bt6na1eftNoo++R4Y+N2FrxkDVTrGvcyzFTsaGif4QTeKESheMGegbhw6iUAq+5A8zA==}
     dependencies:
       get-func-name: 2.0.0
-    dev: true
-
-  /lru-cache@10.0.0:
-    resolution: {integrity: sha512-svTf/fzsKHffP42sujkO/Rjs37BCIsQVRCeNYIm9WN8rgT7ffoUnRtZCqU+6BqcSBdv8gwJeTz8knJpgACeQMw==}
-    engines: {node: 14 || >=16.14}
     dev: true
 
   /lru-cache@10.0.1:
@@ -15031,7 +15013,7 @@ packages:
       fs-extra: 11.1.1
       globby: 13.2.2
       gzip-size: 7.0.0
-      h3: 1.8.0
+      h3: 1.8.1
       hookable: 5.5.3
       httpxy: 0.1.2
       is-primitive: 3.0.1
@@ -15540,12 +15522,8 @@ packages:
       node-fetch-native: 1.4.0
       ufo: 1.3.0
 
-  /ohash@1.1.2:
-    resolution: {integrity: sha512-9CIOSq5945rI045GFtcO3uudyOkYVY1nyfFxVQp+9BRgslr8jPNiSSrsFGg/BNTUFOLqx0P5tng6G32brIPw0w==}
-
   /ohash@1.1.3:
     resolution: {integrity: sha512-zuHHiGTYTA1sYJ/wZN+t5HKZaH23i4yI1HMwbuXm24Nid7Dv0KcuRlKoNKS9UNfAVSBlnGLcuQrnOKWOZoEGaw==}
-    dev: true
 
   /on-finished@2.4.1:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
@@ -18711,23 +18689,6 @@ packages:
       - rollup
     dev: true
 
-  /unimport@3.1.3(rollup@3.20.2):
-    resolution: {integrity: sha512-up4TE2yA+nMyyErGTjbYGVw95MriGa2hVRXQ3/JRp7984cwwqULcnBjHaovVpsO8tZc2j0fvgGu9yiBKOyxvYw==}
-    dependencies:
-      '@rollup/pluginutils': 5.0.3(rollup@3.20.2)
-      escape-string-regexp: 5.0.0
-      fast-glob: 3.3.1
-      local-pkg: 0.4.3
-      magic-string: 0.30.3
-      mlly: 1.4.1
-      pathe: 1.1.1
-      pkg-types: 1.0.3
-      scule: 1.0.0
-      strip-literal: 1.3.0
-      unplugin: 1.4.0
-    transitivePeerDependencies:
-      - rollup
-
   /unimport@3.2.0(rollup@3.20.2):
     resolution: {integrity: sha512-9buxPxkNwxwxAlH/RfOFHxtQTUrlmBGi9Ai9HezY2yYbkoOhgJTYPI6+WqxI1EZphoM9cw1SHoCFRkXSb8/fjQ==}
     dependencies:
@@ -19051,10 +19012,10 @@ packages:
       anymatch: 3.1.3
       chokidar: 3.5.3
       destr: 2.0.1
-      h3: 1.8.0
+      h3: 1.8.1
       ioredis: 5.3.2
       listhen: 1.4.0
-      lru-cache: 10.0.0
+      lru-cache: 10.0.1
       mri: 1.2.0
       node-fetch-native: 1.4.0
       ofetch: 1.3.3
