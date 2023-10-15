@@ -345,8 +345,8 @@ importers:
         specifier: 7.0.0
         version: 7.0.0(@vue/compiler-sfc@3.3.4)(vue@3.3.4)
       '@vitejs/plugin-vue':
-        specifier: 4.3.3
-        version: 4.3.3(vite@4.4.11)(vue@3.3.4)
+        specifier: 4.4.0
+        version: 4.4.0(vite@4.4.11)(vue@3.3.4)
       '@vitest/ui':
         specifier: 0.34.6
         version: 0.34.6(vitest@0.34.6)
@@ -6631,17 +6631,6 @@ packages:
       vue: 3.3.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@vitejs/plugin-vue@4.3.3(vite@4.4.11)(vue@3.3.4):
-    resolution: {integrity: sha512-ssxyhIAZqB0TrpUg6R0cBpCuMk9jTIlO1GNSKKQD6S8VjnXi6JXKfUXjSsxey9IwQiaRGsO1WnW9Rkl1L6AJVw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      vite: ^4.0.0 || 3
-      vue: ^3.2.25
-    dependencies:
-      vite: 4.4.11(@types/node@18.18.5)(sass@1.69.3)
-      vue: 3.3.4
     dev: true
 
   /@vitejs/plugin-vue@4.4.0(vite@4.4.11)(vue@3.3.4):
