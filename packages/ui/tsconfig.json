@@ -1,6 +1,7 @@
 {
   "extends": "tsconfig/vite.json",
   "compilerOptions": {
+    "strict": true,
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["./src/*"]
