@@ -3,27 +3,31 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "build": "dotenv -- turbo run build",
+    "dev": "dotenv -- turbo run dev --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
     "preinstall": "npx only-allow pnpm",
     "prepare": "simple-git-hooks",
     "release": "tsx scripts/release.ts",
     "start:apps": "turbo run start --parallel --filter='./apps/*'",
-    "start:nuxt-app": "turbo run start --filter nuxt-app",
+    "start:nuxt-app": "dotenv -- turbo run start --filter nuxt-app",
     "start:storybook": "turbo run start --filter storybook",
     "start:vite-app": "turbo run start --filter vite-app",
     "start": "turbo run start --parallel",
-    "test:watch": "vitest -w --dir",
-    "test": "pnpm test --filter vitest",
+    "test:e2e:ui": "dotenv -e ./.env.e2e -- turbo run test:e2e:ui",
+    "test:e2e": "dotenv -e ./.env.e2e -- turbo run test:e2e",
+    "test:storybook": "pnpm -r test-storybook",
+    "test:watch:ui": "vitest --ui",
+    "test:watch": "vitest",
+    "test": "vitest run",
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "@types/prompts": "2.4.6",
     "@types/semver": "7.5.3",
+    "dotenv-cli": "7.3.0",
     "eslint-config-custom": "link:packages/eslint-config-custom",
-    "conventional-changelog-cli": "4.1.0",
     "execa": "8.0.1",
     "picocolors": "1.0.0",
     "prettier": "3.0.3",
@@ -45,7 +49,9 @@
   "packageManager": "pnpm@8.9.1",
   "pnpm": {
     "peerDependencyRules": {
-      "ignoreMissing": ["@types/react"],
+      "ignoreMissing": [
+        "@types/react"
+      ],
       "allowedVersions": {
         "vite": "3"
       }

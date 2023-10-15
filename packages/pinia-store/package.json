@@ -5,9 +5,15 @@
   "main": "index.ts",
   "scripts": {
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts",
+    "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
     "tsconfig": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitest/ui": "0.34.3",
+    "jsdom": "22.1.0",
+    "vitest": "0.34.3"
   }
 }

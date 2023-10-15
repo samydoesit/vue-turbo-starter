@@ -8,7 +8,7 @@
     </a>
     <a href="https://vitejs.dev" target="_blank">
         <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Vite&color=646CFF&logo=Vite&logoColor=FFFFFF&label=">
-    </a> 
+    </a>
     <a href="https://github.com/vuejs/core" target="_blank">
         <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Vue.js&color=222222&logo=Vue.js&logoColor=4FC08D&label=">
     </a>
@@ -23,10 +23,10 @@
     </a>
     <a href="https://github.com/storybooks/storybook" target="_blank">
         <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Storybook&color=FF4785&logo=Storybook&logoColor=FFFFFF&label=">
-    </a> 
+    </a>
     <a href="https://github.com/vercel/turborepo" target="_blank">
         <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Turborepo%20by%20Vercel&color=000000&logo=Vercel&logoColor=FFFFFF&label=">
-    </a>  
+    </a>
 </p>
 
 Demo - Nuxt:
@@ -59,7 +59,8 @@ uses:
 - vite
 - storybook v7
 - unoCSS (presetWind - tailwind/windi)
-- vitest
+- vitest (monorepo setup)
+- playwright for e2e tests
 
 ### GitHub Template
 
