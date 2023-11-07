@@ -329,8 +329,8 @@ importers:
   packages/ui:
     dependencies:
       '@types/mdx':
-        specifier: 2.0.9
-        version: 2.0.9
+        specifier: 2.0.10
+        version: 2.0.10
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -3188,7 +3188,7 @@ packages:
     peerDependencies:
       react: '>=16'
     dependencies:
-      '@types/mdx': 2.0.9
+      '@types/mdx': 2.0.10
       '@types/react': 18.0.31
       react: 17.0.2
     dev: true
@@ -6195,8 +6195,12 @@ packages:
       '@types/unist': 3.0.0
     dev: true
 
+  /@types/mdx@2.0.10:
+    resolution: {integrity: sha512-Rllzc5KHk0Al5/WANwgSPl1/CwjqCy+AZrGd78zuK+jO9aDM6ffblZ+zIjgPNAaEBmlO0RYDvLNh7wD0zKVgEg==}
+
   /@types/mdx@2.0.9:
     resolution: {integrity: sha512-OKMdj17y8Cs+k1r0XFyp59ChSOwf8ODGtMQ4mnpfz5eFDk1aO41yN3pSKGuvVzmWAkFp37seubY1tzOVpwfWwg==}
+    dev: true
 
   /@types/mime-types@2.1.1:
     resolution: {integrity: sha512-vXOTGVSLR2jMw440moWTC7H19iUyLtP3Z1YTj7cSsubOICinjMxFeb/V57v9QdyyPGbbWolUFSSmSiRSn94tFw==}
