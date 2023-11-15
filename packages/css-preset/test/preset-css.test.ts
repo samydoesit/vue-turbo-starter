@@ -1,7 +1,7 @@
 import { createGenerator, escapeSelector } from '@unocss/core'
 import { presetIcons } from '@unocss/preset-icons'
 import { presetWind } from '@unocss/preset-wind'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, it } from 'vitest'
 
 import { presetVueTurbo } from '../src'
 
@@ -21,7 +21,7 @@ const uno = createGenerator({
 })
 
 describe('test css-preset', () => {
-  test('targets', async () => {
+  it('targets', async () => {
     const targets = presetCssTargets
     const code = targets.join(' ')
     const { css } = await uno.generate(code)
@@ -38,13 +38,13 @@ describe('test css-preset', () => {
     expect(css).toEqual(css2)
   })
 
-  test('non-targets', async () => {
+  it('non-targets', async () => {
     const { matched } = await uno.generate(new Set(presetCssNonTargets), { preflights: false })
 
     expect([...matched]).toEqual([])
   })
 
-  test('containers', async () => {
+  it('containers', async () => {
     const targets = [
       'container',
       'md:container',

@@ -1,11 +1,11 @@
 {
   "extends": "tsconfig/vite.json",
   "compilerOptions": {
-    "strict": true,
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["./src/*"]
     },
-    "types": ["mdx"]
+    "types": ["mdx"],
+    "strict": true
   }
 }

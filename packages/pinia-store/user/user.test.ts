@@ -1,8 +1,8 @@
-import { beforeEach, describe, expect, it, test } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 import { createPinia, setActivePinia } from 'pinia'
 import { useUserStore } from './user'
 
-describe('User Store with describe', () => {
+describe('user Store with describe', () => {
   setActivePinia(createPinia())
 
   let user = useUserStore()
@@ -11,20 +11,20 @@ describe('User Store with describe', () => {
     user = useUserStore()
   })
 
-  it('First Name', () => {
+  it('first Name', () => {
     expect(user.firstName).toBe('Lebron')
     user.setFirstName('Testo')
     expect(user.firstName).toBe('Testo')
   })
 
-  it('Last Name', () => {
+  it('last Name', () => {
     expect(user.lastName).toBe('James')
     user.setLastName('Testo')
     expect(user.lastName).toBe('Testo')
   })
 })
 
-test('User Store: First Name with test', () => {
+it('user Store: First Name with test', () => {
   setActivePinia(createPinia())
   const user = useUserStore()
 
