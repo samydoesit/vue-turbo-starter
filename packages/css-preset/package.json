@@ -1,14 +1,6 @@
 {
   "name": "css-preset",
   "version": "0.0.0",
-  "scripts": {
-    "test:unit": "vitest",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
-    "build": "unbuild",
-    "stub": "unbuild --stub",
-    "prepare": "pnpm stub",
-    "typecheck": "tsc --noEmit"
-  },
   "keywords": [
     "unocss",
     "unocss-preset"
@@ -17,8 +9,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     },
     "./*": "./*"
   },
@@ -26,9 +18,17 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist",
-    "*.css"
+    "*.css",
+    "dist"
   ],
+  "scripts": {
+    "test:unit": "vitest",
+    "lint": "eslint .",
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "prepare": "pnpm stub",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
     "@unocss/core": "0.57.4",
     "@unocss/nuxt": "0.57.4",

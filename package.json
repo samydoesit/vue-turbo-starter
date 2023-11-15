@@ -2,11 +2,13 @@
   "name": "monorepo-vue-starter",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "dotenv -- turbo run build",
     "dev": "dotenv -- turbo run dev --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
+    "lint:config:viewer": "eslint-flat-config-viewer",
     "preinstall": "npx only-allow pnpm",
     "prepare": "simple-git-hooks",
     "release": "tsx scripts/release.ts",
@@ -36,6 +38,10 @@
     "simple-git-hooks": "2.9.0",
     "tsx": "4.1.2",
     "turbo": "1.10.16",
+    "@antfu/eslint-config": "1.1.2",
+    "@unocss/eslint-config": "0.56.5",
+    "eslint": "8.53.0",
+    "eslint-flat-config-viewer": "0.1.1",
     "typescript": "5.2.2"
   },
   "engines": {

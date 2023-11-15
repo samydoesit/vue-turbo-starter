@@ -4,7 +4,7 @@
   "private": true,
   "main": "index.ts",
   "scripts": {
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts",
+    "lint": "eslint .",
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json"
   },

@@ -1,13 +1,13 @@
 {
   "name": "ui",
   "version": "0.0.0",
+  "main": "main.ts",
   "scripts": {
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
+    "lint": "eslint ."
   },
-  "main": "main.ts",
   "dependencies": {
     "@types/mdx": "2.0.10",
     "tsconfig": "workspace:*",

@@ -7,7 +7,7 @@
     "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 dotenv -e ../../.env -- nuxi dev",
     "build": "dotenv -e ../../.env -- nuxi build",
     "start": "dotenv -e ../../.env -- node .output/server/index.mjs",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,md,mdx --ignore-path .gitignore",
+    "lint": "eslint .",
     "typecheck": "dotenv -e ../../.env -- nuxi typecheck",
     "test:e2e": "dotenv -e ../../.env -- playwright test --project=chromium",
     "test:e2e:ui": "dotenv -e ../../.env -- playwright test --ui"
@@ -21,17 +21,17 @@
     "@vue/test-utils": "2.4.1",
     "css-preset": "workspace:*",
     "nuxt": "3.8.1",
-    "pinia-store": "workspace:*",
     "pinia": "2.1.7",
-    "sass-loader": "13.3.2",
+    "pinia-store": "workspace:*",
     "sass": "1.69.5",
+    "sass-loader": "13.3.2",
     "tsconfig": "workspace:*",
     "typescript": "5.2.2",
     "ui": "workspace:*",
     "vite": "4.5.0",
     "vitest": "0.34.6",
-    "vue-toastification": "2.0.0-rc.5",
     "vue": "3.3.8",
+    "vue-toastification": "2.0.0-rc.5",
     "webpack": "5.89.0"
   }
 }
