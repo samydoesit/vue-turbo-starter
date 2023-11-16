@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@antfu/eslint-config':
-        specifier: 1.1.2
-        version: 1.1.2(eslint@8.53.0)(typescript@5.2.2)
+        specifier: 1.1.3
+        version: 1.1.3(eslint@8.53.0)(typescript@5.2.2)
       '@types/prompts':
         specifier: 2.4.8
         version: 2.4.8
@@ -375,8 +375,8 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.20
 
-  /@antfu/eslint-config@1.1.2(eslint@8.53.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-5wOOd7hgPFvSeeJB5BcQxzuEdfI3L2/nvUxPhdkNGCuUUXKbmH9dC5jAi32psIhYwwzH5WHHi/rRumfyrGmh/w==}
+  /@antfu/eslint-config@1.1.3(eslint@8.53.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-jtwqENo/BJf041aPTx7rGVu6UWaO4Hw5qc1ZgSaxcIFiaWNNUyPcnfS3PPTn/DGbYfIZKMTM6jyp2fuNhaQHXQ==}
     hasBin: true
     peerDependencies:
       eslint: '>=8.0.0'
@@ -390,7 +390,7 @@ packages:
       '@typescript-eslint/parser': 6.11.0(eslint@8.53.0)(typescript@5.2.2)
       eslint: 8.53.0
       eslint-config-flat-gitignore: 0.1.1
-      eslint-plugin-antfu: 1.0.3(eslint@8.53.0)
+      eslint-plugin-antfu: 1.0.6(eslint@8.53.0)
       eslint-plugin-eslint-comments: 3.2.0(eslint@8.53.0)
       eslint-plugin-i: 2.29.0(@typescript-eslint/parser@6.11.0)(eslint@8.53.0)
       eslint-plugin-jsdoc: 46.9.0(eslint@8.53.0)
@@ -8536,8 +8536,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-antfu@1.0.3(eslint@8.53.0):
-    resolution: {integrity: sha512-KwC4qcSGGxAsyUrks4UtqEhUI31xTMf6cyr5Jh63XMlOqPBHNKLTqnW8Fr7Pn+mSt7gEmcKygPtPZbOlxq9W4g==}
+  /eslint-plugin-antfu@1.0.6(eslint@8.53.0):
+    resolution: {integrity: sha512-sWeIhm6Tu6IerSvwxQB9rQVHp4p70Y1zsNuFdV1iAyeh4DI1vCP0WMfWXhUJijFLIHxwis9GBMDJREba+KrBhw==}
     peerDependencies:
       eslint: '*'
     dependencies:
