@@ -73,7 +73,7 @@ If you prefer to do it manually with the cleaner git history
 ```bash
 npx degit samydoesit/vue-turbo-starter my-vue-turbo-starter-monorepo
 cd my-vue-turbo-starter-monorepo
-pnpm i # If you don't have pnpm installed, run: `corepack enable` (or use `npm i -g corepack` for Node.js < 16.10)
+pnpm i # If you don't have pnpm installed, run: `corepack enable` (or use `npm i -g corepack` for Node.js < 20)
 ```
 
 ## Checklist
@@ -88,7 +88,7 @@ When you use this template, try follow the checklist to update your info properl
 - [ ] Clean up the READMEs and remove demo content
 
 ## 💻 Development
-- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable` (use `npm i -g corepack` for Node.js < 16.10)
+- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable` (use `npm i -g corepack` for Node.js < 20)
 - Install dependencies using `pnpm install`
 - Run development servers `pnpm dev`
 
