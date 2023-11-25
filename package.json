@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.10.5",
   "engines": {
-    "node": ">=18",
-    "pnpm": ">=7"
+    "node": ">=20",
+    "pnpm": ">=8"
   },
   "scripts": {
     "build": "dotenv -- turbo run build",
@@ -57,7 +57,7 @@
         "@types/react"
       ],
       "allowedVersions": {
-        "vite": "3"
+        "vite": "4"
       }
     }
   },
