@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@antfu/eslint-config':
-        specifier: 2.1.0
-        version: 2.1.0(eslint@8.54.0)(typescript@5.3.2)(vitest@0.34.6)
+        specifier: 2.1.1
+        version: 2.1.1(eslint@8.54.0)(typescript@5.3.2)(vitest@0.34.6)
       '@types/prompts':
         specifier: 2.4.9
         version: 2.4.9
@@ -378,15 +378,18 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.20
 
-  /@antfu/eslint-config@2.1.0(eslint@8.54.0)(typescript@5.3.2)(vitest@0.34.6):
-    resolution: {integrity: sha512-nCFaITCdoGM3yKx3RNHGTq0tz0mXJHX2pqtGI5ywTjSr+t9r54bt+gDfkP8kziudyN/PfDvujyGqWQQk0t1OAg==}
+  /@antfu/eslint-config@2.1.1(eslint@8.54.0)(typescript@5.3.2)(vitest@0.34.6):
+    resolution: {integrity: sha512-NoFgALYf36YbOnefhVdODIFz484eVbTtYkZHP8F/ppYkq2QzN5/5PCZKtcmJs+QDQSedXWuboQKN0us1Pm0Dmg==}
     hasBin: true
     peerDependencies:
+      '@unocss/eslint-plugin': '>=0.50.0'
       eslint: '>=8.40.0'
       eslint-plugin-react: ^7.33.2
       eslint-plugin-react-hooks: ^4.6.0
       eslint-plugin-react-refresh: ^0.4.4
     peerDependenciesMeta:
+      '@unocss/eslint-plugin':
+        optional: true
       eslint-plugin-react:
         optional: true
       eslint-plugin-react-hooks:
