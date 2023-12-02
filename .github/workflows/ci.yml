@@ -36,6 +36,9 @@ jobs:
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
 
+      - name: 🏢 Lint Monorepo
+        run: nr lint:monorepo
+
       - name: 💪 Lint
         run: nr lint
 
