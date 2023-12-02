@@ -64,7 +64,6 @@ interface CustomOptions {
    */
   customPresetWindOptions?: PresetWindOptions
 }
-
 interface CustomNuxtConfig extends UnocssNuxtOptions, CustomOptions {}
 
 /**

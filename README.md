@@ -35,7 +35,7 @@ Demo - Nuxt:
 Demo - Storybook:
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3fe35172-6d1a-472b-a5c6-5682a55e5e5a/deploy-status)](https://vue-turbo-starter-storybook.netlify.app/)
 
-# Vue3 | Nuxt3 | Storybook v7 | Mono-/Turborepo starter using pnpm
+# Vue3 | Nuxt3 | Storybook v7 | Histoire | Mono-/Turborepo starter using pnpm
 
 ## What's inside?
 
@@ -45,6 +45,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 
 - `nuxt`: another [Nuxt3](https://nuxtjs.org) app - https://localhost:3000/
 - `storybook`: another [Storybook](https://storybook.js.org/) - https://localhost:6006/
+- `histoire`: [Histoire](https://histoire.dev/) - https://localhost:6007/
 - `ui`: a stub Vue component library shared by `nuxt`, `vite` and `storybook` applications
 - `config`: `eslint` configurations (includes [nuxt/eslint-config](https://github.com/nuxt/eslint-config) standardjs flavor)
 <!-- - `tsconfig`: `tsconfig.json`s used throughout the monorepo -->
@@ -58,6 +59,7 @@ uses:
 - nuxt3
 - vite
 - storybook v7
+- histoire
 - unoCSS (presetWind - tailwind/windi)
 - vitest (monorepo setup)
 - playwright for e2e tests
@@ -102,6 +104,9 @@ When you use this template, try follow the checklist to update your info properl
 cd <repo-root>
 # Storybook Dockerfile
 docker build -f apps/storybook/Dockerfile .
+docker run -d -p 6006:6006 <image-id>
+# Histoire Dockerfile
+docker build -f apps/histoire/Dockerfile .
 docker run -d -p 6006:6006 <image-id>
 # Nuxt Dockerfile
 docker build -f apps/nuxt/Dockerfile .
