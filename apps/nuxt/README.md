@@ -36,5 +36,4 @@ docker build -f Dockerfile ../../
 docker run -d -p 3000:3000 <image-id>
 ```
 
-
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
