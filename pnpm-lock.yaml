@@ -188,10 +188,10 @@ importers:
         version: 7.0.0-alpha.43
       '@storybook/vue3':
         specifier: 7.6.6
-        version: 7.6.6(@vue/compiler-core@3.4.2)(vue@3.4.3)
+        version: 7.6.6(@vue/compiler-core@3.4.3)(vue@3.4.3)
       '@storybook/vue3-vite':
         specifier: 7.6.6
-        version: 7.6.6(@vue/compiler-core@3.4.2)(typescript@5.3.3)(vite@4.5.1)(vue@3.4.3)
+        version: 7.6.6(@vue/compiler-core@3.4.3)(typescript@5.3.3)(vite@4.5.1)(vue@3.4.3)
       '@types/node':
         specifier: 20.10.6
         version: 20.10.6
@@ -337,10 +337,10 @@ importers:
         version: 0.1.3(pinia@2.1.7)(vue@3.4.3)
       '@testing-library/vue':
         specifier: 8.0.1
-        version: 8.0.1(@vue/compiler-sfc@3.4.2)(vue@3.4.3)
+        version: 8.0.1(@vue/compiler-sfc@3.4.3)(vue@3.4.3)
       '@vitejs/plugin-vue':
-        specifier: 4.6.1
-        version: 4.6.1(vite@4.5.1)(vue@3.4.3)
+        specifier: 4.6.2
+        version: 4.6.2(vite@4.5.1)(vue@3.4.3)
       '@vitest/ui':
         specifier: 0.34.7
         version: 0.34.7(vitest@0.34.6)
@@ -5496,7 +5496,7 @@ packages:
     resolution: {integrity: sha512-PI0y55gSdMGndJ5GHPwX49C08DncrQhv7c9Uk7PjoGXOaXacc0aMBqFEmV31KGR6ogWK2PIsHDakrqW6nzbK8w==}
     dev: true
 
-  /@storybook/vue3-vite@7.6.6(@vue/compiler-core@3.4.2)(typescript@5.3.3)(vite@4.5.1)(vue@3.4.3):
+  /@storybook/vue3-vite@7.6.6(@vue/compiler-core@3.4.3)(typescript@5.3.3)(vite@4.5.1)(vue@3.4.3):
     resolution: {integrity: sha512-pctJJSCQ67bFTsF5mPEiPgIBqeGibj9aS8VnWZ2Khzj+S5gxJ6NzXvoWCyGlCIgOYixWU66OYd1qvJ8KUnS35g==}
     engines: {node: ^14.18 || >=16}
     peerDependencies:
@@ -5504,7 +5504,7 @@ packages:
     dependencies:
       '@storybook/builder-vite': 7.6.6(typescript@5.3.3)(vite@4.5.1)
       '@storybook/core-server': 7.6.6
-      '@storybook/vue3': 7.6.6(@vue/compiler-core@3.4.2)(vue@3.4.3)
+      '@storybook/vue3': 7.6.6(@vue/compiler-core@3.4.3)(vue@3.4.3)
       '@vitejs/plugin-vue': 4.5.2(vite@4.5.1)(vue@3.4.3)
       magic-string: 0.30.5
       vite: 4.5.1(@types/node@20.10.6)
@@ -5521,7 +5521,7 @@ packages:
       - vue
     dev: true
 
-  /@storybook/vue3@7.6.6(@vue/compiler-core@3.4.2)(vue@3.4.3):
+  /@storybook/vue3@7.6.6(@vue/compiler-core@3.4.3)(vue@3.4.3):
     resolution: {integrity: sha512-GpxV8KRUJyj4OrCm5e5rSDOWL0eUDLZUT26o8c0o1cUSAZAIuRCYcI4hzIcbxy5E2dmdOquBneonyzBI0xEMsA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
@@ -5533,7 +5533,7 @@ packages:
       '@storybook/global': 5.0.0
       '@storybook/preview-api': 7.6.6
       '@storybook/types': 7.6.6
-      '@vue/compiler-core': 3.4.2
+      '@vue/compiler-core': 3.4.3
       lodash: 4.17.21
       ts-dedent: 2.2.0
       type-fest: 2.19.0
@@ -5790,7 +5790,7 @@ packages:
       '@testing-library/dom': 9.3.3
     dev: true
 
-  /@testing-library/vue@8.0.1(@vue/compiler-sfc@3.4.2)(vue@3.4.3):
+  /@testing-library/vue@8.0.1(@vue/compiler-sfc@3.4.3)(vue@3.4.3):
     resolution: {integrity: sha512-l51ZEpjTQ6glq3wM+asQ1GbKJMGcxwgHEygETx0aCRN4TjFEGvMZy4YdWKs/y7bu4bmLrxcxhbEPP7iPSW/2OQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -5799,7 +5799,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.4
       '@testing-library/dom': 9.3.3
-      '@vue/compiler-sfc': 3.4.2
+      '@vue/compiler-sfc': 3.4.3
       '@vue/test-utils': 2.4.3(vue@3.4.3)
       vue: 3.4.3(typescript@5.3.3)
     transitivePeerDependencies:
@@ -6817,8 +6817,8 @@ packages:
       vue: 3.4.3(typescript@5.3.3)
     dev: true
 
-  /@vitejs/plugin-vue@4.6.1(vite@4.5.1)(vue@3.4.3):
-    resolution: {integrity: sha512-4JG1b1SPQpviIXkp4cwUaHluU0KCgjLprdyYaw4cq6OkJzqFXuao5CefsOaftcRpw8rlMQVwmHEurK+1zIzTlA==}
+  /@vitejs/plugin-vue@4.6.2(vite@4.5.1)(vue@3.4.3):
+    resolution: {integrity: sha512-kqf7SGFoG+80aZG6Pf+gsZIVvGSCKE98JbiWqcCV9cThtg91Jav0yvYFC9Zb+jKetNGF6ZKeoaxgZfND21fWKw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0 || 4
