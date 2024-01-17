@@ -3,9 +3,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["./src/*"]
+      "@ui/*": [
+        "./src/*"
+      ]
     },
-    "types": ["mdx"],
+    "types": ["mdx", "@histoire/plugin-vue/components"],
     "strict": true
   }
 }

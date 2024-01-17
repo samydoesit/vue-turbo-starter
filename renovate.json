@@ -187,7 +187,11 @@
       "commitMessageTopic": "vue-group dependency {{depName}}",
       "matchPackagePrefixes": [
         "vue",
-        "@vue"
+        "@vue",
+        "@histoire"
+      ],
+      "matchPackageNames": [
+        "histoire"
       ],
       "excludePackagePatterns": [
         "storybook"
