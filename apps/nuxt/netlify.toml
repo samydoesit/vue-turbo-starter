@@ -1,10 +1,10 @@
 [build]
-  command = "cd ../.. && pnpm install && pnpm build --filter nuxt-app"
-  publish = "dist"
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF . ../../packages/ui ../../packages/css-preset ../../packages/pinia-store"
+command = "cd ../.. && pnpm install && pnpm build --filter nuxt-app"
+publish = "dist"
+ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF . ../../packages/ui ../../packages/css-preset ../../packages/pinia-store"
 
 # [[plugins]]
 #   package = "@netlify/plugin-lighthouse"
 
 [context.deploy-preview.environment]
-  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
+PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
