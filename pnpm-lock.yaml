@@ -64,7 +64,7 @@ importers:
         version: 5.3.3
       vitest:
         specifier: 1.2.1
-        version: 1.2.1(@vitest/ui@1.2.1)(jsdom@23.2.0)
+        version: 1.2.1(@vitest/ui@1.2.1)(jsdom@24.0.0)
 
   apps/histoire:
     dependencies:
@@ -318,8 +318,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1(vitest@1.2.1)
       jsdom:
-        specifier: 23.2.0
-        version: 23.2.0
+        specifier: 24.0.0
+        version: 24.0.0
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -334,7 +334,7 @@ importers:
         version: 5.1.4(@types/node@20.11.20)
       vitest:
         specifier: 1.2.1
-        version: 1.2.1(@vitest/ui@1.2.1)(jsdom@23.2.0)
+        version: 1.2.1(@vitest/ui@1.2.1)(jsdom@24.0.0)
       webpack:
         specifier: 5.90.0
         version: 5.90.0
@@ -349,11 +349,11 @@ importers:
         specifier: 1.2.1
         version: 1.2.1(vitest@1.2.1)
       jsdom:
-        specifier: 23.2.0
-        version: 23.2.0
+        specifier: 24.0.0
+        version: 24.0.0
       vitest:
         specifier: 1.2.1
-        version: 1.2.1(@vitest/ui@1.2.1)(jsdom@23.2.0)
+        version: 1.2.1(@vitest/ui@1.2.1)(jsdom@24.0.0)
 
   packages/tsconfig: {}
 
@@ -385,8 +385,8 @@ importers:
         specifier: 2.4.4
         version: 2.4.4(vue@3.4.19)
       jsdom:
-        specifier: 23.2.0
-        version: 23.2.0
+        specifier: 24.0.0
+        version: 24.0.0
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -395,7 +395,7 @@ importers:
         version: 5.1.4(@types/node@20.11.20)
       vitest:
         specifier: 1.2.1
-        version: 1.2.1(@vitest/ui@1.2.1)(jsdom@23.2.0)
+        version: 1.2.1(@vitest/ui@1.2.1)(jsdom@24.0.0)
       vue-tsc:
         specifier: 1.8.27
         version: 1.8.27(typescript@5.3.3)
@@ -518,14 +518,6 @@ packages:
 
   /@antfu/utils@0.7.7:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
-
-  /@asamuzakjp/dom-selector@2.0.2:
-    resolution: {integrity: sha512-x1KXOatwofR6ZAYzXRBL5wrdV0vwNxlTCK9NCuLqAzQYARqGcvFwiJA6A1ERuh+dgeA4Dxm3JBYictIes+SqUQ==}
-    dependencies:
-      bidi-js: 1.0.3
-      css-tree: 2.3.1
-      is-potential-custom-element-name: 1.0.1
-    dev: true
 
   /@aw-web-design/x-default-browser@1.4.126:
     resolution: {integrity: sha512-Xk1sIhyNC/esHGGVjL/niHLowM0csl/kFO5uawBy4IrWwy0o1G8LGt3jP6nmWGz+USxeeqbihAmp/oVZju6wug==}
@@ -6022,7 +6014,7 @@ packages:
       jest: 29.7.0(@types/node@20.11.20)
       lodash: 4.17.21
       redent: 3.0.0
-      vitest: 1.2.1(@vitest/ui@1.2.1)(jsdom@23.2.0)
+      vitest: 1.2.1(@vitest/ui@1.2.1)(jsdom@24.0.0)
     dev: true
 
   /@testing-library/user-event@14.5.1(@testing-library/dom@9.3.3):
@@ -8017,12 +8009,6 @@ packages:
     engines: {node: '>=12.0.0'}
     dependencies:
       open: 8.4.2
-    dev: true
-
-  /bidi-js@1.0.3:
-    resolution: {integrity: sha512-RKshQI1R3YQ+n9YJz2QQ147P66ELpa1FQEg20Dk8oW9t2KgLbpDLLp9aGZ7y8WHSshDknG0bknqGw5/tyCs5tw==}
-    dependencies:
-      require-from-string: 2.0.2
     dev: true
 
   /big-integer@1.6.52:
@@ -10125,7 +10111,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 6.19.0(@typescript-eslint/parser@6.19.0)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/utils': 6.19.1(eslint@8.56.0)(typescript@5.3.3)
       eslint: 8.56.0
-      vitest: 1.2.1(@vitest/ui@1.2.1)(jsdom@23.2.0)
+      vitest: 1.2.1(@vitest/ui@1.2.1)(jsdom@24.0.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -12798,8 +12784,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /jsdom@23.2.0:
-    resolution: {integrity: sha512-L88oL7D/8ufIES+Zjz7v0aes+oBMh2Xnh3ygWvL0OaICOomKEPKuPnIfBJekiXr+BHbbMjrWn/xqrDQuxFTeyA==}
+  /jsdom@24.0.0:
+    resolution: {integrity: sha512-UDS2NayCvmXSXVP6mpTj+73JnNQadZlr9N68189xib2tx5Mls7swlTNao26IoHv46BZJFvXygyRtyXd1feAk1A==}
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
@@ -12807,7 +12793,6 @@ packages:
       canvas:
         optional: true
     dependencies:
-      '@asamuzakjp/dom-selector': 2.0.2
       cssstyle: 4.0.1
       data-urls: 5.0.0
       decimal.js: 10.4.3
@@ -12816,6 +12801,7 @@ packages:
       http-proxy-agent: 7.0.0
       https-proxy-agent: 7.0.2
       is-potential-custom-element-name: 1.0.1
+      nwsapi: 2.2.7
       parse5: 7.1.2
       rrweb-cssom: 0.6.0
       saxes: 6.0.0
@@ -18575,7 +18561,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.2.1(@vitest/ui@1.2.1)(jsdom@23.2.0):
+  /vitest@1.2.1(@vitest/ui@1.2.1)(jsdom@24.0.0):
     resolution: {integrity: sha512-TRph8N8rnSDa5M2wKWJCMnztCZS9cDcgVTQ6tsTFTG/odHJ4l5yNVqvbeDJYJRZ6is3uxaEpFs8LL6QM+YFSdA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -18611,7 +18597,7 @@ packages:
       chai: 4.3.10
       debug: 4.3.4
       execa: 8.0.1
-      jsdom: 23.2.0
+      jsdom: 24.0.0
       local-pkg: 0.5.0
       magic-string: 0.30.5
       pathe: 1.1.2
