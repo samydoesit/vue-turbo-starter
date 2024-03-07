@@ -94,6 +94,9 @@
         "patch",
         "minor",
         "major"
+      ],
+      "excludePackageNames": [
+        "vitest"
       ]
     },
     {
@@ -124,14 +127,15 @@
     {
       "groupName": "testing",
       "commitMessageTopic": "testing dependency {{depName}}",
-      "matchPaths": [
-        "packages/vitest/package.json",
-        "apps/vite/package.json"
-      ],
       "matchPackageNames": [
-        "vitest"
+        "vitest",
+        "@vitest/ui",
+        "@vue/test-utils",
+        "@testing-library/vue",
+        "@pinia/testing"
       ],
       "matchPackagePatterns": [
+        "vitest",
         "jsdom"
       ],
       "matchUpdateTypes": [
