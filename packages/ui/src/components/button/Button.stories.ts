@@ -33,7 +33,14 @@ const meta = {
       const click = action('click')
       return { args, click }
     },
-    template: '<Button v-bind="args" @click="click"><template v-if="args.icon" #icon><IconCamera /></template>{{ args.text }}</Button>',
+    template: /* html */`
+      <Button v-bind="args" @click="click">
+        <template v-if="args.icon" #icon>
+          <IconCamera />
+        </template>
+        {{ args.text }}
+      </Button>
+    `,
   }),
 } satisfies Meta<typeof Button>
 
