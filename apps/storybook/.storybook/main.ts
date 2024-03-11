@@ -5,7 +5,7 @@ import Unocss from 'unocss/vite'
 import { alias } from '../../../alias'
 
 const config: StorybookConfig = {
-  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx|mdx)', '../../../packages/ui/src/components/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  stories: ['../stories/**/*.@(mdx|stories.@(js|jsx|ts|tsx))', '../../../packages/ui/src/components/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
   framework: {
     name: '@storybook/vue3-vite',
     options: {},
