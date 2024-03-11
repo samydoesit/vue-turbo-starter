@@ -58,7 +58,7 @@ uses:
 - vue3
 - nuxt3
 - vite
-- storybook v7
+- storybook v8
 - histoire
 - unoCSS (presetWind - tailwind/windi)
 - vitest (monorepo setup)
