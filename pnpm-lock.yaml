@@ -357,8 +357,8 @@ importers:
   packages/ui:
     dependencies:
       '@types/mdx':
-        specifier: 2.0.11
-        version: 2.0.11
+        specifier: 2.0.12
+        version: 2.0.12
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -3097,7 +3097,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/mdx': 2.0.11
+      '@types/mdx': 2.0.12
       '@types/react': 18.2.38
       react: 17.0.2
     dev: true
@@ -5589,6 +5589,10 @@ packages:
 
   /@types/mdx@2.0.11:
     resolution: {integrity: sha512-HM5bwOaIQJIQbAYfax35HCKxx7a3KrK3nBtIqJgSOitivTD1y3oW9P3rxY9RkXYPUk7y/AjAohfHKmFpGE79zw==}
+    dev: true
+
+  /@types/mdx@2.0.12:
+    resolution: {integrity: sha512-H9VZ9YqE+H28FQVchC83RCs5xQ2J7mAAv6qdDEaWmXEVl3OpdH+xfrSUzQ1lp7U7oSTRZ0RvW08ASPJsYBi7Cw==}
 
   /@types/mime@1.3.5:
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
