@@ -30,8 +30,8 @@ importers:
         specifier: link:packages/eslint-config-custom
         version: link:packages/eslint-config-custom
       eslint-flat-config-viewer:
-        specifier: 0.1.14
-        version: 0.1.14(eslint@8.57.0)(typescript@5.4.3)
+        specifier: 0.1.16
+        version: 0.1.16(eslint@8.57.0)(typescript@5.4.3)
       execa:
         specifier: 8.0.1
         version: 8.0.1
@@ -3450,7 +3450,7 @@ packages:
       jiti: 1.21.0
       mri: 1.2.0
       nanoid: 4.0.2
-      ofetch: 1.3.3
+      ofetch: 1.3.4
       parse-git-config: 3.0.0
       pathe: 1.1.2
       rc9: 2.1.1
@@ -5949,8 +5949,22 @@ packages:
       '@unhead/shared': 1.8.20
     dev: true
 
+  /@unhead/dom@1.9.2:
+    resolution: {integrity: sha512-yREmUAfYJsPV9qR3G85MkdH+FdvsHf8AIJRm7FgQidrPxFr8tCICdID3+jXULz3oq8pFye1tAyHlBHXeq3SIpA==}
+    dependencies:
+      '@unhead/schema': 1.9.2
+      '@unhead/shared': 1.9.2
+    dev: true
+
   /@unhead/schema@1.8.20:
     resolution: {integrity: sha512-n0e5jsKino8JTHc4wpr4l8MXXIrj0muYYAEVa0WSYkIVnMiBr1Ik3l6elhCr4fdSyJ3M2DQQleea/oZCr11XCw==}
+    dependencies:
+      hookable: 5.5.3
+      zhead: 2.2.4
+    dev: true
+
+  /@unhead/schema@1.9.2:
+    resolution: {integrity: sha512-NRCAcuWtD2WCL8u3qR1yn41JpDB+ExjBnSLAuJseOD9+XJjQBqPRgx/bhxZ3Dx6vrrCnCF+SvKr+W1pa+3mWdA==}
     dependencies:
       hookable: 5.5.3
       zhead: 2.2.4
@@ -5962,11 +5976,24 @@ packages:
       '@unhead/schema': 1.8.20
     dev: true
 
+  /@unhead/shared@1.9.2:
+    resolution: {integrity: sha512-jXQ4vK9wXf66hflOSBUXQKVsOLJrYVSOknDH+9PTwz5CIgJv/Y/o/NkRCJjyf5W7qFf605Te28lbTeLumT+BeQ==}
+    dependencies:
+      '@unhead/schema': 1.9.2
+    dev: true
+
   /@unhead/ssr@1.8.20:
     resolution: {integrity: sha512-Cq1NcdYZ/IAkJ0muqdOBxJXb5dn+uV+RvIXDykRb9lGgriU/S0fzUw8XYTYMwLlvW6rSMrtRx319hz2D3ZrBkA==}
     dependencies:
       '@unhead/schema': 1.8.20
       '@unhead/shared': 1.8.20
+    dev: true
+
+  /@unhead/ssr@1.9.2:
+    resolution: {integrity: sha512-XKNAK3A67ZZpNq8arTyUj7brmTOYH3PJrVSx546MCQQvCuP6U3brWyIPy12+a/XiAxr4z62vd2IHCZya8OrZrQ==}
+    dependencies:
+      '@unhead/schema': 1.9.2
+      '@unhead/shared': 1.9.2
     dev: true
 
   /@unhead/vue@1.8.20(vue@3.4.21):
@@ -9196,14 +9223,14 @@ packages:
       '@types/eslint': 8.56.6
     dev: true
 
-  /eslint-flat-config-viewer@0.1.14(eslint@8.57.0)(typescript@5.4.3):
-    resolution: {integrity: sha512-2ErHkowC7N9jiLHYAEI7lrm9phEPkyuZTCbRjVmj3B9yk/zVHhLCSlPGWzkgAEDW2MQRGSkvlbbhD7C9FRhYXQ==}
+  /eslint-flat-config-viewer@0.1.16(eslint@8.57.0)(typescript@5.4.3):
+    resolution: {integrity: sha512-kJ6YmlFbxO/naS2QJb9g5ZHaw5GLCB6/cQaukhHd36d4n6u3sNOlcM9Nmd5UfWxDgr4jpJkrNIyYjj8qZitoHw==}
     hasBin: true
     peerDependencies:
       eslint: ^8.50.0
     dependencies:
-      '@unhead/shared': 1.8.20
-      '@unhead/ssr': 1.8.20
+      '@unhead/shared': 1.9.2
+      '@unhead/ssr': 1.9.2
       chokidar: 3.6.0
       consola: 3.2.3
       devalue: 4.3.2
@@ -9211,9 +9238,9 @@ packages:
       get-port-please: 3.1.2
       jiti: 1.21.0
       minimatch: 9.0.3
-      ofetch: 1.3.3
+      ofetch: 1.3.4
       open: 10.1.0
-      unhead: 1.8.20
+      unhead: 1.9.2
       vue: 3.4.21(typescript@5.4.3)
       vue-bundle-renderer: 2.0.0
       ws: 8.16.0
@@ -13557,7 +13584,7 @@ packages:
       mlly: 1.6.1
       mri: 1.2.0
       node-fetch-native: 1.6.4
-      ofetch: 1.3.3
+      ofetch: 1.3.4
       ohash: 1.1.3
       openapi-typescript: 6.7.5
       pathe: 1.1.2
@@ -16981,6 +17008,15 @@ packages:
       hookable: 5.5.3
     dev: true
 
+  /unhead@1.9.2:
+    resolution: {integrity: sha512-CveP8bjL8gUJnZ1NqcMU1roe+VuM14wr0cJfNek/LCSI2i968mHDD5tbDXNcMSAVOhffKj6WkTngTUKNOZxA7g==}
+    dependencies:
+      '@unhead/dom': 1.9.2
+      '@unhead/schema': 1.9.2
+      '@unhead/shared': 1.9.2
+      hookable: 5.5.3
+    dev: true
+
   /unicode-canonical-property-names-ecmascript@2.0.0:
     resolution: {integrity: sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ==}
     engines: {node: '>=4'}
@@ -17380,7 +17416,7 @@ packages:
       lru-cache: 10.2.0
       mri: 1.2.0
       node-fetch-native: 1.6.4
-      ofetch: 1.3.3
+      ofetch: 1.3.4
       ufo: 1.5.3
     transitivePeerDependencies:
       - uWebSockets.js
