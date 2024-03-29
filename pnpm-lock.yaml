@@ -30,8 +30,8 @@ importers:
         specifier: link:packages/eslint-config-custom
         version: link:packages/eslint-config-custom
       eslint-flat-config-viewer:
-        specifier: 0.1.18
-        version: 0.1.18(eslint@8.57.0)(typescript@5.4.3)
+        specifier: 0.1.19
+        version: 0.1.19(eslint@8.57.0)(typescript@5.4.3)
       execa:
         specifier: 8.0.1
         version: 8.0.1
@@ -9195,8 +9195,8 @@ packages:
       '@types/eslint': 8.56.6
     dev: true
 
-  /eslint-flat-config-viewer@0.1.18(eslint@8.57.0)(typescript@5.4.3):
-    resolution: {integrity: sha512-9kOdAkwny870PmAU+Lf7V3IEwLL3kL7hz00cvCFPg4MEv8QwEiXIcNndw17AeKZ3J60bZTEJGikN4WOUjZ/UuA==}
+  /eslint-flat-config-viewer@0.1.19(eslint@8.57.0)(typescript@5.4.3):
+    resolution: {integrity: sha512-P+H9M2GmDYFmEra165LaQ+k+J8vOBRAJVWa6wedVrXPMYWf1u9H3eWI5TjQixaOelX4rV1qT1MOaYmoNdx/MZQ==}
     hasBin: true
     peerDependencies:
       eslint: ^8.50.0
@@ -9207,6 +9207,7 @@ packages:
       consola: 3.2.3
       devalue: 4.3.2
       eslint: 8.57.0
+      fast-glob: 3.3.2
       get-port-please: 3.1.2
       jiti: 1.21.0
       minimatch: 9.0.3
