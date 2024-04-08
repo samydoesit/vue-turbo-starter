@@ -73,8 +73,8 @@ importers:
         version: 3.4.21(typescript@5.4.4)
     devDependencies:
       '@histoire/plugin-vue':
-        specifier: 0.17.15
-        version: 0.17.15(histoire@0.17.15)(vite@5.2.8)(vue@3.4.21)
+        specifier: 0.17.16
+        version: 0.17.16(histoire@0.17.16)(vite@5.2.8)(vue@3.4.21)
       '@unocss/reset':
         specifier: 0.58.9
         version: 0.58.9
@@ -85,8 +85,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/css-preset
       histoire:
-        specifier: 0.17.15
-        version: 0.17.15(vite@5.2.8)
+        specifier: 0.17.16
+        version: 0.17.16(vite@5.2.8)
       tsconfig:
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -2582,12 +2582,12 @@ packages:
       '@hapi/hoek': 9.3.0
     dev: true
 
-  /@histoire/app@0.17.15(vite@5.2.8):
-    resolution: {integrity: sha512-sWRzZJ130RvCMPKFZYf9ebaefHY82Ljj8sxwrndNx2Lah3K74aeir0rzYDYRFx3lEmPLTCrXrNEIwQR9V+J8ug==}
+  /@histoire/app@0.17.16(vite@5.2.8):
+    resolution: {integrity: sha512-ds7aF9xzMSaLl+aQZYPGw8EllPJwn9Jb+DdVRdfkqAx2ZN4Lc2Ut3j5E+2IVz2DKLvP8Zio7CPqoatP2UfaoDg==}
     dependencies:
-      '@histoire/controls': 0.17.15(vite@5.2.8)
-      '@histoire/shared': 0.17.15(vite@5.2.8)
-      '@histoire/vendors': 0.17.15
+      '@histoire/controls': 0.17.16(vite@5.2.8)
+      '@histoire/shared': 0.17.16(vite@5.2.8)
+      '@histoire/vendors': 0.17.16
       '@types/flexsearch': 0.7.6
       flexsearch: 0.7.21
       shiki-es: 0.2.0
@@ -2595,8 +2595,8 @@ packages:
       - vite
     dev: true
 
-  /@histoire/controls@0.17.15(vite@5.2.8):
-    resolution: {integrity: sha512-ijM4PNsAYAZIKAMNzTqKuJnJBtWyHxFFJxNFDYgJl7ROlyKLwkUNnJSZ7BcorvraRqczOQPhfl1orCAJLMIXZg==}
+  /@histoire/controls@0.17.16(vite@5.2.8):
+    resolution: {integrity: sha512-yU5xGpAckcExYVdfnN1w7HFg1SwnOHW96RM+6THgu3ejPjRDVAoyMumM4xRWuY/y3PzlmW7kSoLJu9ykwufIGg==}
     dependencies:
       '@codemirror/commands': 6.3.3
       '@codemirror/lang-json': 6.0.1
@@ -2605,24 +2605,24 @@ packages:
       '@codemirror/state': 6.4.0
       '@codemirror/theme-one-dark': 6.1.2
       '@codemirror/view': 6.23.0
-      '@histoire/shared': 0.17.15(vite@5.2.8)
-      '@histoire/vendors': 0.17.15
+      '@histoire/shared': 0.17.16(vite@5.2.8)
+      '@histoire/vendors': 0.17.16
     transitivePeerDependencies:
       - vite
     dev: true
 
-  /@histoire/plugin-vue@0.17.15(histoire@0.17.15)(vite@5.2.8)(vue@3.4.21):
-    resolution: {integrity: sha512-4EHuLWatxEcx4umst5OouAY214hkgVMf4nvSztasV77s17OuIDOBc85oZ07rXMtT2DfkEUsxixRt8p4eK57TTA==}
+  /@histoire/plugin-vue@0.17.16(histoire@0.17.16)(vite@5.2.8)(vue@3.4.21):
+    resolution: {integrity: sha512-sne2u5pIWy8hyivhYGA5P1lA3z/jstOCkNN9DnneLjan347exD3ASjbpVyMQjISUKCfNlY0dXKnlCgac7d6Qlg==}
     peerDependencies:
-      histoire: ^0.17.15
+      histoire: ^0.17.16
       vue: ^3.2.47
     dependencies:
-      '@histoire/controls': 0.17.15(vite@5.2.8)
-      '@histoire/shared': 0.17.15(vite@5.2.8)
-      '@histoire/vendors': 0.17.15
+      '@histoire/controls': 0.17.16(vite@5.2.8)
+      '@histoire/shared': 0.17.16(vite@5.2.8)
+      '@histoire/vendors': 0.17.16
       change-case: 4.1.2
       globby: 13.2.2
-      histoire: 0.17.15(vite@5.2.8)
+      histoire: 0.17.16(vite@5.2.8)
       launch-editor: 2.6.1
       pathe: 1.1.2
       vue: 3.4.21(typescript@5.4.4)
@@ -2630,12 +2630,12 @@ packages:
       - vite
     dev: true
 
-  /@histoire/shared@0.17.15(vite@5.2.8):
-    resolution: {integrity: sha512-a1nt8jtyZZiPUPSCx8Sm88uy8BPAbmyQJcTUFkF13Pyv+PjLY0KbM9f4D8aTAERJxxmQAN51+hGZtgb/mt29qg==}
+  /@histoire/shared@0.17.16(vite@5.2.8):
+    resolution: {integrity: sha512-VsrBSh6EVQDttb/K512vurgUb1PwkAavt4VQWZ7LrQNCGhuoz/EJ6wLMpI0xkMRGvblBjoy204HOh+0W9vDBog==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || 4
     dependencies:
-      '@histoire/vendors': 0.17.15
+      '@histoire/vendors': 0.17.16
       '@types/fs-extra': 9.0.13
       '@types/markdown-it': 12.2.3
       chokidar: 3.6.0
@@ -2644,8 +2644,8 @@ packages:
       vite: 5.2.8(@types/node@20.12.5)
     dev: true
 
-  /@histoire/vendors@0.17.15:
-    resolution: {integrity: sha512-fPC61xGm9SuHfdm1/KB5OrrAU+5ZO3M7aSUWowis4ZML//VOHkz/hLX6yV7ItrcSSwTWgVfzUeeiC2Y2uLeC2g==}
+  /@histoire/vendors@0.17.16:
+    resolution: {integrity: sha512-J/e1sjT/TaFT44aDkszRbqHnNvL7Bwrbl0GgqqH+T1MlkFv9e6prDIGzs8wvtdIDQbCq2T8NZOYhO/PGrcuJUA==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.14:
@@ -10930,17 +10930,17 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /histoire@0.17.15(vite@5.2.8):
-    resolution: {integrity: sha512-DiRMSIgj340z+zikqf0f3Pj0CTv2/xtdBMBIAO1EARat+QXxMwumbfK41Gi7f9IIBr+UVmomNcwFxVY2EM/vrw==}
+  /histoire@0.17.16(vite@5.2.8):
+    resolution: {integrity: sha512-zN67L0mbhJzreCz6VM9N9E203FBs0Adanf597bA8e4GAiLABHmcimsihOLaHQRG9g0qvjr3mU0H7Wi2wsYDRkg==}
     hasBin: true
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || 4
     dependencies:
       '@akryum/tinypool': 0.3.1
-      '@histoire/app': 0.17.15(vite@5.2.8)
-      '@histoire/controls': 0.17.15(vite@5.2.8)
-      '@histoire/shared': 0.17.15(vite@5.2.8)
-      '@histoire/vendors': 0.17.15
+      '@histoire/app': 0.17.16(vite@5.2.8)
+      '@histoire/controls': 0.17.16(vite@5.2.8)
+      '@histoire/shared': 0.17.16(vite@5.2.8)
+      '@histoire/vendors': 0.17.16
       '@types/flexsearch': 0.7.6
       '@types/markdown-it': 12.2.3
       birpc: 0.1.1
