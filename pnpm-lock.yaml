@@ -48,8 +48,8 @@ importers:
         specifier: 7.6.0
         version: 7.6.0
       sherif:
-        specifier: 0.8.1
-        version: 0.8.1
+        specifier: 0.8.4
+        version: 0.8.4
       simple-git-hooks:
         specifier: 2.11.1
         version: 2.11.1
@@ -16107,64 +16107,64 @@ packages:
     resolution: {integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==}
     dev: true
 
-  /sherif-darwin-arm64@0.8.1:
-    resolution: {integrity: sha512-CEpYv6Mg35wWe23hodA+SH6/G3Xq5sox2s8cHMH3rF1YwHBtrZZZ1+0r17jdwGMLMGzyxdV2CoAFH6lRd4PQag==}
+  /sherif-darwin-arm64@0.8.4:
+    resolution: {integrity: sha512-mFJO9BjwjXnzn7UQ0moLyJzDWu68g71E1jNKujkuS8a4UQ8jV2O6gosOqfqPMHLLiZjZwuVZNnp59ecqP4rVpg==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /sherif-darwin-x64@0.8.1:
-    resolution: {integrity: sha512-u0mBU15wPSKXWYGC1DvNfC/ZKD1v7fQQjhP5u5gek7eGY+NCQRKWX6Y6nsyOLvZPSCxhPoiGv79/LRIEi5Z5wQ==}
+  /sherif-darwin-x64@0.8.4:
+    resolution: {integrity: sha512-71keXqkH27FvN5q3OmddS7FXaAVk0iBXGlfZhsuuNSR00CnSndM+AS8ibUH2okvF55HdPK6x6VovoEG3PvqCmw==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /sherif-linux-arm64@0.8.1:
-    resolution: {integrity: sha512-/oClgMG35zra4CbSI6KTN2fM8Ix7RTF6G+F7I4caVGfhmXJZk+sIgnQJ09RB+lwuii1nYn5EFWqDD2Y6AWvoOQ==}
+  /sherif-linux-arm64@0.8.4:
+    resolution: {integrity: sha512-hQwFHQ6cGDOkKSa1zuEAc8WIsSgY0a4MFXEiHIPfRbJdE+leDcAVDovvpPIQZRUgbSe96mQ5QJg5fw52+eySrw==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /sherif-linux-x64@0.8.1:
-    resolution: {integrity: sha512-7xzh9xx/Sc8/XSPT75iOPzqli3vWe3yhaPgODcRi5gNrS38rwiqP0SXA9uZN/tXinR4xnDNCtZ5QmKnrBlWiRw==}
+  /sherif-linux-x64@0.8.4:
+    resolution: {integrity: sha512-S2BK9YLc12JMxg8ODIcceRW7Y4rmgrIEzUBOqp6NSeOz4Wq/34YdtimNRHzwrDOgjTpgUA/pt+TwPsGPXr+gNA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /sherif-windows-arm64@0.8.1:
-    resolution: {integrity: sha512-DFYnClmaUw5MVAvUWr8masgf/HKFOjiHAOOegCLvs6mZHdIcz4D1/noQoGZTEhCNdBGr557WScK4IReUWrfYPQ==}
+  /sherif-windows-arm64@0.8.4:
+    resolution: {integrity: sha512-9IBeX13AeCQ9ETRqfGR7GQqcyRxu4jlXyO7TNQVKU/kBrMjWjYYic/VKwHB37q0xealXUNmB9nD08hfMmdnidg==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /sherif-windows-x64@0.8.1:
-    resolution: {integrity: sha512-BCgAKEPYG3jZ+AuvjLqP4UWnhTbSQpQoGYIZHGV8SRkdh9K/odvgv5Agvjq2SLHkM+jS2YERMxo8ZAOvtvL3WQ==}
+  /sherif-windows-x64@0.8.4:
+    resolution: {integrity: sha512-PR1tjnCLxcdYaC8FRM3K6ldIwaJDEJn0tOt6e2V6R7OFMDwF8CJOSq24RzGgSmJRBFtlLqU94sXTDPfUCR0YPw==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /sherif@0.8.1:
-    resolution: {integrity: sha512-pT1vcHW5fZWZERobCvEaz2gxgOHcDTa2UF7KRsxZ4eunMWyL93smoVd55wWCBOOGMwhO7wnI+l07SYtiB9meMA==}
+  /sherif@0.8.4:
+    resolution: {integrity: sha512-L2tNE60i5gRNe5eFNSjUAqt2rCIbKj9jp/50zCfsw8bSBX6noHamR7FDhaecyrNBk6ZgGEEAjxGe4C6iqelwZw==}
     hasBin: true
     optionalDependencies:
-      sherif-darwin-arm64: 0.8.1
-      sherif-darwin-x64: 0.8.1
-      sherif-linux-arm64: 0.8.1
-      sherif-linux-x64: 0.8.1
-      sherif-windows-arm64: 0.8.1
-      sherif-windows-x64: 0.8.1
+      sherif-darwin-arm64: 0.8.4
+      sherif-darwin-x64: 0.8.4
+      sherif-linux-arm64: 0.8.4
+      sherif-linux-x64: 0.8.4
+      sherif-windows-arm64: 0.8.4
+      sherif-windows-x64: 0.8.4
     dev: true
 
   /shiki-es@0.2.0:
