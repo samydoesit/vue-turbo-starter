@@ -1,5 +1,4 @@
-/* eslint-disable no-console */
-// eslint-disable-next-line import/no-named-as-default
+import process from 'node:process'
 import prompts from 'prompts'
 import { valid } from 'semver'
 import colors from 'picocolors'
@@ -16,7 +15,7 @@ import {
   updateVersion,
 } from './releaseUtils'
 
-async function main (): Promise<void> {
+async function main(): Promise<void> {
   let targetVersion: string | undefined
 
   const { pkg }: { pkg: string } = await prompts({
@@ -26,7 +25,8 @@ async function main (): Promise<void> {
     choices: packages.map(i => ({ value: i, title: i })),
   })
 
-  if (!pkg) { return }
+  if (!pkg)
+    return
 
   await logRecentCommits(pkg)
 
@@ -48,21 +48,20 @@ async function main (): Promise<void> {
         initial: currentVersion,
       })
       targetVersion = res.version
-    } else {
+    }
+    else {
       targetVersion = release
     }
   }
 
-  if (!valid(targetVersion)) {
+  if (!valid(targetVersion))
     throw new Error(`invalid target version: ${targetVersion}`)
-  }
 
-  const tag =
-    pkgName === 'vite' ? `v${targetVersion}` : `${pkgName}@${targetVersion}`
+  const tag
+    = pkgName === 'vite' ? `v${targetVersion}` : `${pkgName}@${targetVersion}`
 
-  if (targetVersion.includes('beta') && !args.tag) {
+  if (targetVersion.includes('beta') && !args.tag)
     args.tag = 'beta'
-  }
 
   const { yes }: { yes: boolean } = await prompts({
     type: 'confirm',
@@ -70,9 +69,8 @@ async function main (): Promise<void> {
     message: `Releasing ${colors.yellow(tag)} Confirm?`,
   })
 
-  if (!yes) {
+  if (!yes)
     return
-  }
 
   step('\nUpdating package version...')
   updateVersion(pkgPath, targetVersion)
@@ -98,7 +96,8 @@ async function main (): Promise<void> {
     await runIfNotDry('git', ['add', '-A'])
     await runIfNotDry('git', ['commit', '-m', `release: ${tag}`])
     await runIfNotDry('git', ['tag', tag])
-  } else {
+  }
+  else {
     console.log('No changes to commit.')
     return
   }
@@ -109,7 +108,8 @@ async function main (): Promise<void> {
 
   if (isDryRun) {
     console.log('\nDry run finished - run git diff to see package changes.')
-  } else {
+  }
+  else {
     console.log(
       colors.green(
         '\nPushed, publishing should starts shortly on CI.\nhttps://github.com/vitejs/vite/actions/workflows/publish.yml',

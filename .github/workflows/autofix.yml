@@ -3,7 +3,7 @@ name: autofix.ci
 on:
   pull_request:
   push:
-    branches: [ "main" ]
+    branches: [main]
 permissions:
   contents: read
 
@@ -29,10 +29,11 @@ jobs:
       - name: Install
         run: nci
         env:
-          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
 
       # Run lint
       - name: 💪 Lint
-        run: nr lint -- --fix
+        # run: nr lint -- --fix
+        run: nr lint --fix
 
       - uses: autofix-ci/action@ea32e3a12414e6d3183163c3424a7d7a8631ad84

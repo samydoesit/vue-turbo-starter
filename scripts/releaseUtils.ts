@@ -1,15 +1,15 @@
-/* eslint-disable no-console */
 /**
  * modified from https://github.com/vuejs/core/blob/master/scripts/release.js
  */
-import { readFileSync, writeFileSync, existsSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
+import process from 'node:process'
 import colors from 'picocolors'
-import type { Options as ExecaOptions } from 'execa'
-import { execa } from 'execa'
 import type { ReleaseType } from 'semver'
 import { inc as semverInc } from 'semver'
 import minimist from 'minimist'
+import type { Options as ExecaOptions, ResultPromise } from 'execa'
+import { execa } from 'execa'
 
 export const args = minimist(process.argv.slice(2))
 
@@ -48,25 +48,23 @@ export const versionIncrements: ReleaseType[] = [
   // 'prerelease'
 ]
 
-export async function getPackageInfo (pkgName: string) {
+export async function getPackageInfo(pkgName: string) {
   const projectPath = realPackages.includes(pkgName) ? 'packages/' : 'apps/'
   const pkgDir = path.resolve(__dirname, `../${projectPath}${pkgName}`)
 
-  if (!existsSync(pkgDir)) {
+  if (!existsSync(pkgDir))
     throw new Error(`Package ${pkgName} not found`)
-  }
 
   const pkgPath = path.resolve(pkgDir, 'package.json')
   const pkg: {
-     name: string
-     version: string
-     private?: boolean
-   } = await import(pkgPath)
+    name: string
+    version: string
+    private?: boolean
+  } = await import(pkgPath)
   const currentVersion = pkg.version
 
-  if (pkg.private) {
+  if (pkg.private)
     throw new Error(`Package ${pkgName} is private`)
-  }
 
   return {
     pkg,
@@ -77,20 +75,18 @@ export async function getPackageInfo (pkgName: string) {
   }
 }
 
-// eslint-disable-next-line require-await
-export async function run (
+export function run<EO extends ExecaOptions>(
   bin: string,
   args: string[],
-  opts: ExecaOptions<string> = {},
-) {
-  return execa(bin, args, { stdio: 'inherit', ...opts })
+  opts?: EO,
+): ResultPromise<EO & (keyof EO extends 'stdio' ? unknown : { stdio: 'inherit' })> {
+  return execa(bin, args, { stdio: 'inherit', ...opts }) as any
 }
 
-// eslint-disable-next-line require-await
-export async function dryRun (
+export async function dryRun<EO extends ExecaOptions>(
   bin: string,
   args: string[],
-  opts?: ExecaOptions<string>,
+  opts?: EO,
 ) {
   return console.log(
     colors.blue(`[dryrun] ${bin} ${args.join(' ')}`),
@@ -100,15 +96,15 @@ export async function dryRun (
 
 export const runIfNotDry = isDryRun ? dryRun : run
 
-export function step (msg: string) {
+export function step(msg: string) {
   return console.log(colors.cyan(msg))
 }
 
-export function getVersionChoices (currentVersion: string) {
+export function getVersionChoices(currentVersion: string) {
   const currentBeta = currentVersion.includes('beta')
 
   const inc: (i: ReleaseType) => string = i =>
-     semverInc(currentVersion, i, 'beta')!
+    semverInc(currentVersion, i, 'beta')!
 
   const versionChoices = [
     {
@@ -149,27 +145,27 @@ export function getVersionChoices (currentVersion: string) {
   return versionChoices
 }
 
-export function updateVersion (pkgPath: string, version: string): void {
+export function updateVersion(pkgPath: string, version: string): void {
   const pkg = JSON.parse(readFileSync(pkgPath, 'utf-8'))
   pkg.version = version
-  writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n')
+  writeFileSync(pkgPath, `${JSON.stringify(pkg, null, 2)}\n`)
 }
 
-export async function publishPackage (
+export async function publishPackage(
   pkdDir: string,
   tag?: string,
 ): Promise<void> {
   const publicArgs = ['publish', '--access', 'public']
-  if (tag) {
+  if (tag)
     publicArgs.push('--tag', tag)
-  }
+
   await runIfNotDry('npm', publicArgs, {
     stdio: 'pipe',
     cwd: pkdDir,
   })
 }
 
-export async function getLatestTag (pkgName: string) {
+export async function getLatestTag(pkgName: string) {
   const tags = (await run('git', ['tag'], { stdio: 'pipe' })).stdout
     .split(/\n/)
     .filter(Boolean)
@@ -180,9 +176,10 @@ export async function getLatestTag (pkgName: string) {
     .reverse()[0]
 }
 
-export async function logRecentCommits (pkgName: string) {
+export async function logRecentCommits(pkgName: string) {
   const tag = await getLatestTag(pkgName)
-  if (!tag) { return }
+  if (!tag)
+    return
   const sha = await run('git', ['rev-list', '-n', '1', tag], {
     stdio: 'pipe',
   }).then(res => res.stdout.trim())
