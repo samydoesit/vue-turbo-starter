@@ -1,5 +1,5 @@
 // Invoked on the commit-msg git hook by simple-git-hooks.
-
+import process from 'node:process'
 import { readFileSync } from 'node:fs'
 import colors from 'picocolors'
 

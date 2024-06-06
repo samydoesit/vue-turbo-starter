@@ -3,12 +3,13 @@
  */
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
+import process from 'node:process'
 import colors from 'picocolors'
-import type { Options as ExecaOptions } from 'execa'
-import { execa } from 'execa'
 import type { ReleaseType } from 'semver'
 import { inc as semverInc } from 'semver'
 import minimist from 'minimist'
+import type { Options as ExecaOptions, ResultPromise } from 'execa'
+import { execa } from 'execa'
 
 export const args = minimist(process.argv.slice(2))
 
@@ -51,9 +52,8 @@ export async function getPackageInfo(pkgName: string) {
   const projectPath = realPackages.includes(pkgName) ? 'packages/' : 'apps/'
   const pkgDir = path.resolve(__dirname, `../${projectPath}${pkgName}`)
 
-  if (!existsSync(pkgDir)) {
+  if (!existsSync(pkgDir))
     throw new Error(`Package ${pkgName} not found`)
-  }
 
   const pkgPath = path.resolve(pkgDir, 'package.json')
   const pkg: {
@@ -63,9 +63,8 @@ export async function getPackageInfo(pkgName: string) {
   } = await import(pkgPath)
   const currentVersion = pkg.version
 
-  if (pkg.private) {
+  if (pkg.private)
     throw new Error(`Package ${pkgName} is private`)
-  }
 
   return {
     pkg,
@@ -76,18 +75,18 @@ export async function getPackageInfo(pkgName: string) {
   }
 }
 
-export async function run(
+export function run<EO extends ExecaOptions>(
   bin: string,
   args: string[],
-  opts: ExecaOptions<string> = {},
-) {
-  return execa(bin, args, { stdio: 'inherit', ...opts })
+  opts?: EO,
+): ResultPromise<EO & (keyof EO extends 'stdio' ? unknown : { stdio: 'inherit' })> {
+  return execa(bin, args, { stdio: 'inherit', ...opts }) as any
 }
 
-export async function dryRun(
+export async function dryRun<EO extends ExecaOptions>(
   bin: string,
   args: string[],
-  opts?: ExecaOptions<string>,
+  opts?: EO,
 ) {
   return console.log(
     colors.blue(`[dryrun] ${bin} ${args.join(' ')}`),
@@ -157,9 +156,9 @@ export async function publishPackage(
   tag?: string,
 ): Promise<void> {
   const publicArgs = ['publish', '--access', 'public']
-  if (tag) {
+  if (tag)
     publicArgs.push('--tag', tag)
-  }
+
   await runIfNotDry('npm', publicArgs, {
     stdio: 'pipe',
     cwd: pkdDir,
@@ -179,7 +178,8 @@ export async function getLatestTag(pkgName: string) {
 
 export async function logRecentCommits(pkgName: string) {
   const tag = await getLatestTag(pkgName)
-  if (!tag) { return }
+  if (!tag)
+    return
   const sha = await run('git', ['rev-list', '-n', '1', tag], {
     stdio: 'pipe',
   }).then(res => res.stdout.trim())

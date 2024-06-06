@@ -1,3 +1,4 @@
+import process from 'node:process'
 import prompts from 'prompts'
 import { valid } from 'semver'
 import colors from 'picocolors'
@@ -24,7 +25,8 @@ async function main(): Promise<void> {
     choices: packages.map(i => ({ value: i, title: i })),
   })
 
-  if (!pkg) { return }
+  if (!pkg)
+    return
 
   await logRecentCommits(pkg)
 
@@ -52,16 +54,14 @@ async function main(): Promise<void> {
     }
   }
 
-  if (!valid(targetVersion)) {
+  if (!valid(targetVersion))
     throw new Error(`invalid target version: ${targetVersion}`)
-  }
 
   const tag
     = pkgName === 'vite' ? `v${targetVersion}` : `${pkgName}@${targetVersion}`
 
-  if (targetVersion.includes('beta') && !args.tag) {
+  if (targetVersion.includes('beta') && !args.tag)
     args.tag = 'beta'
-  }
 
   const { yes }: { yes: boolean } = await prompts({
     type: 'confirm',
@@ -69,9 +69,8 @@ async function main(): Promise<void> {
     message: `Releasing ${colors.yellow(tag)} Confirm?`,
   })
 
-  if (!yes) {
+  if (!yes)
     return
-  }
 
   step('\nUpdating package version...')
   updateVersion(pkgPath, targetVersion)
