@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: 2.23.1
-        version: 2.23.1(@unocss/eslint-plugin@0.61.5(eslint@9.7.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.33)(eslint@9.7.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0)(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))
+        version: 2.23.1(@unocss/eslint-plugin@0.61.5(eslint@9.7.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.33)(eslint@9.7.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0)(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))
       '@types/prompts':
         specifier: 2.4.9
         version: 2.4.9
@@ -64,7 +64,7 @@ importers:
         version: 5.4.5
       vitest:
         specifier: 1.6.0
-        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
 
   apps/histoire:
     dependencies:
@@ -155,7 +155,7 @@ importers:
         version: 5.3.4(@types/node@20.14.6)(sass@1.77.8)(terser@5.27.0)
       vitest:
         specifier: 1.6.0
-        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
       vue:
         specifier: 3.4.33
         version: 3.4.33(typescript@5.4.5)
@@ -192,7 +192,7 @@ importers:
         version: 8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
       '@storybook/addon-interactions':
         specifier: 8.2.5
-        version: 8.2.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))
+        version: 8.2.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))
       '@storybook/addon-links':
         specifier: 8.2.5
         version: 8.2.5(react@17.0.2)(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
@@ -207,7 +207,7 @@ importers:
         version: 8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
       '@storybook/jest':
         specifier: 0.2.3
-        version: 0.2.3(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))
+        version: 0.2.3(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))
       '@storybook/node-logger':
         specifier: 8.2.5
         version: 8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
@@ -315,8 +315,8 @@ importers:
         specifier: 1.6.0
         version: 1.6.0(vitest@1.6.0)
       jsdom:
-        specifier: 24.1.0
-        version: 24.1.0
+        specifier: 24.1.1
+        version: 24.1.1
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -331,7 +331,7 @@ importers:
         version: 5.3.4(@types/node@20.14.6)(sass@1.77.8)(terser@5.27.0)
       vitest:
         specifier: 1.6.0
-        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
       webpack:
         specifier: 5.93.0
         version: 5.93.0
@@ -346,11 +346,11 @@ importers:
         specifier: 1.6.0
         version: 1.6.0(vitest@1.6.0)
       jsdom:
-        specifier: 24.1.0
-        version: 24.1.0
+        specifier: 24.1.1
+        version: 24.1.1
       vitest:
         specifier: 1.6.0
-        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
 
   packages/tsconfig: {}
 
@@ -382,8 +382,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       jsdom:
-        specifier: 24.1.0
-        version: 24.1.0
+        specifier: 24.1.1
+        version: 24.1.1
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -392,7 +392,7 @@ importers:
         version: 5.3.4(@types/node@20.14.6)(sass@1.77.8)(terser@5.27.0)
       vitest:
         specifier: 1.6.0
-        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+        version: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
       vue-tsc:
         specifier: 2.0.26
         version: 2.0.26(typescript@5.4.5)
@@ -5788,8 +5788,8 @@ packages:
     resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
     engines: {node: '>= 6'}
 
-  https-proxy-agent@7.0.4:
-    resolution: {integrity: sha512-wlwpilI7YdjSkWaQ/7omYBMTliDcmCN8OLihO6I9B86g06lMyAoqgoDpV0XqoaPOKj+0DIdAvnsWfyAAhmimcg==}
+  https-proxy-agent@7.0.5:
+    resolution: {integrity: sha512-1e4Wqeblerz+tMKPIq2EMGiiWW1dIjZOksyHWSUm1rmuvw/how9hBHZ38lAGj5ID4Ik6EdkOw7NmWPy6LAwalw==}
     engines: {node: '>= 14'}
 
   httpxy@0.1.5:
@@ -6403,8 +6403,8 @@ packages:
       canvas:
         optional: true
 
-  jsdom@24.1.0:
-    resolution: {integrity: sha512-6gpM7pRXCwIOKxX47cgOyvyQDN/Eh0f1MeKySBV2xGdKtqJBLj8P25eY3EVCWo2mglDDzozR2r2MW4T+JiNUZA==}
+  jsdom@24.1.1:
+    resolution: {integrity: sha512-5O1wWV99Jhq4DV7rCLIoZ/UIhyQeDR7wHVyZAHAshbrvZsLs+Xzz7gtwnlJTJDjleiTKh54F4dXrX70vJQTyJQ==}
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
@@ -7125,8 +7125,8 @@ packages:
       '@types/node':
         optional: true
 
-  nwsapi@2.2.10:
-    resolution: {integrity: sha512-QK0sRs7MKv0tKe1+5uZIQk/C8XGza4DAnztJG8iD+TpJIORARrCxczA738awHrZoHeTjSSoHqao2teO0dC/gFQ==}
+  nwsapi@2.2.12:
+    resolution: {integrity: sha512-qXDmcVlZV4XRtKFzddidpfVP4oMSGhga+xdMc25mv8kaLUHtgzCDhUxkrN8exkGdTlLNaXj7CV3GtON7zuGZ+w==}
 
   nwsapi@2.2.7:
     resolution: {integrity: sha512-ub5E4+FBPKwAZx0UwIQOjYWGHTEq5sPqHQNRN8Z9e4A7u3Tj1weLJsL59yH9vmvqEtBHaOmT6cYQKIZOxp35FQ==}
@@ -8184,8 +8184,8 @@ packages:
   rrweb-cssom@0.6.0:
     resolution: {integrity: sha512-APM0Gt1KoXBz0iIkkdB/kfvGOwC4UuJFeG/c+yV7wSc7q96cG/kJ0HiYCnzivD9SB53cLV1MlHFNfOuPaadYSw==}
 
-  rrweb-cssom@0.7.0:
-    resolution: {integrity: sha512-KlSv0pm9kgQSRxXEMgtivPJ4h826YHsuob8pSHcfSZsSXGtvpEAie8S0AnXuObEJ7nhikOb4ahwxDm0H2yW17g==}
+  rrweb-cssom@0.7.1:
+    resolution: {integrity: sha512-TrEMa7JGdVm0UThDJSx7ddw5nVm3UJS9o9CCIZ72B1vSyEZoziDqBYP3XIoi/12lKrJR8rE3jeFHMok2F/Mnsg==}
 
   run-applescript@7.0.0:
     resolution: {integrity: sha512-9by4Ij99JUr/MCFBUkDKLWK3G9HVXmabKz9U5MlIAIuvuzkiOicRYs8XJLxX+xahD+mLiiCYDqF9dKAgtzKP1A==}
@@ -9548,8 +9548,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  ws@8.17.0:
-    resolution: {integrity: sha512-uJq6108EgZMAl20KagGkzCKfMEjxmKvZHG7Tlq0Z6nOky7YF7aq4mOx6xK8TJ/i1LeK4Qus7INktacctDgY8Ow==}
+  ws@8.17.1:
+    resolution: {integrity: sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -9560,8 +9560,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  ws@8.17.1:
-    resolution: {integrity: sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==}
+  ws@8.18.0:
+    resolution: {integrity: sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -9659,7 +9659,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/eslint-config@2.23.1(@unocss/eslint-plugin@0.61.5(eslint@9.7.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.33)(eslint@9.7.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0)(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))':
+  '@antfu/eslint-config@2.23.1(@unocss/eslint-plugin@0.61.5(eslint@9.7.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.33)(eslint@9.7.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0)(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))':
     dependencies:
       '@antfu/eslint-plugin-unused-imports': 4.0.0(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)
       '@antfu/install-pkg': 0.3.3
@@ -9684,7 +9684,7 @@ snapshots:
       eslint-plugin-regexp: 2.6.0(eslint@9.7.0)
       eslint-plugin-toml: 0.11.1(eslint@9.7.0)
       eslint-plugin-unicorn: 54.0.0(eslint@9.7.0)
-      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0)(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))
+      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0)(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))
       eslint-plugin-vue: 9.27.0(eslint@9.7.0)
       eslint-plugin-yml: 1.14.0(eslint@9.7.0)
       eslint-processor-vue-blocks: 0.1.2(@vue/compiler-sfc@3.4.33)(eslint@9.7.0)
@@ -12427,11 +12427,11 @@ snapshots:
       '@storybook/global': 5.0.0
       storybook: 8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9))
 
-  '@storybook/addon-interactions@8.2.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))':
+  '@storybook/addon-interactions@8.2.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/instrumenter': 8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
-      '@storybook/test': 8.2.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))
+      '@storybook/test': 8.2.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))
       polished: 4.2.2
       storybook: 8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9))
       ts-dedent: 2.2.0
@@ -12605,10 +12605,10 @@ snapshots:
       storybook: 8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9))
       util: 0.12.5
 
-  '@storybook/jest@0.2.3(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))':
+  '@storybook/jest@0.2.3(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))':
     dependencies:
       '@storybook/expect': 28.1.3-5
-      '@testing-library/jest-dom': 6.1.4(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))
+      '@testing-library/jest-dom': 6.1.4(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))
       '@types/jest': 28.1.3
       jest-mock: 27.5.1
     transitivePeerDependencies:
@@ -12685,12 +12685,12 @@ snapshots:
       - supports-color
       - ts-node
 
-  '@storybook/test@8.2.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))':
+  '@storybook/test@8.2.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))':
     dependencies:
       '@storybook/csf': 0.1.11
       '@storybook/instrumenter': 8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
       '@testing-library/dom': 10.1.0
-      '@testing-library/jest-dom': 6.4.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))
+      '@testing-library/jest-dom': 6.4.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))
       '@testing-library/user-event': 14.5.2(@testing-library/dom@10.1.0)
       '@vitest/expect': 1.6.0
       '@vitest/spy': 1.6.0
@@ -12889,7 +12889,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.1.4(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))':
+  '@testing-library/jest-dom@6.1.4(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))':
     dependencies:
       '@adobe/css-tools': 4.3.3
       '@babel/runtime': 7.23.4
@@ -12903,9 +12903,9 @@ snapshots:
       '@jest/globals': 29.7.0
       '@types/jest': 28.1.3
       jest: 29.7.0(@types/node@20.14.6)
-      vitest: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+      vitest: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
 
-  '@testing-library/jest-dom@6.4.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0))':
+  '@testing-library/jest-dom@6.4.5(@jest/globals@29.7.0)(@types/jest@28.1.3)(jest@29.7.0(@types/node@20.14.6))(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0))':
     dependencies:
       '@adobe/css-tools': 4.3.3
       '@babel/runtime': 7.23.4
@@ -12919,7 +12919,7 @@ snapshots:
       '@jest/globals': 29.7.0
       '@types/jest': 28.1.3
       jest: 29.7.0(@types/node@20.14.6)
-      vitest: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+      vitest: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
 
   '@testing-library/user-event@14.5.1(@testing-library/dom@9.3.3)':
     dependencies:
@@ -13728,7 +13728,7 @@ snapshots:
       pathe: 1.1.2
       picocolors: 1.0.0
       sirv: 2.0.4
-      vitest: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+      vitest: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
 
   '@vitest/utils@1.6.0':
     dependencies:
@@ -15630,13 +15630,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0)(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)):
+  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0)(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)):
     dependencies:
       '@typescript-eslint/utils': 7.16.1(eslint@9.7.0)(typescript@5.4.5)
       eslint: 9.7.0
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.4.5))(eslint@9.7.0)(typescript@5.4.5)
-      vitest: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0)
+      vitest: 1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -16544,7 +16544,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.4:
+  https-proxy-agent@7.0.5:
     dependencies:
       agent-base: 7.1.0
       debug: 4.3.5
@@ -17395,7 +17395,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  jsdom@24.1.0:
+  jsdom@24.1.1:
     dependencies:
       cssstyle: 4.0.1
       data-urls: 5.0.0
@@ -17403,11 +17403,11 @@ snapshots:
       form-data: 4.0.0
       html-encoding-sniffer: 4.0.0
       http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.4
+      https-proxy-agent: 7.0.5
       is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.10
+      nwsapi: 2.2.12
       parse5: 7.1.2
-      rrweb-cssom: 0.7.0
+      rrweb-cssom: 0.7.1
       saxes: 6.0.0
       symbol-tree: 3.2.4
       tough-cookie: 4.1.4
@@ -17416,7 +17416,7 @@ snapshots:
       whatwg-encoding: 3.1.1
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.0.0
-      ws: 8.17.0
+      ws: 8.18.0
       xml-name-validator: 5.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -18537,7 +18537,7 @@ snapshots:
       - vue-tsc
       - xml2js
 
-  nwsapi@2.2.10: {}
+  nwsapi@2.2.12: {}
 
   nwsapi@2.2.7: {}
 
@@ -19719,7 +19719,7 @@ snapshots:
 
   rrweb-cssom@0.6.0: {}
 
-  rrweb-cssom@0.7.0: {}
+  rrweb-cssom@0.7.1: {}
 
   run-applescript@7.0.0: {}
 
@@ -21017,7 +21017,7 @@ snapshots:
       sass: 1.77.8
       terser: 5.27.0
 
-  vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.0)(sass@1.77.8)(terser@5.27.0):
+  vitest@1.6.0(@types/node@20.14.6)(@vitest/ui@1.6.0(vitest@1.6.0))(jsdom@24.1.1)(sass@1.77.8)(terser@5.27.0):
     dependencies:
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
@@ -21042,7 +21042,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.6
       '@vitest/ui': 1.6.0(vitest@1.6.0)
-      jsdom: 24.1.0
+      jsdom: 24.1.1
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -21402,9 +21402,9 @@ snapshots:
 
   ws@8.16.0: {}
 
-  ws@8.17.0: {}
-
   ws@8.17.1: {}
+
+  ws@8.18.0: {}
 
   xml-name-validator@4.0.0: {}
 
