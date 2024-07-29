@@ -36,7 +36,7 @@ const iconSizeClasses = {
 <template>
   <button
     :id="`${prefix}ButtonButton`"
-    class="overflow-ellipsis mb-0.5 h-3 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap p-4 text-lg transition-opacity focus:(outline-none ring)"
+    class="flex justify-center overflow-ellipsis mb-0.5 h-3 cursor-pointer items-center overflow-hidden whitespace-nowrap p-4 text-lg transition-opacity focus:outline-none focus:ring"
     :class="[{ 'opacity-20 cursor-not-allowed': disabled }, classes[type]]"
     :disabled="disabled"
     @click="$emit('click')"
