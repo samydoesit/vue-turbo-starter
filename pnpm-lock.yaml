@@ -367,8 +367,8 @@ importers:
         version: 3.4.35(typescript@5.5.4)
     devDependencies:
       '@pinia/testing':
-        specifier: 0.1.4
-        version: 0.1.4(pinia@2.2.1(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
+        specifier: 0.1.5
+        version: 0.1.5(pinia@2.2.1(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
       '@testing-library/vue':
         specifier: 8.1.0
         version: 8.1.0(@vue/compiler-sfc@3.4.35)(vue@3.4.35(typescript@5.5.4))
@@ -2446,10 +2446,10 @@ packages:
   '@pinia/nuxt@0.5.3':
     resolution: {integrity: sha512-AEuHEcaxZdAl73qUOco1TpOGjcmn83nJlYORZ63zhufSCVMj28lPq15ZnfhhofwBh5IjkT/lB7d8Ff958LajDQ==}
 
-  '@pinia/testing@0.1.4':
-    resolution: {integrity: sha512-DJ3oXYqVa6SfAngZoUmKKBp+WmQ50XV41NWThgX49p66ptTeR756QRXd0lg42FC17sIWlAbtc9EEiu1T8Yzoig==}
+  '@pinia/testing@0.1.5':
+    resolution: {integrity: sha512-AcGzuotkzhRoF00htuxLfIPBBHVE6HjjB3YC5Y3os8vRgKu6ipknK5GBQq9+pduwYQhZ+BcCZDC9TyLAUlUpoQ==}
     peerDependencies:
-      pinia: '>=2.2.0'
+      pinia: '>=2.2.1'
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -12146,7 +12146,7 @@ snapshots:
       - typescript
       - vue
 
-  '@pinia/testing@0.1.4(pinia@2.2.1(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))':
+  '@pinia/testing@0.1.5(pinia@2.2.1(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))':
     dependencies:
       pinia: 2.2.1(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4))
       vue-demi: 0.14.10(vue@3.4.35(typescript@5.5.4))
