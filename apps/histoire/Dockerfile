@@ -36,7 +36,7 @@ COPY turbo.json turbo.json
 
 RUN pnpm build
 
-FROM golang:1.22 as gobuilder
+FROM golang:1.23 as gobuilder
 
 COPY apps/storybook/server.go server.go
 RUN go build \
