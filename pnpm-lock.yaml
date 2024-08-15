@@ -130,8 +130,8 @@ importers:
         specifier: 3.12.4
         version: 3.12.4(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.15)(encoding@0.1.13)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.3)(rollup@4.18.0)(sass@1.77.8)(terser@5.27.0)(typescript@5.5.4)(vite@5.4.1(@types/node@20.14.15)(sass@1.77.8)(terser@5.27.0))(vue-tsc@2.0.29(typescript@5.5.4))
       pinia:
-        specifier: 2.2.1
-        version: 2.2.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
+        specifier: 2.2.2
+        version: 2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
       pinia-store:
         specifier: workspace:*
         version: link:../../packages/pinia-store
@@ -169,8 +169,8 @@ importers:
   apps/storybook:
     dependencies:
       pinia:
-        specifier: 2.2.1
-        version: 2.2.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
+        specifier: 2.2.2
+        version: 2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
     devDependencies:
       '@babel/core':
         specifier: 7.25.2
@@ -368,7 +368,7 @@ importers:
     devDependencies:
       '@pinia/testing':
         specifier: 0.1.5
-        version: 0.1.5(pinia@2.2.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))(vue@3.4.38(typescript@5.5.4))
+        version: 0.1.5(pinia@2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))(vue@3.4.38(typescript@5.5.4))
       '@testing-library/vue':
         specifier: 8.1.0
         version: 8.1.0(@vue/compiler-sfc@3.4.38)(vue@3.4.38(typescript@5.5.4))
@@ -7499,6 +7499,18 @@ packages:
       typescript:
         optional: true
 
+  pinia@2.2.2:
+    resolution: {integrity: sha512-ja2XqFWZC36mupU4z1ZzxeTApV7DOw44cV4dhQ9sGwun+N89v/XP7+j7q6TanS1u1tdbK4r+1BUx7heMaIdagA==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+
   pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
@@ -12210,9 +12222,9 @@ snapshots:
       - typescript
       - vue
 
-  '@pinia/testing@0.1.5(pinia@2.2.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))(vue@3.4.38(typescript@5.5.4))':
+  '@pinia/testing@0.1.5(pinia@2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))(vue@3.4.38(typescript@5.5.4))':
     dependencies:
-      pinia: 2.2.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
+      pinia: 2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
       vue-demi: 0.14.10(vue@3.4.38(typescript@5.5.4))
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -19049,6 +19061,14 @@ snapshots:
   pify@4.0.1: {}
 
   pinia@2.2.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)):
+    dependencies:
+      '@vue/devtools-api': 6.6.3
+      vue: 3.4.38(typescript@5.5.4)
+      vue-demi: 0.14.10(vue@3.4.38(typescript@5.5.4))
+    optionalDependencies:
+      typescript: 5.5.4
+
+  pinia@2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)):
     dependencies:
       '@vue/devtools-api': 6.6.3
       vue: 3.4.38(typescript@5.5.4)
