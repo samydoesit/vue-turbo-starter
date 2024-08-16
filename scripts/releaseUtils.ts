@@ -185,9 +185,9 @@ export async function logRecentCommits(pkgName: string) {
   }).then(res => res.stdout.trim())
   console.log(
     colors.bold(
-       `\n${colors.blue('i')} Commits of ${colors.green(
-         pkgName,
-       )} since ${colors.green(tag)} ${colors.gray(`(${sha.slice(0, 5)})`)}`,
+      `\n${colors.blue('i')} Commits of ${colors.green(
+        pkgName,
+      )} since ${colors.green(tag)} ${colors.gray(`(${sha.slice(0, 5)})`)}`,
     ),
   )
   await run(
@@ -195,10 +195,10 @@ export async function logRecentCommits(pkgName: string) {
     [
       '--no-pager',
       'log',
-       `${sha}..HEAD`,
-       '--oneline',
-       '--',
-       `packages/${pkgName}`,
+      `${sha}..HEAD`,
+      '--oneline',
+      '--',
+      `packages/${pkgName}`,
     ],
     { stdio: 'inherit' },
   )
