@@ -166,9 +166,7 @@ export async function publishPackage(
 }
 
 export async function getLatestTag(pkgName: string) {
-  const tags = (await run('git', ['tag'], { stdio: 'pipe' })).stdout
-    .split(/\n/)
-    .filter(Boolean)
+  const tags = (await run('git', ['tag'], { stdio: 'pipe' })).stdout.split(/\n/).filter(Boolean)
   const prefix = pkgName === 'vite' ? 'v' : `${pkgName}@`
   return tags
     .filter(tag => tag.startsWith(prefix))
