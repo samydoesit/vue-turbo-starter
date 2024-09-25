@@ -98,7 +98,7 @@ importers:
         version: link:../../packages/ui
       unocss:
         specifier: 0.62.4
-        version: 0.62.4(@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.94.0))(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
+        version: 0.62.4(@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.95.0))(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
       vite:
         specifier: 5.4.8
         version: 5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)
@@ -116,7 +116,7 @@ importers:
         version: 1.47.2
       '@unocss/nuxt':
         specifier: 0.62.4
-        version: 0.62.4(magicast@0.3.5)(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(webpack-sources@3.2.3)(webpack@5.94.0(esbuild@0.23.1))
+        version: 0.62.4(magicast@0.3.5)(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(webpack-sources@3.2.3)(webpack@5.95.0(esbuild@0.23.1))
       '@vitest/ui':
         specifier: 2.0.5
         version: 2.0.5(vitest@2.0.5)
@@ -140,7 +140,7 @@ importers:
         version: 1.79.3
       sass-loader:
         specifier: 16.0.2
-        version: 16.0.2(sass@1.79.3)(webpack@5.94.0(esbuild@0.23.1))
+        version: 16.0.2(sass@1.79.3)(webpack@5.95.0(esbuild@0.23.1))
       tsconfig:
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -163,8 +163,8 @@ importers:
         specifier: 2.0.0-rc.5
         version: 2.0.0-rc.5(vue@3.5.8(typescript@5.6.2))
       webpack:
-        specifier: 5.94.0
-        version: 5.94.0(esbuild@0.23.1)
+        specifier: 5.95.0
+        version: 5.95.0(esbuild@0.23.1)
 
   apps/storybook:
     dependencies:
@@ -231,7 +231,7 @@ importers:
         version: 5.1.4(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(vue@3.5.8(typescript@5.6.2))
       babel-loader:
         specifier: 9.2.1
-        version: 9.2.1(@babel/core@7.25.2)(webpack@5.94.0(@swc/core@1.6.5)(esbuild@0.23.1))
+        version: 9.2.1(@babel/core@7.25.2)(webpack@5.95.0(@swc/core@1.6.5)(esbuild@0.23.1))
       css-preset:
         specifier: workspace:*
         version: link:../../packages/css-preset
@@ -281,8 +281,8 @@ importers:
         specifier: 3.5.8
         version: 3.5.8(typescript@5.6.2)
       webpack:
-        specifier: 5.94.0
-        version: 5.94.0(@swc/core@1.6.5)(esbuild@0.23.1)
+        specifier: 5.95.0
+        version: 5.95.0(@swc/core@1.6.5)(esbuild@0.23.1)
 
   packages/css-preset:
     dependencies:
@@ -291,7 +291,7 @@ importers:
         version: 0.62.4
       '@unocss/nuxt':
         specifier: 0.62.4
-        version: 0.62.4(magicast@0.3.5)(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(webpack@5.94.0)
+        version: 0.62.4(magicast@0.3.5)(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(webpack@5.95.0)
       '@unocss/preset-icons':
         specifier: 0.62.4
         version: 0.62.4
@@ -306,7 +306,7 @@ importers:
         version: 0.62.4
       unocss:
         specifier: 0.62.4
-        version: 0.62.4(@unocss/webpack@0.62.4(rollup@3.29.4)(webpack@5.94.0))(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
+        version: 0.62.4(@unocss/webpack@0.62.4(rollup@3.29.4)(webpack@5.95.0))(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
     devDependencies:
       '@iconify-json/system-uicons':
         specifier: 1.2.0
@@ -333,8 +333,8 @@ importers:
         specifier: 2.0.5
         version: 2.0.5(@types/node@20.16.7)(@vitest/ui@2.0.5)(jsdom@25.0.0)(sass@1.79.3)(terser@5.27.0)
       webpack:
-        specifier: 5.94.0
-        version: 5.94.0
+        specifier: 5.95.0
+        version: 5.95.0
 
   packages/pinia-store:
     dependencies:
@@ -9218,8 +9218,8 @@ packages:
   webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
-  webpack@5.94.0:
-    resolution: {integrity: sha512-KcsGn50VT+06JH/iunZJedYGUJS5FGjow8wb9c0v5n1Om8O1g4L6LjtfxwlXIATopoQu+vOXXa7gYisWxCoPyg==}
+  webpack@5.95.0:
+    resolution: {integrity: sha512-2t3XstrKULz41MNMBF+cJ97TyHdyQ8HCt//pqErqDvNjU9YQBnZxIHa11VXsi7F3mb5/aO2tuDxdeTPdU7xu9Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -13072,7 +13072,7 @@ snapshots:
       gzip-size: 6.0.0
       sirv: 2.0.4
 
-  '@unocss/nuxt@0.62.4(magicast@0.3.5)(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(webpack@5.94.0)':
+  '@unocss/nuxt@0.62.4(magicast@0.3.5)(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(webpack@5.95.0)':
     dependencies:
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@3.29.4)
       '@unocss/config': 0.62.4
@@ -13086,8 +13086,8 @@ snapshots:
       '@unocss/preset-wind': 0.62.4
       '@unocss/reset': 0.62.4
       '@unocss/vite': 0.62.4(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
-      '@unocss/webpack': 0.62.4(rollup@3.29.4)(webpack@5.94.0)
-      unocss: 0.62.4(@unocss/webpack@0.62.4(rollup@3.29.4)(webpack@5.94.0))(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
+      '@unocss/webpack': 0.62.4(rollup@3.29.4)(webpack@5.95.0)
+      unocss: 0.62.4(@unocss/webpack@0.62.4(rollup@3.29.4)(webpack@5.95.0))(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
     transitivePeerDependencies:
       - magicast
       - postcss
@@ -13097,7 +13097,7 @@ snapshots:
       - webpack
       - webpack-sources
 
-  '@unocss/nuxt@0.62.4(magicast@0.3.5)(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(webpack-sources@3.2.3)(webpack@5.94.0(esbuild@0.23.1))':
+  '@unocss/nuxt@0.62.4(magicast@0.3.5)(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))(webpack-sources@3.2.3)(webpack@5.95.0(esbuild@0.23.1))':
     dependencies:
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.0)(webpack-sources@3.2.3)
       '@unocss/config': 0.62.4
@@ -13111,8 +13111,8 @@ snapshots:
       '@unocss/preset-wind': 0.62.4
       '@unocss/reset': 0.62.4
       '@unocss/vite': 0.62.4(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
-      '@unocss/webpack': 0.62.4(rollup@4.21.0)(webpack@5.94.0(esbuild@0.23.1))
-      unocss: 0.62.4(@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
+      '@unocss/webpack': 0.62.4(rollup@4.21.0)(webpack@5.95.0(esbuild@0.23.1))
+      unocss: 0.62.4(@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.95.0(esbuild@0.23.1)))(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
     transitivePeerDependencies:
       - magicast
       - postcss
@@ -13233,7 +13233,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@unocss/webpack@0.62.4(rollup@3.29.4)(webpack@5.94.0)':
+  '@unocss/webpack@0.62.4(rollup@3.29.4)(webpack@5.95.0)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@3.29.4)
@@ -13243,13 +13243,13 @@ snapshots:
       magic-string: 0.30.11
       tinyglobby: 0.2.6
       unplugin: 1.14.1(webpack-sources@3.2.3)
-      webpack: 5.94.0
+      webpack: 5.95.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  '@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.94.0(esbuild@0.23.1))':
+  '@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.95.0(esbuild@0.23.1))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@4.21.0)
@@ -13259,13 +13259,13 @@ snapshots:
       magic-string: 0.30.11
       tinyglobby: 0.2.6
       unplugin: 1.14.1(webpack-sources@3.2.3)
-      webpack: 5.94.0(esbuild@0.23.1)
+      webpack: 5.95.0(esbuild@0.23.1)
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  '@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.94.0)':
+  '@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.95.0)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@4.21.0)
@@ -13275,7 +13275,7 @@ snapshots:
       magic-string: 0.30.11
       tinyglobby: 0.2.6
       unplugin: 1.14.1(webpack-sources@3.2.3)
-      webpack: 5.94.0
+      webpack: 5.95.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - rollup
@@ -13909,12 +13909,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-loader@9.2.1(@babel/core@7.25.2)(webpack@5.94.0(@swc/core@1.6.5)(esbuild@0.23.1)):
+  babel-loader@9.2.1(@babel/core@7.25.2)(webpack@5.95.0(@swc/core@1.6.5)(esbuild@0.23.1)):
     dependencies:
       '@babel/core': 7.25.2
       find-cache-dir: 4.0.0
       schema-utils: 4.2.0
-      webpack: 5.94.0(@swc/core@1.6.5)(esbuild@0.23.1)
+      webpack: 5.95.0(@swc/core@1.6.5)(esbuild@0.23.1)
 
   babel-plugin-istanbul@6.1.1:
     dependencies:
@@ -19234,12 +19234,12 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@16.0.2(sass@1.79.3)(webpack@5.94.0(esbuild@0.23.1)):
+  sass-loader@16.0.2(sass@1.79.3)(webpack@5.95.0(esbuild@0.23.1)):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
       sass: 1.79.3
-      webpack: 5.94.0(esbuild@0.23.1)
+      webpack: 5.95.0(esbuild@0.23.1)
 
   sass@1.79.3:
     dependencies:
@@ -19683,37 +19683,37 @@ snapshots:
     dependencies:
       memoizerific: 1.11.3
 
-  terser-webpack-plugin@5.3.10(@swc/core@1.6.5)(esbuild@0.23.1)(webpack@5.94.0(@swc/core@1.6.5)(esbuild@0.23.1)):
+  terser-webpack-plugin@5.3.10(@swc/core@1.6.5)(esbuild@0.23.1)(webpack@5.95.0(@swc/core@1.6.5)(esbuild@0.23.1)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
       terser: 5.27.0
-      webpack: 5.94.0(@swc/core@1.6.5)(esbuild@0.23.1)
+      webpack: 5.95.0(@swc/core@1.6.5)(esbuild@0.23.1)
     optionalDependencies:
       '@swc/core': 1.6.5
       esbuild: 0.23.1
 
-  terser-webpack-plugin@5.3.10(esbuild@0.23.1)(webpack@5.94.0(esbuild@0.23.1)):
+  terser-webpack-plugin@5.3.10(esbuild@0.23.1)(webpack@5.95.0(esbuild@0.23.1)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
       terser: 5.27.0
-      webpack: 5.94.0(esbuild@0.23.1)
+      webpack: 5.95.0(esbuild@0.23.1)
     optionalDependencies:
       esbuild: 0.23.1
 
-  terser-webpack-plugin@5.3.10(webpack@5.94.0):
+  terser-webpack-plugin@5.3.10(webpack@5.95.0):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
       terser: 5.27.0
-      webpack: 5.94.0
+      webpack: 5.95.0
 
   terser@5.27.0:
     dependencies:
@@ -20079,7 +20079,7 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss@0.62.4(@unocss/webpack@0.62.4(rollup@3.29.4)(webpack@5.94.0))(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)):
+  unocss@0.62.4(@unocss/webpack@0.62.4(rollup@3.29.4)(webpack@5.95.0))(postcss@8.4.47)(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)):
     dependencies:
       '@unocss/astro': 0.62.4(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
       '@unocss/cli': 0.62.4(rollup@3.29.4)
@@ -20099,14 +20099,14 @@ snapshots:
       '@unocss/transformer-variant-group': 0.62.4
       '@unocss/vite': 0.62.4(rollup@3.29.4)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
     optionalDependencies:
-      '@unocss/webpack': 0.62.4(rollup@3.29.4)(webpack@5.94.0)
+      '@unocss/webpack': 0.62.4(rollup@3.29.4)(webpack@5.95.0)
       vite: 5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)
     transitivePeerDependencies:
       - postcss
       - rollup
       - supports-color
 
-  unocss@0.62.4(@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)):
+  unocss@0.62.4(@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.95.0(esbuild@0.23.1)))(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)):
     dependencies:
       '@unocss/astro': 0.62.4(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
       '@unocss/cli': 0.62.4(rollup@4.21.0)
@@ -20126,14 +20126,14 @@ snapshots:
       '@unocss/transformer-variant-group': 0.62.4
       '@unocss/vite': 0.62.4(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
     optionalDependencies:
-      '@unocss/webpack': 0.62.4(rollup@4.21.0)(webpack@5.94.0(esbuild@0.23.1))
+      '@unocss/webpack': 0.62.4(rollup@4.21.0)(webpack@5.95.0(esbuild@0.23.1))
       vite: 5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)
     transitivePeerDependencies:
       - postcss
       - rollup
       - supports-color
 
-  unocss@0.62.4(@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.94.0))(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)):
+  unocss@0.62.4(@unocss/webpack@0.62.4(rollup@4.21.0)(webpack@5.95.0))(postcss@8.4.47)(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)):
     dependencies:
       '@unocss/astro': 0.62.4(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
       '@unocss/cli': 0.62.4(rollup@4.21.0)
@@ -20153,7 +20153,7 @@ snapshots:
       '@unocss/transformer-variant-group': 0.62.4
       '@unocss/vite': 0.62.4(rollup@4.21.0)(vite@5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0))
     optionalDependencies:
-      '@unocss/webpack': 0.62.4(rollup@4.21.0)(webpack@5.94.0)
+      '@unocss/webpack': 0.62.4(rollup@4.21.0)(webpack@5.95.0)
       vite: 5.4.8(@types/node@20.16.7)(sass@1.79.3)(terser@5.27.0)
     transitivePeerDependencies:
       - postcss
@@ -20648,7 +20648,7 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  webpack@5.94.0:
+  webpack@5.95.0:
     dependencies:
       '@types/estree': 1.0.5
       '@webassemblyjs/ast': 1.12.1
@@ -20670,7 +20670,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(webpack@5.94.0)
+      terser-webpack-plugin: 5.3.10(webpack@5.95.0)
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
@@ -20678,7 +20678,7 @@ snapshots:
       - esbuild
       - uglify-js
 
-  webpack@5.94.0(@swc/core@1.6.5)(esbuild@0.23.1):
+  webpack@5.95.0(@swc/core@1.6.5)(esbuild@0.23.1):
     dependencies:
       '@types/estree': 1.0.5
       '@webassemblyjs/ast': 1.12.1
@@ -20700,7 +20700,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(@swc/core@1.6.5)(esbuild@0.23.1)(webpack@5.94.0(@swc/core@1.6.5)(esbuild@0.23.1))
+      terser-webpack-plugin: 5.3.10(@swc/core@1.6.5)(esbuild@0.23.1)(webpack@5.95.0(@swc/core@1.6.5)(esbuild@0.23.1))
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
@@ -20708,7 +20708,7 @@ snapshots:
       - esbuild
       - uglify-js
 
-  webpack@5.94.0(esbuild@0.23.1):
+  webpack@5.95.0(esbuild@0.23.1):
     dependencies:
       '@types/estree': 1.0.5
       '@webassemblyjs/ast': 1.12.1
@@ -20730,7 +20730,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.23.1)(webpack@5.94.0(esbuild@0.23.1))
+      terser-webpack-plugin: 5.3.10(esbuild@0.23.1)(webpack@5.95.0(esbuild@0.23.1))
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
