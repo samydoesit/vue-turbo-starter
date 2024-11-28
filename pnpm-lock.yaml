@@ -110,7 +110,7 @@ importers:
         version: 1.6.1(rollup@4.24.4)(vite@5.4.11(@types/node@20.17.6)(sass@1.81.0)(terser@5.27.0))(vue@3.5.13(typescript@5.6.3))
       '@pinia/nuxt':
         specifier: 0.8.0
-        version: 0.8.0(magicast@0.3.5)(pinia@2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(rollup@4.24.4)
+        version: 0.8.0(magicast@0.3.5)(pinia@2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(rollup@4.24.4)
       '@playwright/test':
         specifier: 1.49.0
         version: 1.49.0
@@ -130,8 +130,8 @@ importers:
         specifier: 3.14.1592
         version: 3.14.1592(@parcel/watcher@2.4.1)(@types/node@20.17.6)(encoding@0.1.13)(eslint@9.9.1(jiti@2.4.0))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.3)(rollup@4.24.4)(sass@1.81.0)(terser@5.27.0)(typescript@5.6.3)(vite@5.4.11(@types/node@20.17.6)(sass@1.81.0)(terser@5.27.0))(vue-tsc@2.1.10(typescript@5.6.3))
       pinia:
-        specifier: 2.2.7
-        version: 2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+        specifier: 2.2.8
+        version: 2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       pinia-store:
         specifier: workspace:*
         version: link:../../packages/pinia-store
@@ -169,8 +169,8 @@ importers:
   apps/storybook:
     dependencies:
       pinia:
-        specifier: 2.2.7
-        version: 2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+        specifier: 2.2.8
+        version: 2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
     devDependencies:
       '@babel/core':
         specifier: 7.26.0
@@ -368,7 +368,7 @@ importers:
     devDependencies:
       '@pinia/testing':
         specifier: 0.1.5
-        version: 0.1.5(pinia@2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+        version: 0.1.5(pinia@2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
       '@testing-library/vue':
         specifier: 8.1.0
         version: 8.1.0(@vue/compiler-sfc@3.5.13)(vue@3.5.13(typescript@5.6.3))
@@ -6954,8 +6954,8 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
-  pinia@2.2.7:
-    resolution: {integrity: sha512-M+X9Eh9V5De+8wyj0rD1cgB0zy1mPN/aBEpCI9y+DgVmzXV2dIwjYBluJ5cMQd/jAoHs0VW+EyUSHMZv/Wtcnw==}
+  pinia@2.2.8:
+    resolution: {integrity: sha512-NRTYy2g+kju5tBRe0oNlriZIbMNvma8ZJrpHsp3qudyiMEA8jMmPPKQ2QMHg0Oc4BkUyQYWagACabrwriCK9HQ==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -11227,18 +11227,18 @@ snapshots:
       '@parcel/watcher-win32-ia32': 2.4.1
       '@parcel/watcher-win32-x64': 2.4.1
 
-  '@pinia/nuxt@0.8.0(magicast@0.3.5)(pinia@2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(rollup@4.24.4)':
+  '@pinia/nuxt@0.8.0(magicast@0.3.5)(pinia@2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(rollup@4.24.4)':
     dependencies:
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.24.4)
-      pinia: 2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+      pinia: 2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
     transitivePeerDependencies:
       - magicast
       - rollup
       - supports-color
 
-  '@pinia/testing@0.1.5(pinia@2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))':
+  '@pinia/testing@0.1.5(pinia@2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))':
     dependencies:
-      pinia: 2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+      pinia: 2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       vue-demi: 0.14.10(vue@3.5.13(typescript@5.6.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -17567,7 +17567,7 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pinia@2.2.7(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)):
+  pinia@2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.13(typescript@5.6.3)
