@@ -212,8 +212,8 @@ importers:
         specifier: 8.4.6
         version: 8.4.6(storybook@8.4.6(prettier@3.3.3))
       '@storybook/test-runner':
-        specifier: 0.20.0
-        version: 0.20.0(@types/node@20.17.6)(storybook@8.4.6(prettier@3.3.3))
+        specifier: 0.20.1
+        version: 0.20.1(@types/node@20.17.6)(storybook@8.4.6(prettier@3.3.3))
       '@storybook/testing-library':
         specifier: 0.2.2
         version: 0.2.2
@@ -2687,8 +2687,8 @@ packages:
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
       storybook: ^8.4.6
 
-  '@storybook/test-runner@0.20.0':
-    resolution: {integrity: sha512-0cSNW61/XYg8jtcRlk8qc5fJa8qKSq7tvSpvikwS7zcXkKgfu6fbGX56ErxnvidmyCyXjMe/j0UHzLACzc2nTg==}
+  '@storybook/test-runner@0.20.1':
+    resolution: {integrity: sha512-3WU/th/uncIR6vpQDK9hKjiZjmczsluoLbgkRV7ufxY9IgHCGcbIjvT5EPS+XZIaOrNGjaPsyB5cE1okKn9iSA==}
     engines: {node: ^16.10.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -11695,7 +11695,7 @@ snapshots:
       react-dom: 17.0.2(react@17.0.2)
       storybook: 8.4.6(prettier@3.3.3)
 
-  '@storybook/test-runner@0.20.0(@types/node@20.17.6)(storybook@8.4.6(prettier@3.3.3))':
+  '@storybook/test-runner@0.20.1(@types/node@20.17.6)(storybook@8.4.6(prettier@3.3.3))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/generator': 7.26.0
@@ -19378,7 +19378,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.26.0
       '@babel/standalone': 7.23.9
-      '@babel/types': 7.25.9
+      '@babel/types': 7.26.0
       defu: 6.1.4
       jiti: 1.21.6
       mri: 1.2.0
